@@ -38,7 +38,7 @@ export default function CaseMap({ cases, quarantineZones }) {
           style={{ height: '100%', width: '100%' }}
         >
           <TileLayer
-            url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
             attribution='&copy; <a href="https://carto.com/">CARTO</a>'
           />
           <FitBounds bounds={bounds} />
@@ -49,8 +49,8 @@ export default function CaseMap({ cases, quarantineZones }) {
               center={zone.center}
               radius={zone.radiusMiles * 1609.34}
               pathOptions={{
-                color: '#f59e0b',
-                fillColor: '#f59e0b',
+                color: '#C47F17',
+                fillColor: '#C47F17',
                 fillOpacity: 0.08,
                 weight: 1,
                 dashArray: '6 4',
@@ -70,8 +70,8 @@ export default function CaseMap({ cases, quarantineZones }) {
               center={[c.lat, c.lng]}
               radius={c.status === 'active' ? 10 : 7}
               pathOptions={{
-                color: c.status === 'active' ? '#dc2626' : '#6b7280',
-                fillColor: c.status === 'active' ? '#dc2626' : '#6b7280',
+                color: c.status === 'active' ? '#9B1B30' : '#999999',
+                fillColor: c.status === 'active' ? '#9B1B30' : '#999999',
                 fillOpacity: 0.7,
                 weight: 2,
               }}
@@ -81,7 +81,7 @@ export default function CaseMap({ cases, quarantineZones }) {
                 {c.animal}, {c.county} Co., {c.state}<br />
                 {new Date(c.date + 'T00:00:00').toLocaleDateString()}<br />
                 <span className="popup-status">{c.status}</span><br />
-                <em style={{ fontSize: '0.75rem', color: '#9ca3af' }}>{c.notes}</em>
+                <em style={{ fontSize: '0.75rem', color: '#999' }}>{c.notes}</em>
               </Popup>
             </CircleMarker>
           ))}

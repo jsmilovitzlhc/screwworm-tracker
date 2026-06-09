@@ -30,16 +30,16 @@ function App() {
         </div>
         <div className="alert-badge">
           <div className="alert-dot" />
-          ACTIVE OUTBREAK
+          Active Outbreak
         </div>
       </header>
 
       <div className="hero-section">
         <h2>New World Screwworm — U.S. Outbreak 2026</h2>
         <p className="subtitle">
-          Real-time tracking of confirmed Cochliomyia hominivorax cases in the United States
+          Real-time tracking of confirmed <em>Cochliomyia hominivorax</em> cases in the United States
         </p>
-        <p className="last-updated">Last updated: {lastUpdated}</p>
+        <p className="last-updated">Last updated {lastUpdated}</p>
       </div>
 
       <div className="summary-cards">
@@ -49,11 +49,11 @@ function App() {
         </div>
         <div className="summary-card danger">
           <div className="number">{activeCases.length}</div>
-          <div className="label">Active Cases</div>
+          <div className="label">Active</div>
         </div>
         <div className="summary-card">
           <div className="number">{states.length}</div>
-          <div className="label">States Affected</div>
+          <div className="label">States</div>
         </div>
         <div className="summary-card">
           <div className="number">{species.length}</div>
@@ -63,27 +63,28 @@ function App() {
 
       <CaseMap cases={data.confirmedCases} quarantineZones={data.quarantineZones} />
       <Timeline cases={data.confirmedCases} internationalTimeline={data.internationalContext.timeline} />
-      <TradeImpact impacts={data.tradeImpacts} />
       <SpeciesBreakdown breakdown={data.speciesBreakdown} />
+      <TradeImpact impacts={data.tradeImpacts} />
       <StateResponse responses={data.stateResponses} />
       <InternationalContext context={data.internationalContext} />
       <NewsFeed />
 
       <div className="cta-section">
         <h3>Stay Informed on the Outbreak</h3>
-        <p>Get real-time screwworm alerts and industry impact analysis from Meatingplace Data.</p>
+        <p>Get real-time screwworm alerts and industry impact analysis.</p>
         <form className="cta-form" onSubmit={e => { e.preventDefault(); alert('Thank you! You\'ll receive alerts as the situation develops.'); }}>
           <input type="email" placeholder="your@email.com" required />
           <button type="submit">Get Alerts</button>
         </form>
-        <a href="https://www.meatingplace.com/data" className="cta-link" target="_blank" rel="noopener noreferrer">
-          Explore Meatingplace Data →
+        <a href="https://www.meatingplace.com" className="cta-link" target="_blank" rel="noopener noreferrer">
+          Explore Meatingplace →
         </a>
       </div>
 
       <footer className="site-footer">
         <p>
-          © 2026 <a href="https://www.meatingplace.com" target="_blank" rel="noopener noreferrer">Meatingplace</a> — Data sourced from USDA APHIS, state animal health agencies. For informational purposes only.
+          Source: USDA APHIS, state animal health agencies, Meatingplace reporting<br />
+          © 2026 <a href="https://www.meatingplace.com" target="_blank" rel="noopener noreferrer">Meatingplace</a>. For informational purposes only.
         </p>
       </footer>
     </div>

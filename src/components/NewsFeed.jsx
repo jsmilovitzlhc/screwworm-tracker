@@ -40,34 +40,47 @@ export default function NewsFeed() {
 
   return (
     <div className="content-section">
-      <div className="section-header">
-        <span className="section-icon">📰</span>
-        <h3>Recent Meatingplace Coverage</h3>
-      </div>
-      {loading && <div className="news-loading">Loading articles...</div>}
-      {error && (
-        <div className="news-error">
-          Unable to load articles. <a href="https://www.meatingplace.com/?s=screwworm" target="_blank" rel="noopener noreferrer" style={{ color: '#dc2626' }}>View on Meatingplace.com →</a>
+      <div className="news-section-highlight">
+        <div className="section-header">
+          <span className="section-icon">📰</span>
+          <h3>More from Meatingplace</h3>
         </div>
-      )}
-      {!loading && !error && articles.length === 0 && (
-        <div className="news-error">No articles found.</div>
-      )}
-      <div className="news-grid">
-        {articles.map((article, i) => (
-          <a
-            key={i}
-            href={article.link}
-            className="news-card"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="news-date">{formatDate(article.date)}</div>
-            <div className="news-title">{stripHtml(article.title.rendered)}</div>
-            <div className="news-excerpt">{stripHtml(article.excerpt.rendered).slice(0, 200)}...</div>
-            <span className="news-link">Read on Meatingplace →</span>
-          </a>
-        ))}
+        {loading && <div className="news-loading">Loading coverage…</div>}
+        {error && (
+          <div className="news-error">
+            Unable to load articles.{' '}
+            <a href="https://www.meatingplace.com/?s=screwworm" target="_blank" rel="noopener noreferrer">
+              View on Meatingplace.com →
+            </a>
+          </div>
+        )}
+        {!loading && !error && articles.length === 0 && (
+          <div className="news-error">No articles found.</div>
+        )}
+        <div className="news-grid">
+          {articles.map((article, i) => (
+            <a
+              key={i}
+              href={article.link}
+              className="news-card"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="news-date">{formatDate(article.date)}</div>
+              <div className="news-title">{stripHtml(article.title.rendered)}</div>
+              <div className="news-excerpt">{stripHtml(article.excerpt.rendered).slice(0, 180)}…</div>
+              <span className="news-link">Read on Meatingplace →</span>
+            </a>
+          ))}
+        </div>
+        <a
+          href="https://www.meatingplace.com/?s=screwworm"
+          className="news-view-all"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View All Screwworm Coverage →
+        </a>
       </div>
     </div>
   );
