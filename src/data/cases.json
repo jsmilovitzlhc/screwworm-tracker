@@ -1,0 +1,176 @@
+{
+  "lastUpdated": "2026-06-09T00:00:00Z",
+  "confirmedCases": [
+    {
+      "id": 1,
+      "date": "2026-06-03",
+      "species": "Bovine",
+      "animal": "Calf",
+      "county": "Zavala",
+      "state": "TX",
+      "lat": 28.8656,
+      "lng": -99.7604,
+      "status": "active",
+      "notes": "First confirmed US case"
+    },
+    {
+      "id": 2,
+      "date": "2026-06-05",
+      "species": "Bovine",
+      "animal": "Calf",
+      "county": "Zavala",
+      "state": "TX",
+      "lat": 28.8856,
+      "lng": -99.7404,
+      "status": "active",
+      "notes": "Second case in Zavala County"
+    },
+    {
+      "id": 3,
+      "date": "2026-06-06",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "Andrews",
+      "state": "TX",
+      "lat": 32.3187,
+      "lng": -102.5460,
+      "status": "active",
+      "notes": "First canine case; non-livestock detection"
+    },
+    {
+      "id": 4,
+      "date": "2026-06-07",
+      "species": "Bovine",
+      "animal": "Calf",
+      "county": "La Salle",
+      "state": "TX",
+      "lat": 28.3458,
+      "lng": -98.9180,
+      "status": "active",
+      "notes": "Spread to La Salle County"
+    },
+    {
+      "id": 5,
+      "date": "2026-06-08",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "Lea",
+      "state": "NM",
+      "lat": 32.7926,
+      "lng": -103.1568,
+      "status": "active",
+      "notes": "First New Mexico case — 400+ miles from initial TX outbreak"
+    }
+  ],
+  "quarantineZones": [
+    {
+      "name": "Zavala County Quarantine",
+      "state": "TX",
+      "center": [28.8656, -99.7604],
+      "radiusMiles": 15,
+      "established": "2026-06-04",
+      "active": true
+    },
+    {
+      "name": "Andrews County Quarantine",
+      "state": "TX",
+      "center": [32.3187, -102.5460],
+      "radiusMiles": 10,
+      "established": "2026-06-07",
+      "active": true
+    },
+    {
+      "name": "La Salle County Quarantine",
+      "state": "TX",
+      "center": [28.3458, -98.9180],
+      "radiusMiles": 10,
+      "established": "2026-06-08",
+      "active": true
+    },
+    {
+      "name": "Lea County Quarantine",
+      "state": "NM",
+      "center": [32.7926, -103.1568],
+      "radiusMiles": 10,
+      "established": "2026-06-09",
+      "active": true
+    }
+  ],
+  "tradeImpacts": [
+    {
+      "date": "2026-06-05",
+      "entity": "Canada (CFIA)",
+      "action": "Suspended imports of Texas livestock",
+      "scope": "All ruminants and equines from TX",
+      "status": "active"
+    },
+    {
+      "date": "2026-06-06",
+      "entity": "Canada (CFIA)",
+      "action": "Expanded ban to all US states bordering Mexico",
+      "scope": "TX, NM, AZ, CA livestock",
+      "status": "active"
+    },
+    {
+      "date": "2026-06-06",
+      "entity": "Texas Animal Health Commission",
+      "action": "Livestock movement restrictions in affected counties",
+      "scope": "Zavala, La Salle, Andrews counties",
+      "status": "active"
+    },
+    {
+      "date": "2026-06-08",
+      "entity": "New Mexico Livestock Board",
+      "action": "Emergency quarantine zone established",
+      "scope": "Lea County and surrounding areas",
+      "status": "active"
+    }
+  ],
+  "internationalContext": {
+    "totalAnimalCases": 185000,
+    "totalHumanCases": 2100,
+    "affectedCountries": ["Guatemala", "Honduras", "Nicaragua", "Costa Rica", "Panama", "Mexico"],
+    "timeline": [
+      { "date": "2023-10", "event": "Outbreak detected in Central America" },
+      { "date": "2024-03", "event": "Spread reaches southern Mexico" },
+      { "date": "2024-09", "event": "Mexico reports 50,000+ animal cases" },
+      { "date": "2025-06", "event": "Northern Mexico cases surge near US border" },
+      { "date": "2025-12", "event": "USDA increases border surveillance" },
+      { "date": "2026-06-03", "event": "First US case confirmed — Zavala County, TX" },
+      { "date": "2026-06-08", "event": "First NM case — Lea County, 400+ mi from initial outbreak" }
+    ]
+  },
+  "speciesBreakdown": [
+    { "species": "Bovine (Cattle)", "count": 3, "percentage": 60 },
+    { "species": "Canine (Dogs)", "count": 2, "percentage": 40 }
+  ],
+  "stateResponses": [
+    {
+      "state": "Texas",
+      "actions": [
+        "Quarantine zones in Zavala, La Salle, Andrews counties",
+        "Mandatory livestock inspections within 150mi of cases",
+        "Sterile fly release program activated (USDA/APHIS)",
+        "Interstate movement permits required for all livestock"
+      ]
+    },
+    {
+      "state": "New Mexico",
+      "actions": [
+        "Emergency quarantine zone in Lea County",
+        "Enhanced surveillance at livestock markets",
+        "Coordination with TX and federal authorities",
+        "Public advisory to ranchers on wound monitoring"
+      ]
+    },
+    {
+      "state": "Federal (USDA/APHIS)",
+      "actions": [
+        "Activated emergency response team",
+        "Sterile Insect Technique (SIT) fly releases expanded",
+        "Federal order on interstate livestock movement",
+        "Coordination with Mexico on binational response"
+      ]
+    }
+  ]
+}
