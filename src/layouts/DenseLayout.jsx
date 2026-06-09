@@ -95,6 +95,31 @@ export default function DenseLayout() {
         </div>
       </div>
 
+      {/* Case details — prominent, right below the map */}
+      <div className="dense-cases-banner">
+        <h3 className="dense-section-title">Confirmed Cases</h3>
+        <table className="dense-case-table">
+          <thead>
+            <tr>
+              <th>#</th><th>Date</th><th>Species</th><th>Animal</th><th>Location</th><th>Status</th><th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.confirmedCases.map(c => (
+              <tr key={c.id}>
+                <td>{c.id}</td>
+                <td>{formatShortDate(c.date)}</td>
+                <td>{c.species}</td>
+                <td>{c.animal}</td>
+                <td>{c.county} Co., {c.state}</td>
+                <td><span className={`dense-status ${c.status}`}>{c.status}</span></td>
+                <td className="dense-case-notes">{c.notes}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
       {/* Below fold: two columns */}
       <div className="dense-bottom">
         <div className="dense-bottom-left">
@@ -112,28 +137,6 @@ export default function DenseLayout() {
                 </div>
               ))}
             </div>
-          </div>
-
-          <div className="dense-section">
-            <h3 className="dense-section-title">Case Details</h3>
-            <table className="dense-case-table">
-              <thead>
-                <tr>
-                  <th>#</th><th>Date</th><th>Species</th><th>Location</th><th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.confirmedCases.map(c => (
-                  <tr key={c.id}>
-                    <td>{c.id}</td>
-                    <td>{formatShortDate(c.date)}</td>
-                    <td>{c.species}</td>
-                    <td>{c.county} Co., {c.state}</td>
-                    <td><span className={`dense-status ${c.status}`}>{c.status}</span></td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
           </div>
         </div>
 

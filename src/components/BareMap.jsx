@@ -25,8 +25,8 @@ export default function BareMap({ cases, quarantineZones, height = 400, showSlid
   }, [cases]);
 
   return (
-    <div>
-      <div className="map-container" style={{ height }}>
+    <div style={{ height, position: 'relative' }}>
+      <div className="map-container" style={{ height: '100%' }}>
         <MapContainer
           center={[30.5, -100]}
           zoom={6}

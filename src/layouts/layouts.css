@@ -165,6 +165,27 @@
 
 .dense-article-link:hover .dense-article-title { color: var(--red); }
 
+/* Case details banner — right below map */
+.dense-cases-banner {
+  padding: 1rem 1.25rem;
+  border-bottom: 2px solid var(--red);
+  background: #FDF2F2;
+}
+
+.dense-cases-banner .dense-case-table {
+  font-size: 0.85rem;
+}
+
+.dense-cases-banner .dense-case-table th {
+  font-size: 0.7rem;
+}
+
+.dense-case-notes {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
 /* Dense bottom two-column */
 .dense-bottom {
   display: grid;
