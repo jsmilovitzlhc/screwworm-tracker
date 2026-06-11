@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import data from './data/cases.json';
+import useCaseData from './hooks/useCaseData';
 import CaseMap from './components/CaseMap';
 import Timeline from './components/Timeline';
 import TradeImpact from './components/TradeImpact';
@@ -10,10 +10,11 @@ import NewsFeed from './components/NewsFeed';
 
 function App() {
   const isEmbed = new URLSearchParams(window.location.search).get('embed') === 'true';
+  const { data, loading: dataLoading } = useCaseData();
 
-  const activeCases = useMemo(() => data.confirmedCases.filter(c => c.status === 'active'), []);
-  const states = useMemo(() => [...new Set(data.confirmedCases.map(c => c.state))], []);
-  const species = useMemo(() => [...new Set(data.confirmedCases.map(c => c.species))], []);
+  const activeCases = useMemo(() => data.confirmedCases.filter(c => c.status === 'active'), [data]);
+  const states = useMemo(() => [...new Set(data.confirmedCases.map(c => c.state))], [data]);
+  const species = useMemo(() => [...new Set(data.confirmedCases.map(c => c.species))], [data]);
 
   const lastUpdated = new Date(data.lastUpdated).toLocaleDateString('en-US', {
     month: 'long', day: 'numeric', year: 'numeric',

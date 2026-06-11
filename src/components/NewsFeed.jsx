@@ -6,22 +6,20 @@ export default function NewsFeed() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchNews = async () => {
+    let cancelled = false;
+    (async () => {
       try {
-        const res = await fetch(
-          'https://www.meatingplace.com/wp-json/wp/v2/posts?search=screwworm&per_page=10&_fields=title,link,date,excerpt',
-          { headers: { 'User-Agent': 'MeatingplaceSEOAgent/1.0' } }
-        );
+        const res = await fetch('/api/articles');
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
-        setArticles(data);
+        if (!cancelled) setArticles(data);
       } catch (err) {
-        setError(err.message);
+        if (!cancelled) setError(err.message);
       } finally {
-        setLoading(false);
+        if (!cancelled) setLoading(false);
       }
-    };
-    fetchNews();
+    })();
+    return () => { cancelled = true; };
   }, []);
 
   const formatDate = (dateStr) => {
