@@ -911,6 +911,13 @@
   background: #fff;
   border: 1px solid #D4CBC0;
   border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.widget-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .widget-header {
@@ -944,7 +951,7 @@
 
 .widget-title {
   font-family: 'Lora', Georgia, serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   color: #fff;
   letter-spacing: -0.01em;
@@ -956,33 +963,39 @@
   align-items: center;
   justify-content: center;
   gap: 0;
-  padding: 5px 8px;
+  padding: 5px 6px;
   background: #F5F0EB;
   border-bottom: 1px solid #D4CBC0;
   flex-shrink: 0;
+  overflow: hidden;
+  min-width: 0;
 }
 
 .widget-stat {
   display: flex;
   align-items: baseline;
-  gap: 3px;
-  padding: 0 10px;
+  gap: 2px;
+  padding: 0 5px;
+  min-width: 0;
+  flex-shrink: 1;
 }
 
 .widget-stat-num {
   font-family: 'Lora', Georgia, serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #9B1B30;
   line-height: 1;
+  flex-shrink: 0;
 }
 
 .widget-stat-label {
-  font-size: 8px;
+  font-size: 9px;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   color: #666;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .widget-stat-divider {
@@ -1008,10 +1021,10 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  padding: 8px;
+  padding: 7px;
   background: #9B1B30;
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
@@ -1021,7 +1034,7 @@
   cursor: pointer;
 }
 
-.widget-cta:hover {
+.widget-link:hover .widget-cta {
   background: #B82240;
 }
 
