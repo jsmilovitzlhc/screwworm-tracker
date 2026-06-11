@@ -17,6 +17,16 @@ export default function WidgetLayout() {
     [data]
   );
 
+  const states = useMemo(
+    () => [...new Set(data.confirmedCases.map(c => c.state))],
+    [data]
+  );
+
+  const species = useMemo(
+    () => [...new Set(data.confirmedCases.map(c => c.species))],
+    [data]
+  );
+
   const bounds = useMemo(() => {
     if (!data.confirmedCases.length) return null;
     const lats = data.confirmedCases.map(c => c.lat);
@@ -48,10 +58,13 @@ export default function WidgetLayout() {
         </div>
         <div className="widget-stat-divider" />
         <div className="widget-stat">
-          <span className="widget-stat-num">
-            {[...new Set(data.confirmedCases.map(c => c.state))].length}
-          </span>
+          <span className="widget-stat-num">{states.length}</span>
           <span className="widget-stat-label">States</span>
+        </div>
+        <div className="widget-stat-divider" />
+        <div className="widget-stat">
+          <span className="widget-stat-num">{species.length}</span>
+          <span className="widget-stat-label">Species</span>
         </div>
       </div>
 
@@ -102,15 +115,13 @@ export default function WidgetLayout() {
       </div>
 
       <a
-        href="https://screwworm-tracker.vercel.app/v/dense"
+        href="https://screwworm-tracker.vercel.app"
         target="_blank"
         rel="noopener noreferrer"
         className="widget-cta"
       >
-        <svg className="widget-cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M15 3h6v6" />
-          <path d="M10 14L21 3" />
-          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+        <svg className="widget-cta-icon" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+          <path d="M4 2l12 9.5L10.5 13l4 7.5-2 1-4-7.5L4 18V2z" />
         </svg>
         Track Now
       </a>
