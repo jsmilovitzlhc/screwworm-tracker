@@ -17,7 +17,7 @@ export default function SpeciesBreakdown({ breakdown }) {
               </div>
               <div className="species-bar-track">
                 <div
-                  className={`species-bar-fill ${s.species.toLowerCase().includes('cattle') || s.species.toLowerCase().includes('bovine') ? 'cattle' : 'canine'}`}
+                  className={`species-bar-fill ${s.species.toLowerCase().includes('cattle') || s.species.toLowerCase().includes('bovine') ? 'cattle' : s.species.toLowerCase().includes('caprine') || s.species.toLowerCase().includes('goat') ? 'caprine' : s.species.toLowerCase().includes('ovine') || s.species.toLowerCase().includes('sheep') ? 'ovine' : 'canine'}`}
                   style={{ width: `${(s.count / total) * 100}%` }}
                 >
                   {s.percentage}%

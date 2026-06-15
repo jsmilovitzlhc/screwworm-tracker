@@ -1,18 +1,26 @@
 export default function Timeline({ cases, internationalTimeline }) {
+  const seenStates = new Set();
+  const sortedCases = [...cases].sort((a, b) => a.date.localeCompare(b.date));
+  const caseEvents = sortedCases.map(c => {
+    const isNewState = !seenStates.has(c.state);
+    seenStates.add(c.state);
+    return {
+      date: c.date,
+      title: `${c.species} (${c.animal}) — ${c.county} Co., ${c.state}`,
+      detail: c.notes,
+      type: 'us-case',
+      status: c.status,
+      isNewState: isNewState && seenStates.size > 1,
+    };
+  });
+
   const allEvents = [
     ...internationalTimeline.map(e => ({
       date: e.date,
       title: e.event,
       type: 'international',
     })),
-    ...cases.map(c => ({
-      date: c.date,
-      title: `${c.species} (${c.animal}) — ${c.county} Co., ${c.state}`,
-      detail: c.notes,
-      type: 'us-case',
-      status: c.status,
-      isNewState: c.id === 5,
-    })),
+    ...caseEvents,
   ].sort((a, b) => a.date.localeCompare(b.date));
 
   const formatDate = (dateStr) => {

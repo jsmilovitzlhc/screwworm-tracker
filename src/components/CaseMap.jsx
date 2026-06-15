@@ -64,7 +64,7 @@ export default function CaseMap({ cases, quarantineZones }) {
             </Circle>
           ))}
 
-          {filteredCases.map(c => (
+          {filteredCases.map((c, idx) => (
             <CircleMarker
               key={c.id}
               center={[c.lat, c.lng]}
@@ -77,7 +77,7 @@ export default function CaseMap({ cases, quarantineZones }) {
               }}
             >
               <Popup>
-                <strong>Case #{c.id} — {c.species}</strong><br />
+                <strong>Case #{idx + 1} — {c.species}</strong><br />
                 {c.animal}, {c.county} Co., {c.state}<br />
                 {new Date(c.date + 'T00:00:00').toLocaleDateString()}<br />
                 <span className="popup-status">{c.status}</span><br />
