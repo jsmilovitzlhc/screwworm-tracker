@@ -26,6 +26,12 @@ export default function DenseLayout() {
   const states = useMemo(() => [...new Set(data.confirmedCases.map(c => c.state))], [data]);
   const species = useMemo(() => [...new Set(data.confirmedCases.map(c => c.species))], [data]);
 
+  const caseRank = useMemo(() => {
+    const map = {};
+    data.confirmedCases.forEach((c, i) => { map[c.id] = i + 1; });
+    return map;
+  }, [data]);
+
   const recentCases = useMemo(() =>
     [...data.confirmedCases].sort((a, b) => b.date.localeCompare(a.date)),
   [data]);
@@ -110,7 +116,7 @@ export default function DenseLayout() {
           {recentCases.map(c => (
             <div className={`bb-case-row ${c.status}`} key={c.id}>
               <div className="bb-case-top">
-                <span className="bb-case-id">#{c.id}</span>
+                <span className="bb-case-id">#{caseRank[c.id]}</span>
                 <span className="bb-case-animal">{c.species} — {c.animal}</span>
                 <span className={`bb-case-status ${c.status}`}>{c.status}</span>
               </div>

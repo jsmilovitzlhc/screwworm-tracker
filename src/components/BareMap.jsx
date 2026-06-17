@@ -8,7 +8,13 @@ function FitBounds({ bounds }) {
   return null;
 }
 
-export default function BareMap({ cases, quarantineZones, height = 400, showSlider = true, showLegend = true }) {
+export default function BareMap({ cases, quarantineZones, height = 400, showSlider = true, showLegend = true, lastChecked }) {
+  const caseRank = useMemo(() => {
+    const map = {};
+    cases.forEach((c, i) => { map[c.id] = i + 1; });
+    return map;
+  }, [cases]);
+
   const dates = useMemo(() => [...new Set(cases.map(c => c.date))].sort(), [cases]);
   const [dateIndex, setDateIndex] = useState(dates.length - 1);
 
@@ -73,7 +79,7 @@ export default function BareMap({ cases, quarantineZones, height = 400, showSlid
               }}
             >
               <Popup>
-                <strong>Case #{c.id} — {c.species}</strong><br />
+                <strong>Case #{caseRank[c.id]} — {c.species}</strong><br />
                 {c.animal}, {c.county} Co., {c.state}<br />
                 {new Date(c.date + 'T00:00:00').toLocaleDateString()}<br />
                 <span className="popup-status">{c.status}</span><br />
@@ -106,6 +112,12 @@ export default function BareMap({ cases, quarantineZones, height = 400, showSlid
           <div className="legend-item"><div className="legend-dot active"></div> Active case</div>
           <div className="legend-item"><div className="legend-dot inactive"></div> Resolved</div>
           <div className="legend-item"><div className="legend-dot quarantine"></div> Quarantine zone</div>
+        </div>
+      )}
+      {lastChecked && (
+        <div className="data-source-note">
+          USDA dashboard checked {new Date(lastChecked).toLocaleDateString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}
+          {' · '}No new cases since {dates.length > 0 ? new Date(dates[dates.length - 1] + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : 'N/A'}
         </div>
       )}
     </div>
