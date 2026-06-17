@@ -38,7 +38,12 @@ export default function WidgetLayout() {
   }, [data]);
 
   return (
-    <div className="widget-root">
+    <a
+      href="https://meatingplace.com/meatingplace-screwworm-tracker/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="widget-root widget-link"
+    >
       <div className="widget-header">
         <div className="widget-header-left">
           <div className="widget-alert-dot" />
@@ -114,17 +119,12 @@ export default function WidgetLayout() {
         </MapContainer>
       </div>
 
-      <a
-        href="https://screwworm-tracker.vercel.app"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="widget-cta"
-      >
+      <div className="widget-cta">
         <svg className="widget-cta-icon" viewBox="0 0 24 24" fill="currentColor" stroke="none">
           <path d="M4 2l12 9.5L10.5 13l4 7.5-2 1-4-7.5L4 18V2z" />
         </svg>
         Track Now
-      </a>
-    </div>
+      </div>
+    </a>
   );
 }

@@ -99,30 +99,42 @@ async function fetchTableauCSV(sql) {
   }
 
   const existingCases = await sql`SELECT date, county, state, species FROM screwworm_cases`;
-  const existingSet = new Set(
-    existingCases.map(c => {
-      const d = typeof c.date === 'string' ? c.date.slice(0, 10) : c.date.toISOString().slice(0, 10);
-      return `${d}|${c.county}|${c.state}|${c.species}`;
-    })
-  );
+  const existingByExact = new Set();
+  const existingByLocSpecies = {};
+  for (const c of existingCases) {
+    const d = typeof c.date === 'string' ? c.date.slice(0, 10) : c.date.toISOString().slice(0, 10);
+    existingByExact.add(`${d}|${c.county}|${c.state}|${c.species}`);
+    const lsKey = `${c.county}|${c.state}|${c.species}`;
+    existingByLocSpecies[lsKey] = (existingByLocSpecies[lsKey] || 0) + 1;
+  }
 
-  let inserted = 0;
+  const incomingByLocSpecies = {};
+  const rows = [];
   for (let i = 1; i < lines.length; i++) {
     const cells = lines[i].replace(/\r/g, '').split(',').map(c => c.trim());
     if (cells.length < 4) continue;
-
     const rawDate = cells[dateIdx];
     const date = parseDate(rawDate);
     if (!date) continue;
-
     const county = cells[countyIdx];
     const rawSpecies = cells[speciesIdx];
     const state = normalizeState(cells[stateIdx]);
     const species = normalizeSpecies(rawSpecies);
     const animal = deriveAnimal(species, rawSpecies);
+    const lsKey = `${county}|${state}|${species}`;
+    incomingByLocSpecies[lsKey] = (incomingByLocSpecies[lsKey] || 0) + 1;
+    rows.push({ date, county, state, species, animal, rawSpecies });
+  }
 
-    const key = `${date}|${county}|${state}|${species}`;
-    if (existingSet.has(key)) continue;
+  let inserted = 0;
+  for (const { date, county, state, species, animal } of rows) {
+    const exactKey = `${date}|${county}|${state}|${species}`;
+    if (existingByExact.has(exactKey)) continue;
+
+    const lsKey = `${county}|${state}|${species}`;
+    const dbCount = existingByLocSpecies[lsKey] || 0;
+    const csvCount = incomingByLocSpecies[lsKey] || 0;
+    if (dbCount >= csvCount) continue;
 
     const coords = getCoords(county, state);
     if (!coords) continue;
@@ -131,7 +143,8 @@ async function fetchTableauCSV(sql) {
       INSERT INTO screwworm_cases (date, species, animal, county, state, lat, lng, status, notes, source_url)
       VALUES (${date}, ${species}, ${animal}, ${county}, ${state}, ${coords.lat}, ${coords.lng}, 'active', ${'Detected via USDA dashboard'}, ${TABLEAU_CSV_URL})
     `;
-    existingSet.add(key);
+    existingByExact.add(exactKey);
+    existingByLocSpecies[lsKey] = (existingByLocSpecies[lsKey] || 0) + 1;
     inserted++;
   }
 

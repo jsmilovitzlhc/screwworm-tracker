@@ -293,6 +293,11 @@ body {
 
 /* ── Timeline ── */
 
+.timeline-scroll {
+  max-height: 26rem;
+  overflow-y: auto;
+}
+
 .timeline {
   position: relative;
   padding-left: 1.75rem;

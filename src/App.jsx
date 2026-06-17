@@ -3,6 +3,7 @@ import useCaseData from './hooks/useCaseData';
 import CaseMap from './components/CaseMap';
 import Timeline from './components/Timeline';
 import TradeImpact from './components/TradeImpact';
+import CasesByDay from './components/CasesByDay';
 import SpeciesBreakdown from './components/SpeciesBreakdown';
 import StateResponse from './components/StateResponse';
 import InternationalContext from './components/InternationalContext';
@@ -63,12 +64,13 @@ function App() {
       </div>
 
       <CaseMap cases={data.confirmedCases} quarantineZones={data.quarantineZones} />
+      <NewsFeed />
+      <TradeImpact impacts={data.tradeImpacts} />
+      <CasesByDay cases={data.confirmedCases} />
       <Timeline cases={data.confirmedCases} internationalTimeline={data.internationalContext.timeline} />
       <SpeciesBreakdown breakdown={data.speciesBreakdown} />
-      <TradeImpact impacts={data.tradeImpacts} />
       <StateResponse responses={data.stateResponses} />
       <InternationalContext context={data.internationalContext} />
-      <NewsFeed />
 
       <div className="cta-section">
         <h3>Stay Informed on the Outbreak</h3>

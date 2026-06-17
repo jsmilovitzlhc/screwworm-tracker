@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T00:00:00Z",
+  "lastUpdated": "2026-06-16T00:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -27,7 +27,7 @@
     },
     {
       "id": 3,
-      "date": "2026-06-08",
+      "date": "2026-06-07",
       "species": "Bovine",
       "animal": "Calf",
       "county": "La Salle",
@@ -39,6 +39,18 @@
     },
     {
       "id": 4,
+      "date": "2026-06-07",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "Lea",
+      "state": "NM",
+      "lat": 32.7926,
+      "lng": -103.1568,
+      "status": "active",
+      "notes": "First case outside Texas; dog with travel history to Mexico"
+    },
+    {
+      "id": 5,
       "date": "2026-06-08",
       "species": "Caprine",
       "animal": "Goat",
@@ -50,20 +62,8 @@
       "notes": "First caprine case; geographic spread to central Texas Hill Country"
     },
     {
-      "id": 5,
-      "date": "2026-06-08",
-      "species": "Canine",
-      "animal": "Dog",
-      "county": "Lea",
-      "state": "NM",
-      "lat": 32.7926,
-      "lng": -103.1568,
-      "status": "active",
-      "notes": "First case outside Texas; dog had recently been in Mexico"
-    },
-    {
       "id": 6,
-      "date": "2026-06-09",
+      "date": "2026-06-08",
       "species": "Bovine",
       "animal": "Calf",
       "county": "La Salle",
@@ -75,9 +75,9 @@
     },
     {
       "id": 7,
-      "date": "2026-06-10",
+      "date": "2026-06-09",
       "species": "Bovine",
-      "animal": "Calf",
+      "animal": "Cattle",
       "county": "Edwards",
       "state": "TX",
       "lat": 29.9827,
@@ -87,18 +87,6 @@
     },
     {
       "id": 8,
-      "date": "2026-06-10",
-      "species": "Caprine",
-      "animal": "Goat",
-      "county": "Edwards",
-      "state": "TX",
-      "lat": 29.9927,
-      "lng": -100.1956,
-      "status": "active",
-      "notes": "Second Edwards County case; second caprine detection"
-    },
-    {
-      "id": 9,
       "date": "2026-06-11",
       "species": "Bovine",
       "animal": "Cattle",
@@ -107,7 +95,19 @@
       "lat": 29.9727,
       "lng": -100.2156,
       "status": "active",
-      "notes": "Third Edwards County case"
+      "notes": "Second Edwards County case"
+    },
+    {
+      "id": 9,
+      "date": "2026-06-11",
+      "species": "Caprine",
+      "animal": "Goat",
+      "county": "Edwards",
+      "state": "TX",
+      "lat": 29.9927,
+      "lng": -100.1956,
+      "status": "active",
+      "notes": "Third Edwards County case; second caprine detection"
     },
     {
       "id": 10,
@@ -244,9 +244,9 @@
       { "date": "2025-06", "event": "Northern Mexico cases surge near US border" },
       { "date": "2025-12", "event": "USDA increases border surveillance" },
       { "date": "2026-06-03", "event": "First US case confirmed — Zavala County, TX" },
-      { "date": "2026-06-08", "event": "Cases spread to Gillespie Co. (TX) and Lea Co. (NM)" },
-      { "date": "2026-06-09", "event": "Mexico suspends livestock imports from US" },
-      { "date": "2026-06-10", "event": "Spread to Edwards County, TX" },
+      { "date": "2026-06-07", "event": "Outbreak reaches La Salle Co. (TX) and Lea Co. (NM) — first case outside Texas" },
+      { "date": "2026-06-08", "event": "First caprine case — Gillespie Co. (TX); second La Salle Co. case" },
+      { "date": "2026-06-09", "event": "Mexico suspends livestock imports from US; spread to Edwards County, TX" },
       { "date": "2026-06-11", "event": "US total reaches 11 — new counties: Tom Green, TX" },
       { "date": "2026-06-12", "event": "12th US case: sheep in Sutton County, TX" }
     ]

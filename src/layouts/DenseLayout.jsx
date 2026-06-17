@@ -1,6 +1,7 @@
 import { useMemo, useEffect, useRef } from 'react';
 import useCaseData from '../hooks/useCaseData';
 import BareMap from '../components/BareMap';
+import CasesByDay from '../components/CasesByDay';
 import useArticles, { formatDate, formatShortDate, stripHtml } from '../hooks/useArticles';
 
 export default function DenseLayout() {
@@ -165,37 +166,25 @@ export default function DenseLayout() {
         </div>
       </div>
 
-      {/* Timeline + Species */}
+      {/* Timeline + Cases by Day (species stacked) */}
       <div className="bb-panels">
         <div className="bb-panel bb-timeline">
           <div className="bb-panel-header">Outbreak Timeline</div>
-          {allEvents.map((event, i) => (
-            <div className={`bb-tl-item ${event.type}`} key={i}>
-              <span className={`bb-tl-dot ${event.type === 'international' ? 'intl' : ''}`} />
-              <div className="bb-tl-content">
-                <span className="bb-tl-date">{formatShortDate(event.date + 'T00:00:00')}</span>
-                <span className="bb-tl-title">{event.title}</span>
+          <div className="bb-tl-scroll">
+            {allEvents.map((event, i) => (
+              <div className={`bb-tl-item ${event.type}`} key={i}>
+                <span className={`bb-tl-dot ${event.type === 'international' ? 'intl' : ''}`} />
+                <div className="bb-tl-content">
+                  <span className="bb-tl-date">{formatShortDate(event.date + 'T00:00:00')}</span>
+                  <span className="bb-tl-title">{event.title}</span>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className="bb-panel bb-species">
-          <div className="bb-panel-header">Species Breakdown</div>
-          {data.speciesBreakdown.map((s, i) => (
-            <div className="bb-species-row" key={i}>
-              <div className="bb-species-info">
-                <span className="bb-species-name">{s.species}</span>
-                <span className="bb-species-count">{s.count}</span>
-              </div>
-              <div className="bb-species-bar">
-                <div
-                  className={`bb-species-fill ${s.species.toLowerCase().includes('bovine') ? 'cattle' : 'canine'}`}
-                  style={{ width: `${s.percentage}%` }}
-                />
-              </div>
-            </div>
-          ))}
+          <CasesByDay cases={data.confirmedCases} />
         </div>
       </div>
 

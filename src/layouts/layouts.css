@@ -367,6 +367,11 @@
 }
 
 /* Timeline panel */
+.bb-tl-scroll {
+  max-height: 18rem;
+  overflow-y: auto;
+}
+
 .bb-tl-item {
   display: flex;
   gap: 0.5rem;

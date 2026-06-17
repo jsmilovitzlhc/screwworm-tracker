@@ -34,6 +34,7 @@ export default function Timeline({ cases, internationalTimeline }) {
         <span className="section-icon">📅</span>
         <h3>Outbreak Timeline</h3>
       </div>
+      <div className="timeline-scroll">
       <div className="timeline">
         {allEvents.map((event, i) => (
           <div className="timeline-item" key={i}>
@@ -50,6 +51,7 @@ export default function Timeline({ cases, internationalTimeline }) {
             )}
           </div>
         ))}
+      </div>
       </div>
     </div>
   );
