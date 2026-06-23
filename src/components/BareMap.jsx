@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { MapContainer, TileLayer, CircleMarker, Circle, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
@@ -17,6 +17,10 @@ export default function BareMap({ cases, quarantineZones, height = 400, showSlid
 
   const dates = useMemo(() => [...new Set(cases.map(c => c.date))].sort(), [cases]);
   const [dateIndex, setDateIndex] = useState(dates.length - 1);
+
+  useEffect(() => {
+    setDateIndex(dates.length - 1);
+  }, [dates.length]);
 
   const filteredCases = useMemo(
     () => cases.filter(c => c.date <= dates[dateIndex]),

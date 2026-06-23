@@ -78,8 +78,8 @@ export default function DenseLayout() {
         </div>
         <div className="bb-ticker-stats">
           <div className="bb-stat">
-            <span className="bb-stat-num hot">{data.confirmedCases.length}</span>
-            <span className="bb-stat-label">CASES</span>
+            <span className="bb-stat-num">{data.confirmedCases.length}</span>
+            <span className="bb-stat-label">TOTAL</span>
           </div>
           <div className="bb-stat">
             <span className="bb-stat-num hot">{activeCases.length}</span>

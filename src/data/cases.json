@@ -1,5 +1,6 @@
 {
-  "lastUpdated": "2026-06-16T00:00:00Z",
+  "lastUpdated": "2026-06-23T00:00:00Z",
+  "lastChecked": "2026-06-23T14:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -46,7 +47,7 @@
       "state": "NM",
       "lat": 32.7926,
       "lng": -103.1568,
-      "status": "active",
+      "status": "inactive",
       "notes": "First case outside Texas; dog with travel history to Mexico"
     },
     {
@@ -130,7 +131,7 @@
       "state": "TX",
       "lat": 28.8856,
       "lng": -99.7404,
-      "status": "active",
+      "status": "inactive",
       "notes": "Third Zavala County case"
     },
     {
@@ -142,8 +143,56 @@
       "state": "TX",
       "lat": 30.4994,
       "lng": -100.5407,
-      "status": "active",
+      "status": "inactive",
       "notes": "First ovine case; sheep in Sutton County"
+    },
+    {
+      "id": 13,
+      "date": "2026-06-20",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Crockett",
+      "state": "TX",
+      "lat": 30.7225,
+      "lng": -101.4078,
+      "status": "active",
+      "notes": "First Crockett County case"
+    },
+    {
+      "id": 14,
+      "date": "2026-06-21",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Edwards",
+      "state": "TX",
+      "lat": 29.9627,
+      "lng": -100.2256,
+      "status": "active",
+      "notes": "Fourth Edwards County case"
+    },
+    {
+      "id": 15,
+      "date": "2026-06-21",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Edwards",
+      "state": "TX",
+      "lat": 29.9527,
+      "lng": -100.1856,
+      "status": "active",
+      "notes": "Fifth Edwards County case"
+    },
+    {
+      "id": 16,
+      "date": "2026-06-22",
+      "species": "Caprine",
+      "animal": "Goat",
+      "county": "Terrell",
+      "state": "TX",
+      "lat": 30.2249,
+      "lng": -102.0762,
+      "status": "active",
+      "notes": "First Terrell County case; castration site wound"
     }
   ],
   "quarantineZones": [
@@ -185,6 +234,14 @@
       "center": [31.3978, -100.4611],
       "radiusMiles": 12,
       "established": "2026-06-12",
+      "active": true
+    },
+    {
+      "name": "Crockett / Terrell County Zone",
+      "state": "TX",
+      "center": [30.4737, -101.7420],
+      "radiusMiles": 15,
+      "established": "2026-06-21",
       "active": true
     },
     {
@@ -248,14 +305,17 @@
       { "date": "2026-06-08", "event": "First caprine case — Gillespie Co. (TX); second La Salle Co. case" },
       { "date": "2026-06-09", "event": "Mexico suspends livestock imports from US; spread to Edwards County, TX" },
       { "date": "2026-06-11", "event": "US total reaches 11 — new counties: Tom Green, TX" },
-      { "date": "2026-06-12", "event": "12th US case: sheep in Sutton County, TX" }
+      { "date": "2026-06-12", "event": "12th US case: sheep in Sutton County, TX" },
+      { "date": "2026-06-20", "event": "13th US case: sheep in Crockett County, TX — spread westward" },
+      { "date": "2026-06-21", "event": "Cases 14–15: two more cattle in Edwards County, TX" },
+      { "date": "2026-06-22", "event": "16th US case: goat in Terrell County, TX — first border-county case west of initial outbreak" }
     ]
   },
   "speciesBreakdown": [
-    { "species": "Bovine (Cattle)", "count": 8, "percentage": 67 },
-    { "species": "Caprine (Goats)", "count": 2, "percentage": 17 },
-    { "species": "Canine (Dogs)", "count": 1, "percentage": 8 },
-    { "species": "Ovine (Sheep)", "count": 1, "percentage": 8 }
+    { "species": "Bovine (Cattle)", "count": 10, "percentage": 63 },
+    { "species": "Caprine (Goats)", "count": 3, "percentage": 19 },
+    { "species": "Ovine (Sheep)", "count": 2, "percentage": 12 },
+    { "species": "Canine (Dogs)", "count": 1, "percentage": 6 }
   ],
   "stateResponses": [
     {
