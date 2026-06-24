@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-23T00:00:00Z",
-  "lastChecked": "2026-06-23T14:00:00Z",
+  "lastUpdated": "2026-06-24T00:00:00Z",
+  "lastChecked": "2026-06-24T14:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -193,6 +193,42 @@
       "lng": -102.0762,
       "status": "active",
       "notes": "First Terrell County case; castration site wound"
+    },
+    {
+      "id": 17,
+      "date": "2026-06-23",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Pecos",
+      "state": "TX",
+      "lat": 30.7848,
+      "lng": -103.3932,
+      "status": "active",
+      "notes": "First Pecos County case; prompted quarantine zone expansion"
+    },
+    {
+      "id": 18,
+      "date": "2026-06-23",
+      "species": "Caprine",
+      "animal": "Goat",
+      "county": "Edwards",
+      "state": "TX",
+      "lat": 29.9427,
+      "lng": -100.2356,
+      "status": "active",
+      "notes": "Sixth Edwards County case; third caprine detection"
+    },
+    {
+      "id": 19,
+      "date": "2026-06-24",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Val Verde",
+      "state": "TX",
+      "lat": 29.8830,
+      "lng": -100.8960,
+      "status": "active",
+      "notes": "First Val Verde County case"
     }
   ],
   "quarantineZones": [
@@ -242,6 +278,14 @@
       "center": [30.4737, -101.7420],
       "radiusMiles": 15,
       "established": "2026-06-21",
+      "active": true
+    },
+    {
+      "name": "Pecos / Terrell County Zone",
+      "state": "TX",
+      "center": [30.7848, -103.3932],
+      "radiusMiles": 15,
+      "established": "2026-06-22",
       "active": true
     },
     {
@@ -308,14 +352,16 @@
       { "date": "2026-06-12", "event": "12th US case: sheep in Sutton County, TX" },
       { "date": "2026-06-20", "event": "13th US case: sheep in Crockett County, TX — spread westward" },
       { "date": "2026-06-21", "event": "Cases 14–15: two more cattle in Edwards County, TX" },
-      { "date": "2026-06-22", "event": "16th US case: goat in Terrell County, TX — first border-county case west of initial outbreak" }
+      { "date": "2026-06-22", "event": "16th US case: goat in Terrell County, TX — first border-county case west of initial outbreak" },
+      { "date": "2026-06-23", "event": "Cases 17–18: cattle in Pecos County (new county) and goat in Edwards County, TX" },
+      { "date": "2026-06-24", "event": "19th US case: cattle in Val Verde County, TX — US total reaches 19 with 16 active" }
     ]
   },
   "speciesBreakdown": [
-    { "species": "Bovine (Cattle)", "count": 10, "percentage": 63 },
-    { "species": "Caprine (Goats)", "count": 3, "percentage": 19 },
-    { "species": "Ovine (Sheep)", "count": 2, "percentage": 12 },
-    { "species": "Canine (Dogs)", "count": 1, "percentage": 6 }
+    { "species": "Bovine (Cattle)", "count": 12, "percentage": 63 },
+    { "species": "Caprine (Goats)", "count": 4, "percentage": 21 },
+    { "species": "Ovine (Sheep)", "count": 2, "percentage": 11 },
+    { "species": "Canine (Dogs)", "count": 1, "percentage": 5 }
   ],
   "stateResponses": [
     {
