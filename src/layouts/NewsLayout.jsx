@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import data from '../data/cases.json';
+import useCaseData from '../hooks/useCaseData';
 import BareMap from '../components/BareMap';
 import useArticles, { formatDate, stripHtml } from '../hooks/useArticles';
 
@@ -18,9 +18,10 @@ function Accordion({ title, icon, children, defaultOpen = false }) {
 
 export default function NewsLayout() {
   const isEmbed = new URLSearchParams(window.location.search).get('embed') === 'true';
+  const { data } = useCaseData();
   const { articles, loading, error } = useArticles();
 
-  const activeCases = useMemo(() => data.confirmedCases.filter(c => c.status === 'active'), []);
+  const activeCases = useMemo(() => data.confirmedCases.filter(c => c.status === 'active'), [data]);
   const latestCase = data.confirmedCases[data.confirmedCases.length - 1];
 
   const allEvents = [
@@ -67,6 +68,14 @@ export default function NewsLayout() {
         <h3 className="news-articles-row-title">Meatingplace Coverage</h3>
         {loading && <div className="news-loading">Loading articles…</div>}
         {error && (
+          <div className="news-error">
+            Unable to load articles.{' '}
+            <a href="https://www.meatingplace.com/?s=screwworm" target="_blank" rel="noopener noreferrer">
+              View on Meatingplace.com →
+            </a>
+          </div>
+        )}
+        {!loading && !error && articles.length === 0 && (
           <div className="news-error">
             <a href="https://www.meatingplace.com/?s=screwworm" target="_blank" rel="noopener noreferrer">
               View on Meatingplace.com →

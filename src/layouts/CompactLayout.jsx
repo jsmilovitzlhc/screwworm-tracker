@@ -1,15 +1,16 @@
 import { useMemo } from 'react';
-import data from '../data/cases.json';
+import useCaseData from '../hooks/useCaseData';
 import BareMap from '../components/BareMap';
 import useArticles, { formatDate, formatShortDate, stripHtml } from '../hooks/useArticles';
 
 export default function CompactLayout() {
   const isEmbed = new URLSearchParams(window.location.search).get('embed') === 'true';
+  const { data } = useCaseData();
   const { articles, loading, error } = useArticles();
 
-  const activeCases = useMemo(() => data.confirmedCases.filter(c => c.status === 'active'), []);
-  const states = useMemo(() => [...new Set(data.confirmedCases.map(c => c.state))], []);
-  const species = useMemo(() => [...new Set(data.confirmedCases.map(c => c.species))], []);
+  const activeCases = useMemo(() => data.confirmedCases.filter(c => c.status === 'active'), [data]);
+  const states = useMemo(() => [...new Set(data.confirmedCases.map(c => c.state))], [data]);
+  const species = useMemo(() => [...new Set(data.confirmedCases.map(c => c.species))], [data]);
 
   const allEvents = [
     ...data.internationalContext.timeline.map(e => ({

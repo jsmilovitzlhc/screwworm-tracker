@@ -1,5 +1,12 @@
 {
   "rewrites": [
-    { "source": "/v/:path*", "destination": "/index.html" }
+    { "source": "/v/:path*", "destination": "/index.html" },
+    { "source": "/widget", "destination": "/index.html" }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/check-usda",
+      "schedule": "0 */4 * * *"
+    }
   ]
 }

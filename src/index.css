@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Public+Sans:wght@400;500;600;700&display=swap');
 
 :root {
   --red: #9B1B30;
@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
@@ -69,7 +69,7 @@ body {
 }
 
 .header-brand h1 {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Lora', Georgia, serif;
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--text);
@@ -123,7 +123,7 @@ body {
 }
 
 .hero-section h2 {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Lora', Georgia, serif;
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--text);
@@ -175,7 +175,7 @@ body {
 }
 
 .summary-card .number {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Lora', Georgia, serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1;
@@ -208,7 +208,7 @@ body {
 }
 
 .section-header h3 {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Lora', Georgia, serif;
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--text);
@@ -292,6 +292,11 @@ body {
 }
 
 /* ── Timeline ── */
+
+.timeline-scroll {
+  max-height: 26rem;
+  overflow-y: auto;
+}
 
 .timeline {
   position: relative;
@@ -525,7 +530,7 @@ body {
 }
 
 .response-card h4 {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Lora', Georgia, serif;
   font-size: 0.95rem;
   font-weight: 700;
   margin-bottom: 0.6rem;
@@ -578,7 +583,7 @@ body {
 }
 
 .intl-stat .number {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Lora', Georgia, serif;
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--red);
@@ -650,7 +655,7 @@ body {
 }
 
 .news-title {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Lora', Georgia, serif;
   font-size: 0.95rem;
   font-weight: 700;
   margin-top: 0.15rem;
@@ -718,7 +723,7 @@ body {
 }
 
 .cta-section h3 {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Lora', Georgia, serif;
   font-size: 1.15rem;
   font-weight: 700;
   margin-bottom: 0.4rem;
@@ -823,7 +828,7 @@ body {
 }
 
 .leaflet-popup-content {
-  font-family: 'Inter', sans-serif !important;
+  font-family: 'Public Sans', sans-serif !important;
   font-size: 0.8rem !important;
   line-height: 1.5 !important;
 }

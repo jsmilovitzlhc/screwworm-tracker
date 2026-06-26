@@ -1,8 +1,9 @@
 import { useMemo } from 'react';
-import data from './data/cases.json';
+import useCaseData from './hooks/useCaseData';
 import CaseMap from './components/CaseMap';
 import Timeline from './components/Timeline';
 import TradeImpact from './components/TradeImpact';
+import CasesByDay from './components/CasesByDay';
 import SpeciesBreakdown from './components/SpeciesBreakdown';
 import StateResponse from './components/StateResponse';
 import InternationalContext from './components/InternationalContext';
@@ -10,10 +11,11 @@ import NewsFeed from './components/NewsFeed';
 
 function App() {
   const isEmbed = new URLSearchParams(window.location.search).get('embed') === 'true';
+  const { data, loading: dataLoading } = useCaseData();
 
-  const activeCases = useMemo(() => data.confirmedCases.filter(c => c.status === 'active'), []);
-  const states = useMemo(() => [...new Set(data.confirmedCases.map(c => c.state))], []);
-  const species = useMemo(() => [...new Set(data.confirmedCases.map(c => c.species))], []);
+  const activeCases = useMemo(() => data.confirmedCases.filter(c => c.status === 'active'), [data]);
+  const states = useMemo(() => [...new Set(data.confirmedCases.map(c => c.state))], [data]);
+  const species = useMemo(() => [...new Set(data.confirmedCases.map(c => c.species))], [data]);
 
   const lastUpdated = new Date(data.lastUpdated).toLocaleDateString('en-US', {
     month: 'long', day: 'numeric', year: 'numeric',
@@ -62,12 +64,13 @@ function App() {
       </div>
 
       <CaseMap cases={data.confirmedCases} quarantineZones={data.quarantineZones} />
+      <NewsFeed />
+      <TradeImpact impacts={data.tradeImpacts} />
+      <CasesByDay cases={data.confirmedCases} />
       <Timeline cases={data.confirmedCases} internationalTimeline={data.internationalContext.timeline} />
       <SpeciesBreakdown breakdown={data.speciesBreakdown} />
-      <TradeImpact impacts={data.tradeImpacts} />
       <StateResponse responses={data.stateResponses} />
       <InternationalContext context={data.internationalContext} />
-      <NewsFeed />
 
       <div className="cta-section">
         <h3>Stay Informed on the Outbreak</h3>

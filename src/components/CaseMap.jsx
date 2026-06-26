@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { MapContainer, TileLayer, CircleMarker, Circle, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
@@ -8,9 +8,13 @@ function FitBounds({ bounds }) {
   return null;
 }
 
-export default function CaseMap({ cases, quarantineZones }) {
+export default function CaseMap({ cases, quarantineZones, lastChecked }) {
   const dates = useMemo(() => [...new Set(cases.map(c => c.date))].sort(), [cases]);
   const [dateIndex, setDateIndex] = useState(dates.length - 1);
+
+  useEffect(() => {
+    setDateIndex(dates.length - 1);
+  }, [dates.length]);
 
   const filteredCases = useMemo(
     () => cases.filter(c => c.date <= dates[dateIndex]),
@@ -64,7 +68,7 @@ export default function CaseMap({ cases, quarantineZones }) {
             </Circle>
           ))}
 
-          {filteredCases.map(c => (
+          {filteredCases.map((c, idx) => (
             <CircleMarker
               key={c.id}
               center={[c.lat, c.lng]}
@@ -77,7 +81,7 @@ export default function CaseMap({ cases, quarantineZones }) {
               }}
             >
               <Popup>
-                <strong>Case #{c.id} — {c.species}</strong><br />
+                <strong>Case #{idx + 1} — {c.species}</strong><br />
                 {c.animal}, {c.county} Co., {c.state}<br />
                 {new Date(c.date + 'T00:00:00').toLocaleDateString()}<br />
                 <span className="popup-status">{c.status}</span><br />
@@ -108,6 +112,12 @@ export default function CaseMap({ cases, quarantineZones }) {
         <div className="legend-item"><div className="legend-dot inactive"></div> Resolved</div>
         <div className="legend-item"><div className="legend-dot quarantine"></div> Quarantine zone</div>
       </div>
+      {lastChecked && (
+        <div className="data-source-note">
+          USDA dashboard checked {new Date(lastChecked).toLocaleDateString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}
+          {' · '}No new cases since {dates.length > 0 ? new Date(dates[dates.length - 1] + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : 'N/A'}
+        </div>
+      )}
     </div>
   );
 }

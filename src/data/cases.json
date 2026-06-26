@@ -1,5 +1,6 @@
 {
-  "lastUpdated": "2026-06-09T00:00:00Z",
+  "lastUpdated": "2026-06-26T00:00:00Z",
+  "lastChecked": "2026-06-26T09:30:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -20,25 +21,13 @@
       "animal": "Calf",
       "county": "Zavala",
       "state": "TX",
-      "lat": 28.8856,
-      "lng": -99.7404,
+      "lat": 28.8756,
+      "lng": -99.7504,
       "status": "active",
       "notes": "Second case in Zavala County"
     },
     {
       "id": 3,
-      "date": "2026-06-06",
-      "species": "Canine",
-      "animal": "Dog",
-      "county": "Andrews",
-      "state": "TX",
-      "lat": 32.3187,
-      "lng": -102.5460,
-      "status": "active",
-      "notes": "First canine case; non-livestock detection"
-    },
-    {
-      "id": 4,
       "date": "2026-06-07",
       "species": "Bovine",
       "animal": "Calf",
@@ -47,24 +36,216 @@
       "lat": 28.3458,
       "lng": -98.9180,
       "status": "active",
-      "notes": "Spread to La Salle County"
+      "notes": "First La Salle County case"
     },
     {
-      "id": 5,
-      "date": "2026-06-08",
+      "id": 4,
+      "date": "2026-06-07",
       "species": "Canine",
       "animal": "Dog",
       "county": "Lea",
       "state": "NM",
       "lat": 32.7926,
       "lng": -103.1568,
+      "status": "inactive",
+      "notes": "First case outside Texas; dog with travel history to Mexico"
+    },
+    {
+      "id": 5,
+      "date": "2026-06-08",
+      "species": "Caprine",
+      "animal": "Goat",
+      "county": "Gillespie",
+      "state": "TX",
+      "lat": 30.2752,
+      "lng": -98.8720,
       "status": "active",
-      "notes": "First New Mexico case — 400+ miles from initial TX outbreak"
+      "notes": "First caprine case; geographic spread to central Texas Hill Country"
+    },
+    {
+      "id": 6,
+      "date": "2026-06-08",
+      "species": "Bovine",
+      "animal": "Calf",
+      "county": "La Salle",
+      "state": "TX",
+      "lat": 28.3558,
+      "lng": -98.9280,
+      "status": "active",
+      "notes": "Second La Salle County case"
+    },
+    {
+      "id": 7,
+      "date": "2026-06-09",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Edwards",
+      "state": "TX",
+      "lat": 29.9827,
+      "lng": -100.2056,
+      "status": "active",
+      "notes": "First Edwards County case; spread to western Hill Country"
+    },
+    {
+      "id": 8,
+      "date": "2026-06-11",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Edwards",
+      "state": "TX",
+      "lat": 29.9727,
+      "lng": -100.2156,
+      "status": "active",
+      "notes": "Second Edwards County case"
+    },
+    {
+      "id": 9,
+      "date": "2026-06-11",
+      "species": "Caprine",
+      "animal": "Goat",
+      "county": "Edwards",
+      "state": "TX",
+      "lat": 29.9927,
+      "lng": -100.1956,
+      "status": "active",
+      "notes": "Third Edwards County case; second caprine detection"
+    },
+    {
+      "id": 10,
+      "date": "2026-06-11",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Tom Green",
+      "state": "TX",
+      "lat": 31.3978,
+      "lng": -100.4611,
+      "status": "active",
+      "notes": "First Tom Green County case; significant northward spread"
+    },
+    {
+      "id": 11,
+      "date": "2026-06-11",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Zavala",
+      "state": "TX",
+      "lat": 28.8856,
+      "lng": -99.7404,
+      "status": "inactive",
+      "notes": "Third Zavala County case"
+    },
+    {
+      "id": 12,
+      "date": "2026-06-12",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Sutton",
+      "state": "TX",
+      "lat": 30.4994,
+      "lng": -100.5407,
+      "status": "inactive",
+      "notes": "First ovine case; sheep in Sutton County"
+    },
+    {
+      "id": 13,
+      "date": "2026-06-20",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Crockett",
+      "state": "TX",
+      "lat": 30.7225,
+      "lng": -101.4078,
+      "status": "active",
+      "notes": "First Crockett County case"
+    },
+    {
+      "id": 14,
+      "date": "2026-06-21",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Edwards",
+      "state": "TX",
+      "lat": 29.9627,
+      "lng": -100.2256,
+      "status": "active",
+      "notes": "Fourth Edwards County case"
+    },
+    {
+      "id": 15,
+      "date": "2026-06-21",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Edwards",
+      "state": "TX",
+      "lat": 29.9527,
+      "lng": -100.1856,
+      "status": "active",
+      "notes": "Fifth Edwards County case"
+    },
+    {
+      "id": 16,
+      "date": "2026-06-22",
+      "species": "Caprine",
+      "animal": "Goat",
+      "county": "Terrell",
+      "state": "TX",
+      "lat": 30.2249,
+      "lng": -102.0762,
+      "status": "active",
+      "notes": "First Terrell County case; castration site wound"
+    },
+    {
+      "id": 17,
+      "date": "2026-06-23",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Terrell",
+      "state": "TX",
+      "lat": 30.2149,
+      "lng": -102.0862,
+      "status": "active",
+      "notes": "First Terrell County cattle case; part of 3-cattle cluster on same property"
+    },
+    {
+      "id": 18,
+      "date": "2026-06-23",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Terrell",
+      "state": "TX",
+      "lat": 30.2049,
+      "lng": -102.0962,
+      "status": "active",
+      "notes": "Second Terrell County cattle case; same property cluster"
+    },
+    {
+      "id": 19,
+      "date": "2026-06-23",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Terrell",
+      "state": "TX",
+      "lat": 30.2349,
+      "lng": -102.0662,
+      "status": "active",
+      "notes": "Third Terrell County cattle case; same property cluster"
+    },
+    {
+      "id": 20,
+      "date": "2026-06-23",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Medina",
+      "state": "TX",
+      "lat": 29.6547,
+      "lng": -99.2785,
+      "status": "active",
+      "notes": "First Medina County case; cow in northwest Medina County; prompted Infested Zone 09"
     }
   ],
   "quarantineZones": [
     {
-      "name": "Zavala County Quarantine",
+      "name": "Zavala / Uvalde County Zone",
       "state": "TX",
       "center": [28.8656, -99.7604],
       "radiusMiles": 15,
@@ -72,26 +253,66 @@
       "active": true
     },
     {
-      "name": "Andrews County Quarantine",
-      "state": "TX",
-      "center": [32.3187, -102.5460],
-      "radiusMiles": 10,
-      "established": "2026-06-07",
-      "active": true
-    },
-    {
-      "name": "La Salle County Quarantine",
+      "name": "La Salle / Webb County Zone",
       "state": "TX",
       "center": [28.3458, -98.9180],
-      "radiusMiles": 10,
+      "radiusMiles": 12,
       "established": "2026-06-08",
       "active": true
     },
     {
-      "name": "Lea County Quarantine",
+      "name": "Gillespie / Kerr / Kimble County Zone",
+      "state": "TX",
+      "center": [30.2752, -98.8720],
+      "radiusMiles": 15,
+      "established": "2026-06-09",
+      "active": true
+    },
+    {
+      "name": "Edwards / Sutton / Val Verde County Zone",
+      "state": "TX",
+      "center": [29.9827, -100.2056],
+      "radiusMiles": 15,
+      "established": "2026-06-11",
+      "active": true
+    },
+    {
+      "name": "Tom Green / Coke County Zone",
+      "state": "TX",
+      "center": [31.3978, -100.4611],
+      "radiusMiles": 12,
+      "established": "2026-06-12",
+      "active": true
+    },
+    {
+      "name": "Crockett / Terrell County Zone",
+      "state": "TX",
+      "center": [30.4737, -101.7420],
+      "radiusMiles": 15,
+      "established": "2026-06-21",
+      "active": true
+    },
+    {
+      "name": "Terrell / Pecos County Zone",
+      "state": "TX",
+      "center": [30.2249, -102.0762],
+      "radiusMiles": 15,
+      "established": "2026-06-22",
+      "active": true
+    },
+    {
+      "name": "Medina / Uvalde / Bandera County Zone",
+      "state": "TX",
+      "center": [29.6547, -99.2785],
+      "radiusMiles": 15,
+      "established": "2026-06-24",
+      "active": true
+    },
+    {
+      "name": "Lea County Zone",
       "state": "NM",
       "center": [32.7926, -103.1568],
-      "radiusMiles": 10,
+      "radiusMiles": 12,
       "established": "2026-06-09",
       "active": true
     }
@@ -115,7 +336,7 @@
       "date": "2026-06-06",
       "entity": "Texas Animal Health Commission",
       "action": "Livestock movement restrictions in affected counties",
-      "scope": "Zavala, La Salle, Andrews counties",
+      "scope": "Zavala, La Salle counties",
       "status": "active"
     },
     {
@@ -123,6 +344,13 @@
       "entity": "New Mexico Livestock Board",
       "action": "Emergency quarantine zone established",
       "scope": "Lea County and surrounding areas",
+      "status": "active"
+    },
+    {
+      "date": "2026-06-09",
+      "entity": "Mexico (SENASICA)",
+      "action": "Suspended livestock imports from US",
+      "scope": "Cattle, horses, pigs, sheep, goats, birds, ferrets",
       "status": "active"
     }
   ],
@@ -137,21 +365,33 @@
       { "date": "2025-06", "event": "Northern Mexico cases surge near US border" },
       { "date": "2025-12", "event": "USDA increases border surveillance" },
       { "date": "2026-06-03", "event": "First US case confirmed — Zavala County, TX" },
-      { "date": "2026-06-08", "event": "First NM case — Lea County, 400+ mi from initial outbreak" }
+      { "date": "2026-06-07", "event": "Outbreak reaches La Salle Co. (TX) and Lea Co. (NM) — first case outside Texas" },
+      { "date": "2026-06-08", "event": "First caprine case — Gillespie Co. (TX); second La Salle Co. case" },
+      { "date": "2026-06-09", "event": "Mexico suspends livestock imports from US; spread to Edwards County, TX" },
+      { "date": "2026-06-11", "event": "US total reaches 11 — new counties: Tom Green, TX" },
+      { "date": "2026-06-12", "event": "12th US case: sheep in Sutton County, TX" },
+      { "date": "2026-06-20", "event": "13th US case: sheep in Crockett County, TX — spread westward" },
+      { "date": "2026-06-21", "event": "Cases 14–15: two more cattle in Edwards County, TX" },
+      { "date": "2026-06-22", "event": "16th US case: goat in Terrell County, TX — first Terrell County detection" },
+      { "date": "2026-06-23", "event": "Cases 17–20: 3 cattle on same Terrell County property (largest US cluster) plus cow in Medina County — US total reaches 20 with 17 active" }
     ]
   },
   "speciesBreakdown": [
-    { "species": "Bovine (Cattle)", "count": 3, "percentage": 60 },
-    { "species": "Canine (Dogs)", "count": 2, "percentage": 40 }
+    { "species": "Bovine (Cattle)", "count": 14, "percentage": 70 },
+    { "species": "Caprine (Goats)", "count": 3, "percentage": 15 },
+    { "species": "Ovine (Sheep)", "count": 2, "percentage": 10 },
+    { "species": "Canine (Dogs)", "count": 1, "percentage": 5 }
   ],
   "stateResponses": [
     {
       "state": "Texas",
       "actions": [
-        "Quarantine zones in Zavala, La Salle, Andrews counties",
+        "Governor Abbott disaster declaration covering all 254 Texas counties",
+        "Quarantine zones in Zavala, Uvalde, La Salle, Webb, Gillespie, Kerr, Kimble, Edwards, Sutton, Val Verde, Tom Green, Coke, Schleicher, Terrell, Pecos, Medina, Bandera counties",
         "Mandatory livestock inspections within 150mi of cases",
-        "Sterile fly release program activated (USDA/APHIS)",
-        "Interstate movement permits required for all livestock"
+        "Sterile fly release program activated (USDA/APHIS) from Moore Air Base, Edinburg",
+        "Interstate movement permits required for all livestock",
+        "NWS Certified Inspector Program launched with Texas A&M AgriLife"
       ]
     },
     {
@@ -166,10 +406,13 @@
     {
       "state": "Federal (USDA/APHIS)",
       "actions": [
-        "Activated emergency response team",
-        "Sterile Insect Technique (SIT) fly releases expanded",
+        "John Bellinger appointed Senior Advisor for NWS Preparedness",
+        "Sterile Insect Technique (SIT) fly releases expanded from Moore Air Base",
         "Federal order on interstate livestock movement",
-        "Coordination with Mexico on binational response"
+        "Coordination with Mexico on binational response",
+        "$100M New World Screwworm Grand Challenge launched",
+        "Emergency Use Authorization for Nitenpyram Tablets (OTC NWS treatment for pets)",
+        "Knipling-Bushland US Livestock Insects Research Laboratory opened in Kerrville"
       ]
     }
   ]
