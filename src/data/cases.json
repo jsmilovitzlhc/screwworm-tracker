@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-26T00:00:00Z",
-  "lastChecked": "2026-06-26T09:30:00Z",
+  "lastUpdated": "2026-06-27T00:00:00Z",
+  "lastChecked": "2026-06-27T05:30:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -241,6 +241,66 @@
       "lng": -99.2785,
       "status": "active",
       "notes": "First Medina County case; cow in northwest Medina County; prompted Infested Zone 09"
+    },
+    {
+      "id": 21,
+      "date": "2026-06-24",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Edwards",
+      "state": "TX",
+      "lat": 29.9427,
+      "lng": -100.2356,
+      "status": "active",
+      "notes": "Sixth Edwards County case; sheep"
+    },
+    {
+      "id": 22,
+      "date": "2026-06-24",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Crockett",
+      "state": "TX",
+      "lat": 30.7325,
+      "lng": -101.3978,
+      "status": "active",
+      "notes": "Second Crockett County case; part of 4-sheep cluster"
+    },
+    {
+      "id": 23,
+      "date": "2026-06-24",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Crockett",
+      "state": "TX",
+      "lat": 30.7125,
+      "lng": -101.4178,
+      "status": "active",
+      "notes": "Third Crockett County case; part of 4-sheep cluster"
+    },
+    {
+      "id": 24,
+      "date": "2026-06-24",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Crockett",
+      "state": "TX",
+      "lat": 30.7425,
+      "lng": -101.3878,
+      "status": "active",
+      "notes": "Fourth Crockett County case; part of 4-sheep cluster"
+    },
+    {
+      "id": 25,
+      "date": "2026-06-24",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Crockett",
+      "state": "TX",
+      "lat": 30.7225,
+      "lng": -101.4278,
+      "status": "active",
+      "notes": "Fifth Crockett County case; part of 4-sheep cluster"
     }
   ],
   "quarantineZones": [
@@ -373,14 +433,15 @@
       { "date": "2026-06-20", "event": "13th US case: sheep in Crockett County, TX — spread westward" },
       { "date": "2026-06-21", "event": "Cases 14–15: two more cattle in Edwards County, TX" },
       { "date": "2026-06-22", "event": "16th US case: goat in Terrell County, TX — first Terrell County detection" },
-      { "date": "2026-06-23", "event": "Cases 17–20: 3 cattle on same Terrell County property (largest US cluster) plus cow in Medina County — US total reaches 20 with 17 active" }
+      { "date": "2026-06-23", "event": "Cases 17–20: 3 cattle on same Terrell County property (largest US cluster) plus cow in Medina County — US total reaches 20 with 17 active" },
+      { "date": "2026-06-24", "event": "Cases 21–25: sheep in Edwards County plus 4 sheep in Crockett County (largest single-county single-day cluster) — US total reaches 25 with 22 active" }
     ]
   },
   "speciesBreakdown": [
-    { "species": "Bovine (Cattle)", "count": 14, "percentage": 70 },
-    { "species": "Caprine (Goats)", "count": 3, "percentage": 15 },
-    { "species": "Ovine (Sheep)", "count": 2, "percentage": 10 },
-    { "species": "Canine (Dogs)", "count": 1, "percentage": 5 }
+    { "species": "Bovine (Cattle)", "count": 14, "percentage": 56 },
+    { "species": "Ovine (Sheep)", "count": 7, "percentage": 28 },
+    { "species": "Caprine (Goats)", "count": 3, "percentage": 12 },
+    { "species": "Canine (Dogs)", "count": 1, "percentage": 4 }
   ],
   "stateResponses": [
     {
