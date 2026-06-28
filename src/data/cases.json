@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-27T00:00:00Z",
-  "lastChecked": "2026-06-27T05:30:00Z",
+  "lastUpdated": "2026-06-28T00:00:00Z",
+  "lastChecked": "2026-06-28T09:30:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -301,6 +301,18 @@
       "lng": -101.4278,
       "status": "active",
       "notes": "Fifth Crockett County case; part of 4-sheep cluster"
+    },
+    {
+      "id": 26,
+      "date": "2026-06-25",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Jim Hogg",
+      "state": "TX",
+      "lat": 27.0435,
+      "lng": -98.6932,
+      "status": "active",
+      "notes": "First Jim Hogg County case; significant southward expansion toward Mexico border; prompted Infested Zone 10"
     }
   ],
   "quarantineZones": [
@@ -369,6 +381,14 @@
       "active": true
     },
     {
+      "name": "Jim Hogg / Starr / Zapata County Zone",
+      "state": "TX",
+      "center": [27.0435, -98.6932],
+      "radiusMiles": 15,
+      "established": "2026-06-26",
+      "active": true
+    },
+    {
       "name": "Lea County Zone",
       "state": "NM",
       "center": [32.7926, -103.1568],
@@ -434,13 +454,14 @@
       { "date": "2026-06-21", "event": "Cases 14–15: two more cattle in Edwards County, TX" },
       { "date": "2026-06-22", "event": "16th US case: goat in Terrell County, TX — first Terrell County detection" },
       { "date": "2026-06-23", "event": "Cases 17–20: 3 cattle on same Terrell County property (largest US cluster) plus cow in Medina County — US total reaches 20 with 17 active" },
-      { "date": "2026-06-24", "event": "Cases 21–25: sheep in Edwards County plus 4 sheep in Crockett County (largest single-county single-day cluster) — US total reaches 25 with 22 active" }
+      { "date": "2026-06-24", "event": "Cases 21–25: sheep in Edwards County plus 4 sheep in Crockett County (largest single-county single-day cluster) — US total reaches 25 with 22 active" },
+      { "date": "2026-06-25", "event": "Case 26: bovine in Jim Hogg County — first case in new county, significant southward expansion toward Mexico border; TAHC establishes Infested Zone 10 (Jim Hogg, Starr, Zapata counties)" }
     ]
   },
   "speciesBreakdown": [
-    { "species": "Bovine (Cattle)", "count": 14, "percentage": 56 },
-    { "species": "Ovine (Sheep)", "count": 7, "percentage": 28 },
-    { "species": "Caprine (Goats)", "count": 3, "percentage": 12 },
+    { "species": "Bovine (Cattle)", "count": 15, "percentage": 58 },
+    { "species": "Ovine (Sheep)", "count": 7, "percentage": 27 },
+    { "species": "Caprine (Goats)", "count": 3, "percentage": 11 },
     { "species": "Canine (Dogs)", "count": 1, "percentage": 4 }
   ],
   "stateResponses": [
@@ -448,7 +469,7 @@
       "state": "Texas",
       "actions": [
         "Governor Abbott disaster declaration covering all 254 Texas counties",
-        "Quarantine zones in Zavala, Uvalde, La Salle, Webb, Gillespie, Kerr, Kimble, Edwards, Sutton, Val Verde, Tom Green, Coke, Schleicher, Terrell, Pecos, Medina, Bandera counties",
+        "Quarantine zones in Zavala, Uvalde, La Salle, Webb, Gillespie, Kerr, Kimble, Edwards, Sutton, Val Verde, Tom Green, Coke, Schleicher, Terrell, Pecos, Medina, Bandera, Jim Hogg, Starr, Zapata counties",
         "Mandatory livestock inspections within 150mi of cases",
         "Sterile fly release program activated (USDA/APHIS) from Moore Air Base, Edinburg",
         "Interstate movement permits required for all livestock",
