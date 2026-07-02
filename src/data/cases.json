@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-01T00:00:00Z",
-  "lastChecked": "2026-07-01T05:30:00Z",
+  "lastUpdated": "2026-07-02T00:00:00Z",
+  "lastChecked": "2026-07-02T05:30:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -11,7 +11,7 @@
       "state": "TX",
       "lat": 28.8656,
       "lng": -99.7604,
-      "status": "active",
+      "status": "inactive",
       "notes": "First confirmed US case"
     },
     {
@@ -23,7 +23,7 @@
       "state": "TX",
       "lat": 28.8756,
       "lng": -99.7504,
-      "status": "active",
+      "status": "inactive",
       "notes": "Second case in Zavala County"
     },
     {
@@ -83,7 +83,7 @@
       "state": "TX",
       "lat": 29.9827,
       "lng": -100.2056,
-      "status": "active",
+      "status": "inactive",
       "notes": "First Edwards County case; spread to western Hill Country"
     },
     {
@@ -349,6 +349,30 @@
       "lng": -103.4932,
       "status": "inactive",
       "notes": "First Pecos County case; second dog case in outbreak; domestic animal"
+    },
+    {
+      "id": 30,
+      "date": "2026-07-01",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Crockett",
+      "state": "TX",
+      "lat": 30.7525,
+      "lng": -101.3778,
+      "status": "active",
+      "notes": "Seventh Crockett County case; sheep"
+    },
+    {
+      "id": 31,
+      "date": "2026-07-01",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Crockett",
+      "state": "TX",
+      "lat": 30.7025,
+      "lng": -101.4378,
+      "status": "active",
+      "notes": "Eighth Crockett County case; sheep"
     }
   ],
   "quarantineZones": [
@@ -494,14 +518,15 @@
       { "date": "2026-06-25", "event": "Case 26: bovine in Jim Hogg County — first case in new county, significant southward expansion toward Mexico border; TAHC establishes Infested Zone 10 (Jim Hogg, Starr, Zapata counties)" },
       { "date": "2026-06-28", "event": "Case 27: cattle in Crockett County — US total reaches 27" },
       { "date": "2026-06-29", "event": "Case 28: cattle in Uvalde County — US total reaches 28" },
-      { "date": "2026-06-30", "event": "Case 29: dog in Pecos County — second canine case; US total reaches 29 with 23 active across 13 counties" }
+      { "date": "2026-06-30", "event": "Case 29: dog in Pecos County — second canine case; US total reaches 29 with 23 active across 13 counties" },
+      { "date": "2026-07-01", "event": "Cases 30–31: two sheep in Crockett County, TX — US total reaches 31 with 22 active across 13 counties" }
     ]
   },
   "speciesBreakdown": [
-    { "species": "Bovine (Cattle)", "count": 17, "percentage": 59 },
-    { "species": "Ovine (Sheep)", "count": 7, "percentage": 24 },
+    { "species": "Bovine (Cattle)", "count": 17, "percentage": 55 },
+    { "species": "Ovine (Sheep)", "count": 9, "percentage": 29 },
     { "species": "Caprine (Goats)", "count": 3, "percentage": 10 },
-    { "species": "Canine (Dogs)", "count": 2, "percentage": 7 }
+    { "species": "Canine (Dogs)", "count": 2, "percentage": 6 }
   ],
   "stateResponses": [
     {
