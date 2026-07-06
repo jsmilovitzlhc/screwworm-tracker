@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-02T00:00:00Z",
-  "lastChecked": "2026-07-02T05:30:00Z",
+  "lastUpdated": "2026-07-06T00:00:00Z",
+  "lastChecked": "2026-07-06T05:30:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -373,6 +373,18 @@
       "lng": -101.4378,
       "status": "active",
       "notes": "Eighth Crockett County case; sheep"
+    },
+    {
+      "id": 32,
+      "date": "2026-07-04",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Crockett",
+      "state": "TX",
+      "lat": 30.7325,
+      "lng": -101.4078,
+      "status": "active",
+      "notes": "Ninth Crockett County case; domestic sheep"
     }
   ],
   "quarantineZones": [
@@ -519,13 +531,14 @@
       { "date": "2026-06-28", "event": "Case 27: cattle in Crockett County — US total reaches 27" },
       { "date": "2026-06-29", "event": "Case 28: cattle in Uvalde County — US total reaches 28" },
       { "date": "2026-06-30", "event": "Case 29: dog in Pecos County — second canine case; US total reaches 29 with 23 active across 13 counties" },
-      { "date": "2026-07-01", "event": "Cases 30–31: two sheep in Crockett County, TX — US total reaches 31 with 22 active across 13 counties" }
+      { "date": "2026-07-01", "event": "Cases 30–31: two more sheep in Crockett County — US total reaches 31" },
+      { "date": "2026-07-04", "event": "Case 32: domestic sheep in Crockett County — ninth Crockett County case; US total reaches 32 with 23 active across 13 counties" }
     ]
   },
   "speciesBreakdown": [
-    { "species": "Bovine (Cattle)", "count": 17, "percentage": 55 },
-    { "species": "Ovine (Sheep)", "count": 9, "percentage": 29 },
-    { "species": "Caprine (Goats)", "count": 3, "percentage": 10 },
+    { "species": "Bovine (Cattle)", "count": 17, "percentage": 53 },
+    { "species": "Ovine (Sheep)", "count": 10, "percentage": 31 },
+    { "species": "Caprine (Goats)", "count": 3, "percentage": 9 },
     { "species": "Canine (Dogs)", "count": 2, "percentage": 6 }
   ],
   "stateResponses": [
