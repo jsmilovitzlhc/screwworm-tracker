@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-06T00:00:00Z",
-  "lastChecked": "2026-07-06T05:30:00Z",
+  "lastUpdated": "2026-07-09T00:00:00Z",
+  "lastChecked": "2026-07-09T05:30:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -83,7 +83,7 @@
       "state": "TX",
       "lat": 29.9827,
       "lng": -100.2056,
-      "status": "inactive",
+      "status": "active",
       "notes": "First Edwards County case; spread to western Hill Country"
     },
     {
@@ -119,7 +119,7 @@
       "state": "TX",
       "lat": 31.3978,
       "lng": -100.4611,
-      "status": "active",
+      "status": "inactive",
       "notes": "First Tom Green County case; significant northward spread"
     },
     {
@@ -131,7 +131,7 @@
       "state": "TX",
       "lat": 28.8856,
       "lng": -99.7404,
-      "status": "active",
+      "status": "inactive",
       "notes": "Third Zavala County case"
     },
     {
@@ -385,6 +385,18 @@
       "lng": -101.4078,
       "status": "active",
       "notes": "Ninth Crockett County case; domestic sheep"
+    },
+    {
+      "id": 33,
+      "date": "2026-07-07",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Crockett",
+      "state": "TX",
+      "lat": 30.7425,
+      "lng": -101.3978,
+      "status": "active",
+      "notes": "Tenth Crockett County case; cattle"
     }
   ],
   "quarantineZones": [
@@ -532,12 +544,13 @@
       { "date": "2026-06-29", "event": "Case 28: cattle in Uvalde County — US total reaches 28" },
       { "date": "2026-06-30", "event": "Case 29: dog in Pecos County — second canine case; US total reaches 29 with 23 active across 13 counties" },
       { "date": "2026-07-01", "event": "Cases 30–31: two more sheep in Crockett County — US total reaches 31" },
-      { "date": "2026-07-04", "event": "Case 32: domestic sheep in Crockett County — ninth Crockett County case; US total reaches 32 with 23 active across 13 counties" }
+      { "date": "2026-07-04", "event": "Case 32: domestic sheep in Crockett County — ninth Crockett County case; US total reaches 32 with 23 active across 13 counties" },
+      { "date": "2026-07-07", "event": "Case 33: cattle in Crockett County — tenth Crockett County case; US total reaches 33 with 23 active across 13 counties" }
     ]
   },
   "speciesBreakdown": [
-    { "species": "Bovine (Cattle)", "count": 17, "percentage": 53 },
-    { "species": "Ovine (Sheep)", "count": 10, "percentage": 31 },
+    { "species": "Bovine (Cattle)", "count": 18, "percentage": 55 },
+    { "species": "Ovine (Sheep)", "count": 10, "percentage": 30 },
     { "species": "Caprine (Goats)", "count": 3, "percentage": 9 },
     { "species": "Canine (Dogs)", "count": 2, "percentage": 6 }
   ],
