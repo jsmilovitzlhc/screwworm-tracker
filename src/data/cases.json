@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-09T00:00:00Z",
-  "lastChecked": "2026-07-09T05:30:00Z",
+  "lastUpdated": "2026-07-10T00:00:00Z",
+  "lastChecked": "2026-07-10T05:30:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -304,7 +304,7 @@
     },
     {
       "id": 26,
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "species": "Bovine",
       "animal": "Cattle",
       "county": "Jim Hogg",
@@ -316,7 +316,7 @@
     },
     {
       "id": 27,
-      "date": "2026-06-28",
+      "date": "2026-06-27",
       "species": "Bovine",
       "animal": "Cattle",
       "county": "Crockett",
@@ -352,7 +352,7 @@
     },
     {
       "id": 30,
-      "date": "2026-07-01",
+      "date": "2026-06-30",
       "species": "Ovine",
       "animal": "Sheep",
       "county": "Crockett",
@@ -364,7 +364,7 @@
     },
     {
       "id": 31,
-      "date": "2026-07-01",
+      "date": "2026-06-30",
       "species": "Ovine",
       "animal": "Sheep",
       "county": "Crockett",
@@ -376,7 +376,7 @@
     },
     {
       "id": 32,
-      "date": "2026-07-04",
+      "date": "2026-07-03",
       "species": "Ovine",
       "animal": "Sheep",
       "county": "Crockett",
@@ -397,6 +397,18 @@
       "lng": -101.3978,
       "status": "active",
       "notes": "Tenth Crockett County case; cattle"
+    },
+    {
+      "id": 34,
+      "date": "2026-07-09",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Brewster",
+      "state": "TX",
+      "lat": 29.81,
+      "lng": -103.25,
+      "status": "active",
+      "notes": "First Brewster County case; new county"
     }
   ],
   "quarantineZones": [
@@ -539,18 +551,19 @@
       { "date": "2026-06-22", "event": "16th US case: goat in Terrell County, TX — first Terrell County detection" },
       { "date": "2026-06-23", "event": "Cases 17–20: 3 cattle on same Terrell County property (largest US cluster) plus cow in Medina County — US total reaches 20 with 17 active" },
       { "date": "2026-06-24", "event": "Cases 21–25: sheep in Edwards County plus 4 sheep in Crockett County (largest single-county single-day cluster) — US total reaches 25 with 22 active" },
-      { "date": "2026-06-25", "event": "Case 26: bovine in Jim Hogg County — first case in new county, significant southward expansion toward Mexico border; TAHC establishes Infested Zone 10 (Jim Hogg, Starr, Zapata counties)" },
-      { "date": "2026-06-28", "event": "Case 27: cattle in Crockett County — US total reaches 27" },
+      { "date": "2026-06-26", "event": "Case 26: bovine in Jim Hogg County — first case in new county, significant southward expansion toward Mexico border; TAHC establishes Infested Zone 10 (Jim Hogg, Starr, Zapata counties)" },
+      { "date": "2026-06-27", "event": "Case 27: cattle in Crockett County — US total reaches 27" },
       { "date": "2026-06-29", "event": "Case 28: cattle in Uvalde County — US total reaches 28" },
       { "date": "2026-06-30", "event": "Case 29: dog in Pecos County — second canine case; US total reaches 29 with 23 active across 13 counties" },
-      { "date": "2026-07-01", "event": "Cases 30–31: two more sheep in Crockett County — US total reaches 31" },
-      { "date": "2026-07-04", "event": "Case 32: domestic sheep in Crockett County — ninth Crockett County case; US total reaches 32 with 23 active across 13 counties" },
-      { "date": "2026-07-07", "event": "Case 33: cattle in Crockett County — tenth Crockett County case; US total reaches 33 with 23 active across 13 counties" }
+      { "date": "2026-06-30", "event": "Cases 30–31: two more sheep in Crockett County — US total reaches 31" },
+      { "date": "2026-07-03", "event": "Case 32: domestic sheep in Crockett County — ninth Crockett County case; US total reaches 32 with 23 active across 13 counties" },
+      { "date": "2026-07-07", "event": "Case 33: cattle in Crockett County — tenth Crockett County case; US total reaches 33 with 23 active across 13 counties" },
+      { "date": "2026-07-09", "event": "Case 34: cattle in Brewster County — first Brewster County case; new county; US total reaches 34 with 24 active across 14 counties" }
     ]
   },
   "speciesBreakdown": [
-    { "species": "Bovine (Cattle)", "count": 18, "percentage": 55 },
-    { "species": "Ovine (Sheep)", "count": 10, "percentage": 30 },
+    { "species": "Bovine (Cattle)", "count": 19, "percentage": 56 },
+    { "species": "Ovine (Sheep)", "count": 10, "percentage": 29 },
     { "species": "Caprine (Goats)", "count": 3, "percentage": 9 },
     { "species": "Canine (Dogs)", "count": 2, "percentage": 6 }
   ],
