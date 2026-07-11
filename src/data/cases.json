@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-10T00:00:00Z",
-  "lastChecked": "2026-07-10T05:30:00Z",
+  "lastUpdated": "2026-07-11T00:00:00Z",
+  "lastChecked": "2026-07-11T05:30:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -409,6 +409,18 @@
       "lng": -103.25,
       "status": "active",
       "notes": "First Brewster County case; new county"
+    },
+    {
+      "id": 35,
+      "date": "2026-07-10",
+      "species": "Caprine",
+      "animal": "Goat",
+      "county": "Crockett",
+      "state": "TX",
+      "lat": 30.7125,
+      "lng": -101.4478,
+      "status": "active",
+      "notes": "Eleventh Crockett County case; goat"
     }
   ],
   "quarantineZones": [
@@ -558,13 +570,14 @@
       { "date": "2026-06-30", "event": "Cases 30–31: two more sheep in Crockett County — US total reaches 31" },
       { "date": "2026-07-03", "event": "Case 32: domestic sheep in Crockett County — ninth Crockett County case; US total reaches 32 with 23 active across 13 counties" },
       { "date": "2026-07-07", "event": "Case 33: cattle in Crockett County — tenth Crockett County case; US total reaches 33 with 23 active across 13 counties" },
-      { "date": "2026-07-09", "event": "Case 34: cattle in Brewster County — first Brewster County case; new county; US total reaches 34 with 24 active across 14 counties" }
+      { "date": "2026-07-09", "event": "Case 34: cattle in Brewster County — first Brewster County case; new county; US total reaches 34 with 24 active across 14 counties" },
+      { "date": "2026-07-10", "event": "Case 35: goat in Crockett County — eleventh Crockett County case; US total reaches 35 with 25 active across 14 counties" }
     ]
   },
   "speciesBreakdown": [
-    { "species": "Bovine (Cattle)", "count": 19, "percentage": 56 },
+    { "species": "Bovine (Cattle)", "count": 19, "percentage": 54 },
     { "species": "Ovine (Sheep)", "count": 10, "percentage": 29 },
-    { "species": "Caprine (Goats)", "count": 3, "percentage": 9 },
+    { "species": "Caprine (Goats)", "count": 4, "percentage": 11 },
     { "species": "Canine (Dogs)", "count": 2, "percentage": 6 }
   ],
   "stateResponses": [
