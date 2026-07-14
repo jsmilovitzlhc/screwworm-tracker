@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-12T00:00:00Z",
-  "lastChecked": "2026-07-13T05:30:00Z",
+  "lastUpdated": "2026-07-13T00:00:00Z",
+  "lastChecked": "2026-07-14T05:30:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -167,7 +167,7 @@
       "state": "TX",
       "lat": 29.9627,
       "lng": -100.2256,
-      "status": "active",
+      "status": "inactive",
       "notes": "Fourth Edwards County case"
     },
     {
@@ -179,7 +179,7 @@
       "state": "TX",
       "lat": 29.9527,
       "lng": -100.1856,
-      "status": "active",
+      "status": "inactive",
       "notes": "Fifth Edwards County case"
     },
     {
