@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-16T00:00:00Z",
-  "lastChecked": "2026-07-16T09:30:00Z",
+  "lastUpdated": "2026-07-19T00:00:00Z",
+  "lastChecked": "2026-07-19T09:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -251,7 +251,7 @@
       "state": "TX",
       "lat": 29.9427,
       "lng": -100.2356,
-      "status": "active",
+      "status": "inactive",
       "notes": "Sixth Edwards County case; sheep"
     },
     {
@@ -263,7 +263,7 @@
       "state": "TX",
       "lat": 30.7325,
       "lng": -101.3978,
-      "status": "active",
+      "status": "inactive",
       "notes": "Second Crockett County case; part of 4-sheep cluster"
     },
     {
@@ -275,7 +275,7 @@
       "state": "TX",
       "lat": 30.7125,
       "lng": -101.4178,
-      "status": "active",
+      "status": "inactive",
       "notes": "Third Crockett County case; part of 4-sheep cluster"
     },
     {
@@ -287,7 +287,7 @@
       "state": "TX",
       "lat": 30.7425,
       "lng": -101.3878,
-      "status": "active",
+      "status": "inactive",
       "notes": "Fourth Crockett County case; part of 4-sheep cluster"
     },
     {
@@ -299,7 +299,7 @@
       "state": "TX",
       "lat": 30.7225,
       "lng": -101.4278,
-      "status": "active",
+      "status": "inactive",
       "notes": "Fifth Crockett County case; part of 4-sheep cluster"
     },
     {
@@ -311,7 +311,7 @@
       "state": "TX",
       "lat": 27.0435,
       "lng": -98.6932,
-      "status": "active",
+      "status": "inactive",
       "notes": "First Jim Hogg County case; significant southward expansion toward Mexico border; prompted Infested Zone 10"
     },
     {
@@ -323,7 +323,7 @@
       "state": "TX",
       "lat": 30.7325,
       "lng": -101.3878,
-      "status": "active",
+      "status": "inactive",
       "notes": "Sixth Crockett County case; another cattle case in Crockett County"
     },
     {
@@ -469,6 +469,30 @@
       "lng": -103.5032,
       "status": "active",
       "notes": "Second ovine case in Pecos County; same-day cluster; SU:21830:26"
+    },
+    {
+      "id": 40,
+      "date": "2026-07-18",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Schleicher",
+      "state": "TX",
+      "lat": 30.8578,
+      "lng": -100.5998,
+      "status": "inactive",
+      "notes": "First Schleicher County case; sheep; new county"
+    },
+    {
+      "id": 41,
+      "date": "2026-07-18",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Starr",
+      "state": "TX",
+      "lat": 26.5561,
+      "lng": -98.7669,
+      "status": "active",
+      "notes": "First Starr County case; cattle; southern border region"
     }
   ],
   "quarantineZones": [
@@ -739,19 +763,23 @@
       {
         "date": "2026-07-14",
         "event": "Cases 38–39: two sheep in Pecos County — first ovine cases in Pecos County; US total reaches 39 with 18 active across 15 counties"
+      },
+      {
+        "date": "2026-07-18",
+        "event": "Cases 40–41: sheep in Schleicher County (inactive) and cattle in Starr County (active) — US total reaches 41 with 12 active across 17 counties; 7 older cases (Jun 24–27) reclassified inactive"
       }
     ]
   },
   "speciesBreakdown": [
     {
       "species": "Bovine (Cattle)",
-      "count": 20,
+      "count": 21,
       "percentage": 51
     },
     {
       "species": "Ovine (Sheep)",
-      "count": 12,
-      "percentage": 31
+      "count": 13,
+      "percentage": 32
     },
     {
       "species": "Caprine (Goats)",
@@ -761,7 +789,7 @@
     {
       "species": "Canine (Dogs)",
       "count": 3,
-      "percentage": 8
+      "percentage": 7
     }
   ],
   "stateResponses": [
