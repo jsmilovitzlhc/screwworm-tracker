@@ -120,12 +120,11 @@
 
 .bb-map {
   position: relative;
-  height: 380px;
   min-height: 380px;
 }
 
 .bb-map .map-container {
-  height: 100% !important;
+  height: 380px !important;
   border-radius: 0;
   border: none;
 }
@@ -465,7 +464,8 @@
   .bb-main {
     grid-template-columns: 1fr;
   }
-  .bb-map { height: 300px; min-height: 300px; }
+  .bb-map { min-height: 300px; }
+  .bb-map .map-container { height: 300px !important; }
   .bb-cases {
     border-left: none;
     border-top: 1px solid #D4CBC0;
