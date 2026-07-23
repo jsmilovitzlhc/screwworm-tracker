@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-22T00:00:00Z",
-  "lastChecked": "2026-07-22T09:00:00Z",
+  "lastUpdated": "2026-07-23T00:00:00Z",
+  "lastChecked": "2026-07-23T09:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -493,6 +493,18 @@
       "lng": -98.7669,
       "status": "active",
       "notes": "First Starr County case; cattle; southern border region"
+    },
+    {
+      "id": 42,
+      "date": "2026-07-21",
+      "species": "Caprine",
+      "animal": "Goat",
+      "county": "Sutton",
+      "state": "TX",
+      "lat": 30.4994,
+      "lng": -100.5407,
+      "status": "active",
+      "notes": "Third Sutton County case; goat; expanding caprine detections in outbreak area; SU:22420:26, SS:9575:26"
     }
   ],
   "quarantineZones": [
@@ -767,6 +779,10 @@
       {
         "date": "2026-07-18",
         "event": "Cases 40\u201341: sheep in Schleicher County (inactive) and cattle in Starr County (active) \u2014 US total reaches 41 with 12 active across 17 counties; 7 older cases (Jun 24\u201327) reclassified inactive"
+      },
+      {
+        "date": "2026-07-21",
+        "event": "Case 42: goat in Sutton County \u2014 third Sutton County case; expanding caprine detections in outbreak area; US total reaches 42 with 10 active"
       }
     ]
   },
@@ -774,22 +790,22 @@
     {
       "species": "Bovine (Cattle)",
       "count": 21,
-      "percentage": 51
-    },
-    {
-      "species": "Ovine (Sheep)",
-      "count": 13,
-      "percentage": 32
-    },
-    {
-      "species": "Caprine (Goats)",
-      "count": 4,
-      "percentage": 10
+      "percentage": 50
     },
     {
       "species": "Canine (Dogs)",
       "count": 3,
       "percentage": 7
+    },
+    {
+      "species": "Caprine (Goats)",
+      "count": 5,
+      "percentage": 12
+    },
+    {
+      "species": "Ovine (Sheep)",
+      "count": 13,
+      "percentage": 31
     }
   ],
   "stateResponses": [
