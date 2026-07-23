@@ -120,6 +120,7 @@
 
 .bb-map {
   position: relative;
+  height: 380px;
   min-height: 380px;
 }
 
@@ -464,7 +465,7 @@
   .bb-main {
     grid-template-columns: 1fr;
   }
-  .bb-map { min-height: 300px; }
+  .bb-map { height: 300px; min-height: 300px; }
   .bb-cases {
     border-left: none;
     border-top: 1px solid #D4CBC0;
