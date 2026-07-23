@@ -8,6 +8,15 @@ function FitBounds({ bounds }) {
   return null;
 }
 
+function InvalidateSizeOnMount() {
+  const map = useMap();
+  useEffect(() => {
+    const t = setTimeout(() => map.invalidateSize(), 100);
+    return () => clearTimeout(t);
+  }, [map]);
+  return null;
+}
+
 export default function CaseMap({ cases, quarantineZones, lastChecked }) {
   const dates = useMemo(() => [...new Set(cases.map(c => c.date))].sort(), [cases]);
   const [dateIndex, setDateIndex] = useState(dates.length - 1);
@@ -46,6 +55,7 @@ export default function CaseMap({ cases, quarantineZones, lastChecked }) {
             attribution='&copy; <a href="https://carto.com/">CARTO</a>'
           />
           <FitBounds bounds={bounds} />
+          <InvalidateSizeOnMount />
 
           {quarantineZones.filter(z => z.active).map((zone, i) => (
             <Circle
