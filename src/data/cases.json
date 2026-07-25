@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-23T00:00:00Z",
-  "lastChecked": "2026-07-23T09:00:00Z",
+  "lastUpdated": "2026-07-25T00:00:00Z",
+  "lastChecked": "2026-07-25T09:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -383,7 +383,7 @@
       "state": "TX",
       "lat": 30.7325,
       "lng": -101.4078,
-      "status": "active",
+      "status": "inactive",
       "notes": "Ninth Crockett County case; domestic sheep"
     },
     {
