@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-29T00:00:00Z",
-  "lastChecked": "2026-07-29T09:00:00Z",
+  "lastUpdated": "2026-07-30T00:00:00Z",
+  "lastChecked": "2026-07-30T09:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -517,6 +517,18 @@
       "lng": -103.21,
       "status": "active",
       "notes": "Third Brewster County case; SU:23081:26, SS:9989:26"
+    },
+    {
+      "id": 44,
+      "date": "2026-07-30",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Brewster",
+      "state": "TX",
+      "lat": 29.84,
+      "lng": -103.20,
+      "status": "active",
+      "notes": "Fourth Brewster County case; cattle; domestic; SU:23127:26, SS:10041:26"
     }
   ],
   "quarantineZones": [
@@ -805,8 +817,8 @@
   "speciesBreakdown": [
     {
       "species": "Bovine (Cattle)",
-      "count": 22,
-      "percentage": 51
+      "count": 23,
+      "percentage": 52
     },
     {
       "species": "Canine (Dogs)",
@@ -816,7 +828,7 @@
     {
       "species": "Caprine (Goats)",
       "count": 5,
-      "percentage": 12
+      "percentage": 11
     },
     {
       "species": "Ovine (Sheep)",
