@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-30T00:00:00Z",
-  "lastChecked": "2026-07-30T09:00:00Z",
+  "lastUpdated": "2026-08-03T00:00:00Z",
+  "lastChecked": "2026-08-03T09:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -395,7 +395,7 @@
       "state": "TX",
       "lat": 30.7425,
       "lng": -101.3978,
-      "status": "active",
+      "status": "inactive",
       "notes": "Tenth Crockett County case; cattle"
     },
     {
@@ -407,7 +407,7 @@
       "state": "TX",
       "lat": 29.81,
       "lng": -103.25,
-      "status": "active",
+      "status": "inactive",
       "notes": "First Brewster County case; new county"
     },
     {
@@ -419,7 +419,7 @@
       "state": "TX",
       "lat": 30.7125,
       "lng": -101.4478,
-      "status": "active",
+      "status": "inactive",
       "notes": "Eleventh Crockett County case; goat"
     },
     {
@@ -529,6 +529,18 @@
       "lng": -103.20,
       "status": "active",
       "notes": "Fourth Brewster County case; cattle; domestic; SU:23127:26, SS:10041:26"
+    },
+    {
+      "id": 45,
+      "date": "2026-07-31",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Pecos",
+      "state": "TX",
+      "lat": 30.8894,
+      "lng": -103.4732,
+      "status": "inactive",
+      "notes": "Sixth Pecos County case; sheep; SU:23271:26, SS:10099:26"
     }
   ],
   "quarantineZones": [
@@ -811,6 +823,18 @@
       {
         "date": "2026-07-29",
         "event": "Case 43: cattle in Brewster County — third Brewster County case; Animal ID: SU:23081:26, SS:9989:26; US total reaches 43 with 10 active"
+      },
+      {
+        "date": "2026-07-30",
+        "event": "Case 44: cattle in Brewster County — fourth Brewster County case; SU:23127:26, SS:10041:26; US total reaches 44 with 11 active"
+      },
+      {
+        "date": "2026-07-31",
+        "event": "Case 45: sheep in Pecos County — sixth Pecos County case; SU:23271:26, SS:10099:26; US total reaches 45 with 11 active"
+      },
+      {
+        "date": "2026-08-03",
+        "event": "Cases 33, 34, 35 reclassified inactive (Crockett cattle Jul 7, Brewster cattle Jul 9, Crockett goat Jul 10); US total 45 with 8 active across 15 counties"
       }
     ]
   },
@@ -818,7 +842,7 @@
     {
       "species": "Bovine (Cattle)",
       "count": 23,
-      "percentage": 52
+      "percentage": 51
     },
     {
       "species": "Canine (Dogs)",
@@ -832,8 +856,8 @@
     },
     {
       "species": "Ovine (Sheep)",
-      "count": 13,
-      "percentage": 30
+      "count": 14,
+      "percentage": 31
     }
   ],
   "stateResponses": [
