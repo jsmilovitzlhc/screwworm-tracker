@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-03T00:00:00Z",
-  "lastChecked": "2026-08-03T09:00:00Z",
+  "lastUpdated": "2026-08-05T00:00:00Z",
+  "lastChecked": "2026-08-05T09:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -169,18 +169,6 @@
       "lng": -100.2256,
       "status": "inactive",
       "notes": "Fourth Edwards County case"
-    },
-    {
-      "id": 15,
-      "date": "2026-06-21",
-      "species": "Bovine",
-      "animal": "Cattle",
-      "county": "Edwards",
-      "state": "TX",
-      "lat": 29.9527,
-      "lng": -100.1856,
-      "status": "inactive",
-      "notes": "Fifth Edwards County case"
     },
     {
       "id": 16,
@@ -443,7 +431,7 @@
       "state": "TX",
       "lat": 30.5094,
       "lng": -100.5307,
-      "status": "active",
+      "status": "inactive",
       "notes": "First canine case in Sutton County; third dog case in outbreak; SU:21758:26"
     },
     {
@@ -455,7 +443,7 @@
       "state": "TX",
       "lat": 30.8994,
       "lng": -103.4832,
-      "status": "active",
+      "status": "inactive",
       "notes": "First ovine case in Pecos County; SU:21829:26"
     },
     {
@@ -467,7 +455,7 @@
       "state": "TX",
       "lat": 30.8794,
       "lng": -103.5032,
-      "status": "active",
+      "status": "inactive",
       "notes": "Second ovine case in Pecos County; same-day cluster; SU:21830:26"
     },
     {
@@ -835,14 +823,18 @@
       {
         "date": "2026-08-03",
         "event": "Cases 33, 34, 35 reclassified inactive (Crockett cattle Jul 7, Brewster cattle Jul 9, Crockett goat Jul 10); US total 45 with 8 active across 15 counties"
+      },
+      {
+        "date": "2026-08-05",
+        "event": "USDA status sync: cases 37 (Sutton dog, SU:21758:26), 38 (Pecos sheep, SU:21829:26), 39 (Pecos sheep, SU:21830:26) reclassified inactive; case 15 (Edwards cattle 6/21) confirmed duplicate of case 14, removed — US total corrected to 44 with 4 active"
       }
     ]
   },
   "speciesBreakdown": [
     {
       "species": "Bovine (Cattle)",
-      "count": 23,
-      "percentage": 51
+      "count": 22,
+      "percentage": 50
     },
     {
       "species": "Canine (Dogs)",
