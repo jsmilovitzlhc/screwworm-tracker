@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-05T00:00:00Z",
-  "lastChecked": "2026-08-05T09:00:00Z",
+  "lastUpdated": "2026-08-06T00:00:00Z",
+  "lastChecked": "2026-08-06T09:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -529,6 +529,18 @@
       "lng": -103.4732,
       "status": "inactive",
       "notes": "Sixth Pecos County case; sheep; SU:23271:26, SS:10099:26"
+    },
+    {
+      "id": 46,
+      "date": "2026-08-05",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Terrell",
+      "state": "TX",
+      "lat": 30.22,
+      "lng": -102.07,
+      "status": "active",
+      "notes": "Second Terrell County ovine case; domestic sheep; active"
     }
   ],
   "quarantineZones": [
@@ -826,7 +838,7 @@
       },
       {
         "date": "2026-08-05",
-        "event": "USDA status sync: cases 37 (Sutton dog, SU:21758:26), 38 (Pecos sheep, SU:21829:26), 39 (Pecos sheep, SU:21830:26) reclassified inactive; case 15 (Edwards cattle 6/21) confirmed duplicate of case 14, removed — US total corrected to 44 with 4 active"
+        "event": "USDA status sync: cases 37 (Sutton dog, SU:21758:26), 38 (Pecos sheep, SU:21829:26), 39 (Pecos sheep, SU:21830:26) reclassified inactive; case 15 (Edwards cattle 6/21) confirmed duplicate of case 14, removed; Case 46: sheep in Terrell County (active) — US total reaches 45 with 5 active"
       }
     ]
   },
@@ -834,7 +846,7 @@
     {
       "species": "Bovine (Cattle)",
       "count": 22,
-      "percentage": 50
+      "percentage": 49
     },
     {
       "species": "Canine (Dogs)",
@@ -848,8 +860,8 @@
     },
     {
       "species": "Ovine (Sheep)",
-      "count": 14,
-      "percentage": 31
+      "count": 15,
+      "percentage": 33
     }
   ],
   "stateResponses": [
