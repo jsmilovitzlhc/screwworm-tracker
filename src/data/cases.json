@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-12T00:00:00Z",
-  "lastChecked": "2026-08-12T09:00:00Z",
+  "lastUpdated": "2026-08-14T00:00:00Z",
+  "lastChecked": "2026-08-14T09:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -179,7 +179,7 @@
       "state": "TX",
       "lat": 30.2249,
       "lng": -102.0762,
-      "status": "active",
+      "status": "inactive",
       "notes": "First Terrell County case; castration site wound"
     },
     {
@@ -191,7 +191,7 @@
       "state": "TX",
       "lat": 30.2149,
       "lng": -102.0862,
-      "status": "active",
+      "status": "inactive",
       "notes": "First Terrell County cattle case; part of 3-cattle cluster on same property"
     },
     {
@@ -203,7 +203,7 @@
       "state": "TX",
       "lat": 30.2049,
       "lng": -102.0962,
-      "status": "active",
+      "status": "inactive",
       "notes": "Second Terrell County cattle case; same property cluster"
     },
     {
@@ -215,7 +215,7 @@
       "state": "TX",
       "lat": 30.2349,
       "lng": -102.0662,
-      "status": "active",
+      "status": "inactive",
       "notes": "Third Terrell County cattle case; same property cluster"
     },
     {
@@ -395,7 +395,7 @@
       "state": "TX",
       "lat": 29.81,
       "lng": -103.25,
-      "status": "active",
+      "status": "inactive",
       "notes": "First Brewster County case; new county"
     },
     {
@@ -419,7 +419,7 @@
       "state": "TX",
       "lat": 29.82,
       "lng": -103.23,
-      "status": "active",
+      "status": "inactive",
       "notes": "Second Brewster County case; SU:21744:26"
     },
     {
@@ -847,6 +847,10 @@
       {
         "date": "2026-08-12",
         "event": "USDA status sync (as of Aug 12): case 42 (Sutton County goat, Jul 21, SU:22420:26) reclassified inactive \u2014 US total remains 45 with 3 active"
+      },
+      {
+        "date": "2026-08-14",
+        "event": "APHIS status correction (as of Aug 13): cases 16 (Terrell goat, Jun 22), 17-19 (Terrell cattle, Jun 22-23), 34 (Brewster cattle, Jul 9), 36 (Brewster cattle, Jul 13) reclassified inactive \u2014 US total remains 45 with 3 active (cases 43, 44, 46: two Brewster cattle Jul 29-30, one Terrell sheep Aug 5)"
       }
     ]
   },
