@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-14T00:00:00Z",
-  "lastChecked": "2026-08-14T09:00:00Z",
+  "lastUpdated": "2026-08-21T00:00:00Z",
+  "lastChecked": "2026-08-21T09:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -503,7 +503,7 @@
       "state": "TX",
       "lat": 29.83,
       "lng": -103.21,
-      "status": "active",
+      "status": "inactive",
       "notes": "Third Brewster County case; SU:23081:26, SS:9989:26"
     },
     {
@@ -515,7 +515,7 @@
       "state": "TX",
       "lat": 29.84,
       "lng": -103.2,
-      "status": "active",
+      "status": "inactive",
       "notes": "Fourth Brewster County case; cattle; domestic; SU:23127:26, SS:10041:26"
     },
     {
@@ -541,6 +541,18 @@
       "lng": -102.07,
       "status": "active",
       "notes": "Second Terrell County ovine case; domestic sheep; active"
+    },
+    {
+      "id": 47,
+      "date": "2026-08-18",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Val Verde",
+      "state": "TX",
+      "lat": 29.89,
+      "lng": -100.97,
+      "status": "active",
+      "notes": "First Val Verde County case; domestic sheep; SU:24447:26, SS:11131:26"
     }
   ],
   "quarantineZones": [
@@ -851,6 +863,14 @@
       {
         "date": "2026-08-14",
         "event": "APHIS status correction (as of Aug 13): cases 16 (Terrell goat, Jun 22), 17-19 (Terrell cattle, Jun 22-23), 34 (Brewster cattle, Jul 9), 36 (Brewster cattle, Jul 13) reclassified inactive \u2014 US total remains 45 with 3 active (cases 43, 44, 46: two Brewster cattle Jul 29-30, one Terrell sheep Aug 5)"
+      },
+      {
+        "date": "2026-08-18",
+        "event": "Case 47: sheep in Val Verde County (first Val Verde County case) \u2014 SU:24447:26, SS:11131:26; US total reaches 46 with 4 active"
+      },
+      {
+        "date": "2026-08-21",
+        "event": "APHIS status sync (as of Aug 21): cases 43 (Brewster cattle, Jul 29) and 44 (Brewster cattle, Jul 30) reclassified inactive \u2014 US total remains 46 with 2 active (cases 46 Terrell sheep Aug 5, 47 Val Verde sheep Aug 18)"
       }
     ]
   },
@@ -858,7 +878,7 @@
     {
       "species": "Bovine (Cattle)",
       "count": 22,
-      "percentage": 49
+      "percentage": 48
     },
     {
       "species": "Canine (Dogs)",
@@ -872,8 +892,8 @@
     },
     {
       "species": "Ovine (Sheep)",
-      "count": 15,
-      "percentage": 33
+      "count": 16,
+      "percentage": 35
     }
   ],
   "stateResponses": [
