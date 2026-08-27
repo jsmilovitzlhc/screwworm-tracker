@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-21T00:00:00Z",
-  "lastChecked": "2026-08-21T09:00:00Z",
+  "lastUpdated": "2026-08-27T00:00:00Z",
+  "lastChecked": "2026-08-27T09:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -553,6 +553,18 @@
       "lng": -100.97,
       "status": "active",
       "notes": "First Val Verde County case; domestic sheep; SU:24447:26, SS:11131:26"
+    },
+    {
+      "id": 48,
+      "date": "2026-08-25",
+      "species": "Caprine",
+      "animal": "Goat",
+      "county": "Val Verde",
+      "state": "TX",
+      "lat": 29.88,
+      "lng": -100.96,
+      "status": "active",
+      "notes": "Second Val Verde County case; goat; confirmed Aug 25"
     }
   ],
   "quarantineZones": [
@@ -871,6 +883,10 @@
       {
         "date": "2026-08-21",
         "event": "APHIS status sync (as of Aug 21): cases 43 (Brewster cattle, Jul 29) and 44 (Brewster cattle, Jul 30) reclassified inactive \u2014 US total remains 46 with 2 active (cases 46 Terrell sheep Aug 5, 47 Val Verde sheep Aug 18)"
+      },
+      {
+        "date": "2026-08-25",
+        "event": "Case 48: goat in Val Verde County \u2014 second Val Verde County case; first caprine case in Val Verde; US total reaches 47 with 3 active"
       }
     ]
   },
@@ -878,22 +894,22 @@
     {
       "species": "Bovine (Cattle)",
       "count": 22,
-      "percentage": 48
+      "percentage": 47
     },
     {
       "species": "Canine (Dogs)",
       "count": 3,
-      "percentage": 7
+      "percentage": 6
     },
     {
       "species": "Caprine (Goats)",
-      "count": 5,
-      "percentage": 11
+      "count": 6,
+      "percentage": 13
     },
     {
       "species": "Ovine (Sheep)",
       "count": 16,
-      "percentage": 35
+      "percentage": 34
     }
   ],
   "stateResponses": [
