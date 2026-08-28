@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-27T00:00:00Z",
-  "lastChecked": "2026-08-27T09:00:00Z",
+  "lastUpdated": "2026-08-28T00:00:00Z",
+  "lastChecked": "2026-08-28T09:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -539,12 +539,12 @@
       "state": "TX",
       "lat": 30.22,
       "lng": -102.07,
-      "status": "active",
-      "notes": "Second Terrell County ovine case; domestic sheep; active"
+      "status": "inactive",
+      "notes": "Second Terrell County ovine case; domestic sheep; reclassified inactive Aug 28"
     },
     {
       "id": 47,
-      "date": "2026-08-18",
+      "date": "2026-08-16",
       "species": "Ovine",
       "animal": "Sheep",
       "county": "Val Verde",
@@ -564,7 +564,7 @@
       "lat": 29.88,
       "lng": -100.96,
       "status": "active",
-      "notes": "Second Val Verde County case; goat; confirmed Aug 25"
+      "notes": "Second Val Verde County case; domestic goat; new case per APHIS dashboard Aug 27"
     }
   ],
   "quarantineZones": [
@@ -877,7 +877,7 @@
         "event": "APHIS status correction (as of Aug 13): cases 16 (Terrell goat, Jun 22), 17-19 (Terrell cattle, Jun 22-23), 34 (Brewster cattle, Jul 9), 36 (Brewster cattle, Jul 13) reclassified inactive \u2014 US total remains 45 with 3 active (cases 43, 44, 46: two Brewster cattle Jul 29-30, one Terrell sheep Aug 5)"
       },
       {
-        "date": "2026-08-18",
+        "date": "2026-08-16",
         "event": "Case 47: sheep in Val Verde County (first Val Verde County case) \u2014 SU:24447:26, SS:11131:26; US total reaches 46 with 4 active"
       },
       {
@@ -887,6 +887,10 @@
       {
         "date": "2026-08-25",
         "event": "Case 48: goat in Val Verde County \u2014 second Val Verde County case; first caprine case in Val Verde; US total reaches 47 with 3 active"
+      },
+      {
+        "date": "2026-08-28",
+        "event": "APHIS status sync (as of Aug 27): case 46 (Terrell sheep, Aug 5) reclassified inactive; case 47 date corrected to Aug 16 (Val Verde sheep, APHIS confirmation); US total 47 with 2 active (cases 47 Val Verde sheep Aug 16, 48 Val Verde goat Aug 25)"
       }
     ]
   },
