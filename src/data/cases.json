@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-28T00:00:00Z",
-  "lastChecked": "2026-08-28T09:00:00Z",
+  "lastUpdated": "2026-09-02T00:00:00Z",
+  "lastChecked": "2026-09-02T09:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -565,6 +565,18 @@
       "lng": -100.96,
       "status": "active",
       "notes": "Second Val Verde County case; domestic goat; new case per APHIS dashboard Aug 27"
+    },
+    {
+      "id": 49,
+      "date": "2026-08-31",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "Crockett",
+      "state": "TX",
+      "lat": 30.7025,
+      "lng": -101.4278,
+      "status": "active",
+      "notes": "Fifth Crockett County case; domestic dog; confirmed per APHIS dashboard Sep 1"
     }
   ],
   "quarantineZones": [
@@ -891,6 +903,10 @@
       {
         "date": "2026-08-28",
         "event": "APHIS status sync (as of Aug 27): case 46 (Terrell sheep, Aug 5) reclassified inactive; case 47 date corrected to Aug 16 (Val Verde sheep, APHIS confirmation); US total 47 with 2 active (cases 47 Val Verde sheep Aug 16, 48 Val Verde goat Aug 25)"
+      },
+      {
+        "date": "2026-08-31",
+        "event": "Case 49: dog in Crockett County — fifth Crockett County case, first canine case since July; US total reaches 48 with 3 active (cases 47 Val Verde sheep, 48 Val Verde goat, 49 Crockett dog)"
       }
     ]
   },
@@ -898,12 +914,12 @@
     {
       "species": "Bovine (Cattle)",
       "count": 22,
-      "percentage": 47
+      "percentage": 46
     },
     {
       "species": "Canine (Dogs)",
-      "count": 3,
-      "percentage": 6
+      "count": 4,
+      "percentage": 8
     },
     {
       "species": "Caprine (Goats)",
@@ -913,7 +929,7 @@
     {
       "species": "Ovine (Sheep)",
       "count": 16,
-      "percentage": 34
+      "percentage": 33
     }
   ],
   "stateResponses": [
