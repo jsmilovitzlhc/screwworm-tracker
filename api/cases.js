@@ -35,7 +35,7 @@ export default async function handler(req, res) {
 
     const speciesMap = {};
     for (const c of confirmedCases) {
-      const SPECIES_LABELS = { Bovine: 'Bovine (Cattle)', Canine: 'Canine (Dogs)', Caprine: 'Caprine (Goats)', Ovine: 'Ovine (Sheep)' };
+      const SPECIES_LABELS = { Bovine: 'Bovine (Cattle)', Canine: 'Canine (Dogs)', Caprine: 'Caprine (Goats)', Ovine: 'Ovine (Sheep)', Equine: 'Equine (Horses)' };
       const label = SPECIES_LABELS[c.species] || c.species;
       speciesMap[label] = (speciesMap[label] || 0) + 1;
     }

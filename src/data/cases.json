@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-02T00:00:00Z",
-  "lastChecked": "2026-09-02T09:00:00Z",
+  "lastUpdated": "2026-09-11T00:00:00Z",
+  "lastChecked": "2026-09-11T09:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -577,6 +577,18 @@
       "lng": -101.4278,
       "status": "active",
       "notes": "Fifth Crockett County case; domestic dog; confirmed per APHIS dashboard Sep 1"
+    },
+    {
+      "id": 50,
+      "date": "2026-09-09",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Presidio",
+      "state": "TX",
+      "lat": 29.9856,
+      "lng": -104.2494,
+      "status": "active",
+      "notes": "First Presidio County case; first equine (horse) detection of the US outbreak; APHIS SU:26079:26 / SS:12230:26"
     }
   ],
   "quarantineZones": [
@@ -907,6 +919,10 @@
       {
         "date": "2026-08-31",
         "event": "Case 49: dog in Crockett County — fifth Crockett County case, first canine case since July; US total reaches 48 with 3 active (cases 47 Val Verde sheep, 48 Val Verde goat, 49 Crockett dog)"
+      },
+      {
+        "date": "2026-09-09",
+        "event": "Case 50: horse in Presidio County — first Presidio County detection and first equine case of the US outbreak; westernmost detection to date; US total reaches 49 with 4 active (cases 47 Val Verde sheep, 48 Val Verde goat, 49 Crockett dog, 50 Presidio horse)"
       }
     ]
   },
@@ -914,7 +930,7 @@
     {
       "species": "Bovine (Cattle)",
       "count": 22,
-      "percentage": 46
+      "percentage": 45
     },
     {
       "species": "Canine (Dogs)",
@@ -924,7 +940,12 @@
     {
       "species": "Caprine (Goats)",
       "count": 6,
-      "percentage": 13
+      "percentage": 12
+    },
+    {
+      "species": "Equine (Horses)",
+      "count": 1,
+      "percentage": 2
     },
     {
       "species": "Ovine (Sheep)",

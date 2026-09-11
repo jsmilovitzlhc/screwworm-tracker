@@ -6,9 +6,10 @@ const SPECIES_COLORS = {
   Caprine: '#2E6B4F',
   Canine: '#D4A017',
   Ovine: '#4A6FA5',
+  Equine: '#7B4B94',
 };
 
-const SPECIES_ORDER = ['Bovine', 'Caprine', 'Canine', 'Ovine'];
+const SPECIES_ORDER = ['Bovine', 'Caprine', 'Canine', 'Ovine', 'Equine'];
 
 export default function CasesByDay({ cases }) {
   const allSpecies = useMemo(() => {
