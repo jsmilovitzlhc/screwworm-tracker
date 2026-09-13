@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-11T00:00:00Z",
-  "lastChecked": "2026-09-11T09:00:00Z",
+  "lastUpdated": "2026-09-13T00:00:00Z",
+  "lastChecked": "2026-09-13T09:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -551,8 +551,8 @@
       "state": "TX",
       "lat": 29.89,
       "lng": -100.97,
-      "status": "active",
-      "notes": "First Val Verde County case; domestic sheep; SU:24447:26, SS:11131:26"
+      "status": "inactive",
+      "notes": "First Val Verde County case; domestic sheep; SU:24447:26, SS:11131:26; reclassified inactive Sep 13"
     },
     {
       "id": 48,
@@ -563,8 +563,8 @@
       "state": "TX",
       "lat": 29.88,
       "lng": -100.96,
-      "status": "active",
-      "notes": "Second Val Verde County case; domestic goat; new case per APHIS dashboard Aug 27"
+      "status": "inactive",
+      "notes": "Second Val Verde County case; domestic goat; new case per APHIS dashboard Aug 27; reclassified inactive Sep 13"
     },
     {
       "id": 49,
