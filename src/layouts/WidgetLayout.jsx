@@ -85,7 +85,7 @@ export default function WidgetLayout() {
           touchZoom={false}
           style={{ height: '100%', width: '100%' }}
         >
-          <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" />
+          <TileLayer url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}" />
           <FitBounds bounds={bounds} />
 
           {data.quarantineZones.filter(z => z.active).map((zone, i) => (
