@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-13T00:00:00Z",
-  "lastChecked": "2026-09-13T09:00:00Z",
+  "lastUpdated": "2026-09-19T00:00:00Z",
+  "lastChecked": "2026-09-19T09:00:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -155,7 +155,7 @@
       "state": "TX",
       "lat": 30.7225,
       "lng": -101.4078,
-      "status": "inactive",
+      "status": "active",
       "notes": "First Crockett County case"
     },
     {
@@ -251,7 +251,7 @@
       "state": "TX",
       "lat": 30.7325,
       "lng": -101.3978,
-      "status": "inactive",
+      "status": "active",
       "notes": "Second Crockett County case; part of 4-sheep cluster"
     },
     {
@@ -263,7 +263,7 @@
       "state": "TX",
       "lat": 30.7125,
       "lng": -101.4178,
-      "status": "inactive",
+      "status": "active",
       "notes": "Third Crockett County case; part of 4-sheep cluster"
     },
     {
@@ -275,7 +275,7 @@
       "state": "TX",
       "lat": 30.7425,
       "lng": -101.3878,
-      "status": "inactive",
+      "status": "active",
       "notes": "Fourth Crockett County case; part of 4-sheep cluster"
     },
     {
@@ -287,7 +287,7 @@
       "state": "TX",
       "lat": 30.7225,
       "lng": -101.4278,
-      "status": "inactive",
+      "status": "active",
       "notes": "Fifth Crockett County case; part of 4-sheep cluster"
     },
     {
@@ -311,7 +311,7 @@
       "state": "TX",
       "lat": 30.7325,
       "lng": -101.3878,
-      "status": "inactive",
+      "status": "active",
       "notes": "Sixth Crockett County case; another cattle case in Crockett County"
     },
     {
@@ -347,7 +347,7 @@
       "state": "TX",
       "lat": 30.7525,
       "lng": -101.3778,
-      "status": "inactive",
+      "status": "active",
       "notes": "Seventh Crockett County case; sheep"
     },
     {
@@ -359,7 +359,7 @@
       "state": "TX",
       "lat": 30.7025,
       "lng": -101.4378,
-      "status": "inactive",
+      "status": "active",
       "notes": "Eighth Crockett County case; sheep"
     },
     {
@@ -371,7 +371,7 @@
       "state": "TX",
       "lat": 30.7325,
       "lng": -101.4078,
-      "status": "inactive",
+      "status": "active",
       "notes": "Ninth Crockett County case; domestic sheep"
     },
     {
@@ -383,7 +383,7 @@
       "state": "TX",
       "lat": 30.7425,
       "lng": -101.3978,
-      "status": "inactive",
+      "status": "active",
       "notes": "Tenth Crockett County case; cattle"
     },
     {
@@ -407,7 +407,7 @@
       "state": "TX",
       "lat": 30.7125,
       "lng": -101.4478,
-      "status": "inactive",
+      "status": "active",
       "notes": "Eleventh Crockett County case; goat"
     },
     {
@@ -459,18 +459,6 @@
       "notes": "Second ovine case in Pecos County; same-day cluster; SU:21830:26"
     },
     {
-      "id": 40,
-      "date": "2026-07-18",
-      "species": "Ovine",
-      "animal": "Sheep",
-      "county": "Schleicher",
-      "state": "TX",
-      "lat": 30.8578,
-      "lng": -100.5998,
-      "status": "inactive",
-      "notes": "First Schleicher County case; sheep; new county"
-    },
-    {
       "id": 41,
       "date": "2026-07-17",
       "species": "Bovine",
@@ -481,6 +469,18 @@
       "lng": -98.7669,
       "status": "inactive",
       "notes": "First Starr County case; cattle; southern border region"
+    },
+    {
+      "id": 40,
+      "date": "2026-07-18",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Schleicher",
+      "state": "TX",
+      "lat": 30.8578,
+      "lng": -100.5998,
+      "status": "inactive",
+      "notes": "First Schleicher County case; sheep; new county"
     },
     {
       "id": 42,
@@ -589,6 +589,18 @@
       "lng": -104.2494,
       "status": "active",
       "notes": "First Presidio County case; first equine (horse) detection of the US outbreak; APHIS SU:26079:26 / SS:12230:26"
+    },
+    {
+      "id": 51,
+      "date": "2026-09-17",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Grant",
+      "state": "NM",
+      "lat": 32.7299,
+      "lng": -108.2803,
+      "status": "active",
+      "notes": "First Grant County case; second New Mexico county affected; second equine (horse) detection of the US outbreak; domestic animal"
     }
   ],
   "quarantineZones": [
@@ -774,15 +786,15 @@
       },
       {
         "date": "2026-06-03",
-        "event": "First US case confirmed \u2014 Zavala County, TX"
+        "event": "First US case confirmed — Zavala County, TX"
       },
       {
         "date": "2026-06-07",
-        "event": "Outbreak reaches La Salle Co. (TX) and Lea Co. (NM) \u2014 first case outside Texas"
+        "event": "Outbreak reaches La Salle Co. (TX) and Lea Co. (NM) — first case outside Texas"
       },
       {
         "date": "2026-06-08",
-        "event": "First caprine case \u2014 Gillespie Co. (TX); second La Salle Co. case"
+        "event": "First caprine case — Gillespie Co. (TX); second La Salle Co. case"
       },
       {
         "date": "2026-06-09",
@@ -790,7 +802,7 @@
       },
       {
         "date": "2026-06-11",
-        "event": "US total reaches 11 \u2014 new counties: Tom Green, TX"
+        "event": "US total reaches 11 — new counties: Tom Green, TX"
       },
       {
         "date": "2026-06-12",
@@ -798,87 +810,87 @@
       },
       {
         "date": "2026-06-20",
-        "event": "13th US case: sheep in Crockett County, TX \u2014 spread westward"
+        "event": "13th US case: sheep in Crockett County, TX — spread westward"
       },
       {
         "date": "2026-06-21",
-        "event": "Cases 14\u201315: two more cattle in Edwards County, TX"
+        "event": "Cases 14–15: two more cattle in Edwards County, TX"
       },
       {
         "date": "2026-06-22",
-        "event": "16th US case: goat in Terrell County, TX \u2014 first Terrell County detection"
+        "event": "16th US case: goat in Terrell County, TX — first Terrell County detection"
       },
       {
         "date": "2026-06-23",
-        "event": "Cases 17\u201320: 3 cattle on same Terrell County property (largest US cluster) plus cow in Medina County \u2014 US total reaches 20 with 17 active"
+        "event": "Cases 17–20: 3 cattle on same Terrell County property (largest US cluster) plus cow in Medina County — US total reaches 20 with 17 active"
       },
       {
         "date": "2026-06-24",
-        "event": "Cases 21\u201325: sheep in Edwards County plus 4 sheep in Crockett County (largest single-county single-day cluster) \u2014 US total reaches 25 with 22 active"
+        "event": "Cases 21–25: sheep in Edwards County plus 4 sheep in Crockett County (largest single-county single-day cluster) — US total reaches 25 with 22 active"
       },
       {
         "date": "2026-06-26",
-        "event": "Case 26: bovine in Jim Hogg County \u2014 first case in new county, significant southward expansion toward Mexico border; TAHC establishes Infested Zone 10 (Jim Hogg, Starr, Zapata counties)"
+        "event": "Case 26: bovine in Jim Hogg County — first case in new county, significant southward expansion toward Mexico border; TAHC establishes Infested Zone 10 (Jim Hogg, Starr, Zapata counties)"
       },
       {
         "date": "2026-06-27",
-        "event": "Case 27: cattle in Crockett County \u2014 US total reaches 27"
+        "event": "Case 27: cattle in Crockett County — US total reaches 27"
       },
       {
         "date": "2026-06-29",
-        "event": "Case 28: cattle in Uvalde County \u2014 US total reaches 28"
+        "event": "Case 28: cattle in Uvalde County — US total reaches 28"
       },
       {
         "date": "2026-06-30",
-        "event": "Case 29: dog in Pecos County \u2014 second canine case; US total reaches 29 with 23 active across 13 counties"
+        "event": "Case 29: dog in Pecos County — second canine case; US total reaches 29 with 23 active across 13 counties"
       },
       {
         "date": "2026-06-30",
-        "event": "Cases 30\u201331: two more sheep in Crockett County \u2014 US total reaches 31"
+        "event": "Cases 30–31: two more sheep in Crockett County — US total reaches 31"
       },
       {
         "date": "2026-07-03",
-        "event": "Case 32: domestic sheep in Crockett County \u2014 ninth Crockett County case; US total reaches 32 with 23 active across 13 counties"
+        "event": "Case 32: domestic sheep in Crockett County — ninth Crockett County case; US total reaches 32 with 23 active across 13 counties"
       },
       {
         "date": "2026-07-07",
-        "event": "Case 33: cattle in Crockett County \u2014 tenth Crockett County case; US total reaches 33 with 23 active across 13 counties"
+        "event": "Case 33: cattle in Crockett County — tenth Crockett County case; US total reaches 33 with 23 active across 13 counties"
       },
       {
         "date": "2026-07-09",
-        "event": "Case 34: cattle in Brewster County \u2014 first Brewster County case; new county; US total reaches 34 with 24 active across 14 counties"
+        "event": "Case 34: cattle in Brewster County — first Brewster County case; new county; US total reaches 34 with 24 active across 14 counties"
       },
       {
         "date": "2026-07-10",
-        "event": "Case 35: goat in Crockett County \u2014 eleventh Crockett County case; US total reaches 35 with 25 active across 14 counties"
+        "event": "Case 35: goat in Crockett County — eleventh Crockett County case; US total reaches 35 with 25 active across 14 counties"
       },
       {
         "date": "2026-07-13",
-        "event": "Cases 36\u201337: cattle in Brewster County (second Brewster case) and dog in Sutton County (third canine case in outbreak) \u2014 US total reaches 37"
+        "event": "Cases 36–37: cattle in Brewster County (second Brewster case) and dog in Sutton County (third canine case in outbreak) — US total reaches 37"
       },
       {
         "date": "2026-07-14",
-        "event": "Cases 38\u201339: two sheep in Pecos County \u2014 first ovine cases in Pecos County; US total reaches 39 with 18 active across 15 counties"
+        "event": "Cases 38–39: two sheep in Pecos County — first ovine cases in Pecos County; US total reaches 39 with 18 active across 15 counties"
       },
       {
         "date": "2026-07-18",
-        "event": "Cases 40\u201341: sheep in Schleicher County (inactive) and cattle in Starr County (active) \u2014 US total reaches 41 with 12 active across 17 counties; 7 older cases (Jun 24\u201327) reclassified inactive"
+        "event": "Cases 40–41: sheep in Schleicher County (inactive) and cattle in Starr County (active) — US total reaches 41 with 12 active across 17 counties; 7 older cases (Jun 24–27) reclassified inactive"
       },
       {
         "date": "2026-07-21",
-        "event": "Case 42: goat in Sutton County \u2014 third Sutton County case; expanding caprine detections in outbreak area; US total reaches 42 with 10 active"
+        "event": "Case 42: goat in Sutton County — third Sutton County case; expanding caprine detections in outbreak area; US total reaches 42 with 10 active"
       },
       {
         "date": "2026-07-29",
-        "event": "Case 43: cattle in Brewster County \u2014 third Brewster County case; Animal ID: SU:23081:26, SS:9989:26; US total reaches 43 with 10 active"
+        "event": "Case 43: cattle in Brewster County — third Brewster County case; Animal ID: SU:23081:26, SS:9989:26; US total reaches 43 with 10 active"
       },
       {
         "date": "2026-07-30",
-        "event": "Case 44: cattle in Brewster County \u2014 fourth Brewster County case; SU:23127:26, SS:10041:26; US total reaches 44 with 11 active"
+        "event": "Case 44: cattle in Brewster County — fourth Brewster County case; SU:23127:26, SS:10041:26; US total reaches 44 with 11 active"
       },
       {
         "date": "2026-07-31",
-        "event": "Case 45: sheep in Pecos County \u2014 sixth Pecos County case; SU:23271:26, SS:10099:26; US total reaches 45 with 11 active"
+        "event": "Case 45: sheep in Pecos County — sixth Pecos County case; SU:23271:26, SS:10099:26; US total reaches 45 with 11 active"
       },
       {
         "date": "2026-08-03",
@@ -886,31 +898,31 @@
       },
       {
         "date": "2026-08-05",
-        "event": "USDA status sync: cases 37 (Sutton dog, SU:21758:26), 38 (Pecos sheep, SU:21829:26), 39 (Pecos sheep, SU:21830:26) reclassified inactive; case 15 (Edwards cattle 6/21) confirmed duplicate of case 14, removed; Case 46: sheep in Terrell County (active) \u2014 US total reaches 45 with 5 active"
+        "event": "USDA status sync: cases 37 (Sutton dog, SU:21758:26), 38 (Pecos sheep, SU:21829:26), 39 (Pecos sheep, SU:21830:26) reclassified inactive; case 15 (Edwards cattle 6/21) confirmed duplicate of case 14, removed; Case 46: sheep in Terrell County (active) — US total reaches 45 with 5 active"
       },
       {
         "date": "2026-08-11",
-        "event": "USDA status sync (as of Aug 10): case 41 (Starr County cattle, Jul 17) reclassified inactive \u2014 US total remains 45 with 4 active across 4 counties (Terrell, Brewster x2, Sutton)"
+        "event": "USDA status sync (as of Aug 10): case 41 (Starr County cattle, Jul 17) reclassified inactive — US total remains 45 with 4 active across 4 counties (Terrell, Brewster x2, Sutton)"
       },
       {
         "date": "2026-08-12",
-        "event": "USDA status sync (as of Aug 12): case 42 (Sutton County goat, Jul 21, SU:22420:26) reclassified inactive \u2014 US total remains 45 with 3 active"
+        "event": "USDA status sync (as of Aug 12): case 42 (Sutton County goat, Jul 21, SU:22420:26) reclassified inactive — US total remains 45 with 3 active"
       },
       {
         "date": "2026-08-14",
-        "event": "APHIS status correction (as of Aug 13): cases 16 (Terrell goat, Jun 22), 17-19 (Terrell cattle, Jun 22-23), 34 (Brewster cattle, Jul 9), 36 (Brewster cattle, Jul 13) reclassified inactive \u2014 US total remains 45 with 3 active (cases 43, 44, 46: two Brewster cattle Jul 29-30, one Terrell sheep Aug 5)"
+        "event": "APHIS status correction (as of Aug 13): cases 16 (Terrell goat, Jun 22), 17-19 (Terrell cattle, Jun 22-23), 34 (Brewster cattle, Jul 9), 36 (Brewster cattle, Jul 13) reclassified inactive — US total remains 45 with 3 active (cases 43, 44, 46: two Brewster cattle Jul 29-30, one Terrell sheep Aug 5)"
       },
       {
         "date": "2026-08-16",
-        "event": "Case 47: sheep in Val Verde County (first Val Verde County case) \u2014 SU:24447:26, SS:11131:26; US total reaches 46 with 4 active"
+        "event": "Case 47: sheep in Val Verde County (first Val Verde County case) — SU:24447:26, SS:11131:26; US total reaches 46 with 4 active"
       },
       {
         "date": "2026-08-21",
-        "event": "APHIS status sync (as of Aug 21): cases 43 (Brewster cattle, Jul 29) and 44 (Brewster cattle, Jul 30) reclassified inactive \u2014 US total remains 46 with 2 active (cases 46 Terrell sheep Aug 5, 47 Val Verde sheep Aug 18)"
+        "event": "APHIS status sync (as of Aug 21): cases 43 (Brewster cattle, Jul 29) and 44 (Brewster cattle, Jul 30) reclassified inactive — US total remains 46 with 2 active (cases 46 Terrell sheep Aug 5, 47 Val Verde sheep Aug 18)"
       },
       {
         "date": "2026-08-25",
-        "event": "Case 48: goat in Val Verde County \u2014 second Val Verde County case; first caprine case in Val Verde; US total reaches 47 with 3 active"
+        "event": "Case 48: goat in Val Verde County — second Val Verde County case; first caprine case in Val Verde; US total reaches 47 with 3 active"
       },
       {
         "date": "2026-08-28",
@@ -923,6 +935,10 @@
       {
         "date": "2026-09-09",
         "event": "Case 50: horse in Presidio County — first Presidio County detection and first equine case of the US outbreak; westernmost detection to date; US total reaches 49 with 4 active (cases 47 Val Verde sheep, 48 Val Verde goat, 49 Crockett dog, 50 Presidio horse)"
+      },
+      {
+        "date": "2026-09-17",
+        "event": "Case 51: horse in Grant County, NM — second equine case; second New Mexico county affected; US total reaches 50 with 14 active cases"
       }
     ]
   },
@@ -930,7 +946,7 @@
     {
       "species": "Bovine (Cattle)",
       "count": 22,
-      "percentage": 45
+      "percentage": 44
     },
     {
       "species": "Canine (Dogs)",
@@ -944,13 +960,13 @@
     },
     {
       "species": "Equine (Horses)",
-      "count": 1,
-      "percentage": 2
+      "count": 2,
+      "percentage": 4
     },
     {
       "species": "Ovine (Sheep)",
       "count": 16,
-      "percentage": 33
+      "percentage": 32
     }
   ],
   "stateResponses": [
