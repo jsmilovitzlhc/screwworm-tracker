@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-20T00:00:00Z",
-  "lastChecked": "2026-09-20T09:30:00Z",
+  "lastUpdated": "2026-09-23T00:00:00Z",
+  "lastChecked": "2026-09-23T09:30:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -575,7 +575,7 @@
       "state": "TX",
       "lat": 30.7025,
       "lng": -101.4278,
-      "status": "active",
+      "status": "inactive",
       "notes": "Fifth Crockett County case; domestic dog; confirmed per APHIS dashboard Sep 1"
     },
     {
