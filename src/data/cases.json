@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-23T00:00:00Z",
-  "lastChecked": "2026-09-23T09:30:00Z",
+  "lastUpdated": "2026-09-30T00:00:00Z",
+  "lastChecked": "2026-09-30T09:30:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -576,7 +576,7 @@
       "lat": 30.7025,
       "lng": -101.4278,
       "status": "inactive",
-      "notes": "Fifth Crockett County case; domestic dog; confirmed per APHIS dashboard Sep 1"
+      "notes": "Twelfth Crockett County case; domestic dog; confirmed per APHIS dashboard Sep 1"
     },
     {
       "id": 50,
@@ -601,6 +601,18 @@
       "lng": -108.2803,
       "status": "active",
       "notes": "First Grant County case; second New Mexico county affected; second equine (horse) detection of the US outbreak; domestic animal"
+    },
+    {
+      "id": 52,
+      "date": "2026-09-26",
+      "species": "Caprine",
+      "animal": "Goat",
+      "county": "Crockett",
+      "state": "TX",
+      "lat": 30.7425,
+      "lng": -101.4178,
+      "status": "active",
+      "notes": "Thirteenth Crockett County case; domestic goat; confirmed per APHIS dashboard Sept 29"
     }
   ],
   "quarantineZones": [
@@ -930,7 +942,7 @@
       },
       {
         "date": "2026-08-31",
-        "event": "Case 49: dog in Crockett County — fifth Crockett County case, first canine case since July; US total reaches 48 with 3 active (cases 47 Val Verde sheep, 48 Val Verde goat, 49 Crockett dog)"
+        "event": "Case 49: dog in Crockett County — twelfth Crockett County case, first canine case since July; US total reaches 48 with 3 active (cases 47 Val Verde sheep, 48 Val Verde goat, 49 Crockett dog)"
       },
       {
         "date": "2026-09-09",
@@ -939,6 +951,10 @@
       {
         "date": "2026-09-17",
         "event": "Case 51: horse in Grant County, NM — second equine case; second New Mexico county affected; US total reaches 50 with 3 active cases (49 Crockett dog, 50 Presidio horse, 51 Grant NM horse)"
+      },
+      {
+        "date": "2026-09-26",
+        "event": "Case 52: goat in Crockett County — thirteenth Crockett County case; US total reaches 51 with 3 active cases (50 Presidio horse, 51 Grant NM horse, 52 Crockett goat)"
       }
     ]
   },
@@ -946,7 +962,7 @@
     {
       "species": "Bovine (Cattle)",
       "count": 22,
-      "percentage": 44
+      "percentage": 43
     },
     {
       "species": "Canine (Dogs)",
@@ -955,8 +971,8 @@
     },
     {
       "species": "Caprine (Goats)",
-      "count": 6,
-      "percentage": 12
+      "count": 7,
+      "percentage": 14
     },
     {
       "species": "Equine (Horses)",
@@ -966,7 +982,7 @@
     {
       "species": "Ovine (Sheep)",
       "count": 16,
-      "percentage": 32
+      "percentage": 31
     }
   ],
   "stateResponses": [
