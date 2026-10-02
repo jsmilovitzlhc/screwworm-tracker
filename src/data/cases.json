@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-30T00:00:00Z",
-  "lastChecked": "2026-09-30T09:30:00Z",
+  "lastUpdated": "2026-10-02T00:00:00Z",
+  "lastChecked": "2026-10-02T09:45:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -587,7 +587,7 @@
       "state": "TX",
       "lat": 29.9856,
       "lng": -104.2494,
-      "status": "active",
+      "status": "inactive",
       "notes": "First Presidio County case; first equine (horse) detection of the US outbreak; APHIS SU:26079:26 / SS:12230:26"
     },
     {
@@ -953,8 +953,16 @@
         "event": "Case 51: horse in Grant County, NM — second equine case; second New Mexico county affected; US total reaches 50 with 3 active cases (49 Crockett dog, 50 Presidio horse, 51 Grant NM horse)"
       },
       {
+        "date": "2026-09-25",
+        "event": "Surveillance: wild New World screwworm fly caught in a trap in Brewster County, TX. Counted by APHIS under total cases but not domestic animal cases — no animal case recorded; tracked here as context only"
+      },
+      {
         "date": "2026-09-26",
         "event": "Case 52: goat in Crockett County — thirteenth Crockett County case; US total reaches 51 with 3 active cases (50 Presidio horse, 51 Grant NM horse, 52 Crockett goat)"
+      },
+      {
+        "date": "2026-10-01",
+        "event": "Case 50 (Presidio County horse, confirmed Sep 9) moved to inactive per the APHIS dashboard. No new domestic cases; US total holds at 51 with 2 active (51 Grant NM horse, 52 Crockett goat)"
       }
     ]
   },
