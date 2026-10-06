@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-02T00:00:00Z",
-  "lastChecked": "2026-10-02T09:45:00Z",
+  "lastUpdated": "2026-10-06T00:00:00Z",
+  "lastChecked": "2026-10-06T09:45:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -613,6 +613,18 @@
       "lng": -101.4178,
       "status": "active",
       "notes": "Thirteenth Crockett County case; domestic goat; confirmed per APHIS dashboard Sept 29"
+    },
+    {
+      "id": 53,
+      "date": "2026-10-02",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "Brewster",
+      "state": "TX",
+      "lat": 29.85,
+      "lng": -103.18,
+      "status": "active",
+      "notes": "Fifth Brewster County case; fifth canine (dog) detection of the US outbreak and fourth in Texas; confirmed per APHIS dashboard (October 2026: 1 domestic case, 1 active) and Houston Public Media Oct 4"
     }
   ],
   "quarantineZones": [
@@ -846,7 +858,7 @@
       },
       {
         "date": "2026-06-27",
-        "event": "Case 27: cattle in Crockett County — US total reaches 27"
+        "event": "Case 27: cattle in Crockett County — US total reaches 27 with 21 active and 6 inactive"
       },
       {
         "date": "2026-06-29",
@@ -858,7 +870,7 @@
       },
       {
         "date": "2026-06-30",
-        "event": "Cases 30–31: two more sheep in Crockett County — US total reaches 31"
+        "event": "Cases 30–31: two sheep in Crockett County, TX — US total reaches 31 with 22 active across 13 counties"
       },
       {
         "date": "2026-07-03",
@@ -963,6 +975,14 @@
       {
         "date": "2026-10-01",
         "event": "Case 50 (Presidio County horse, confirmed Sep 9) moved to inactive per the APHIS dashboard. No new domestic cases; US total holds at 51 with 2 active (51 Grant NM horse, 52 Crockett goat)"
+      },
+      {
+        "date": "2026-10-02",
+        "event": "Case 53: dog in Brewster County, TX — fifth Brewster County case and fifth canine detection of the US outbreak (fourth in Texas); US total reaches 52 domestic animal cases with 3 active (51 Grant NM horse, 52 Crockett goat, 53 Brewster dog)"
+      },
+      {
+        "date": "2026-10-06",
+        "event": "APHIS reconciliation: the dashboard's 53 headline is 52 domestic animal cases plus the Sep 25 Brewster County fly-trap detection, which APHIS counts under total cases but not under domestic animal cases. No un-ingested animal case; tracker at 52 with 3 active"
       }
     ]
   },
@@ -970,17 +990,17 @@
     {
       "species": "Bovine (Cattle)",
       "count": 22,
-      "percentage": 43
+      "percentage": 42
     },
     {
       "species": "Canine (Dogs)",
-      "count": 4,
-      "percentage": 8
+      "count": 5,
+      "percentage": 10
     },
     {
       "species": "Caprine (Goats)",
       "count": 7,
-      "percentage": 14
+      "percentage": 13
     },
     {
       "species": "Equine (Horses)",
