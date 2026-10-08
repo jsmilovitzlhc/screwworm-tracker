@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-06T00:00:00Z",
-  "lastChecked": "2026-10-06T09:45:00Z",
+  "lastUpdated": "2026-10-08T00:00:00Z",
+  "lastChecked": "2026-10-08T09:45:00Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -599,7 +599,7 @@
       "state": "NM",
       "lat": 32.7299,
       "lng": -108.2803,
-      "status": "active",
+      "status": "inactive",
       "notes": "First Grant County case; second New Mexico county affected; second equine (horse) detection of the US outbreak; domestic animal"
     },
     {
@@ -983,6 +983,10 @@
       {
         "date": "2026-10-06",
         "event": "APHIS reconciliation: the dashboard's 53 headline is 52 domestic animal cases plus the Sep 25 Brewster County fly-trap detection, which APHIS counts under total cases but not under domestic animal cases. No un-ingested animal case; tracker at 52 with 3 active"
+      },
+      {
+        "date": "2026-10-08",
+        "event": "Case 51 (Grant County, NM horse, confirmed Sep 17) moved to inactive per the APHIS dashboard — 21 days after confirmation, matching the outbreak's typical resolution window. No new domestic cases; US total holds at 52 domestic animal cases with 2 active (52 Crockett goat, 53 Brewster dog). New Mexico has no active cases for the first time since the Grant County detection"
       }
     ]
   },
