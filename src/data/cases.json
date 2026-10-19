@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-08T00:00:00Z",
-  "lastChecked": "2026-10-08T09:45:00Z",
+  "lastUpdated": "2026-10-19T00:00:00Z",
+  "lastChecked": "2026-10-19T09:36:14.489Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -611,7 +611,7 @@
       "state": "TX",
       "lat": 30.7425,
       "lng": -101.4178,
-      "status": "active",
+      "status": "inactive",
       "notes": "Thirteenth Crockett County case; domestic goat; confirmed per APHIS dashboard Sept 29"
     },
     {
@@ -625,6 +625,42 @@
       "lng": -103.18,
       "status": "active",
       "notes": "Fifth Brewster County case; fifth canine (dog) detection of the US outbreak and fourth in Texas; confirmed per APHIS dashboard (October 2026: 1 domestic case, 1 active) and Houston Public Media Oct 4"
+    },
+    {
+      "id": 54,
+      "date": "2026-10-10",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Pecos",
+      "state": "TX",
+      "lat": 30.8944,
+      "lng": -103.4882,
+      "status": "active",
+      "notes": "Fifth Pecos County case and the first bovine (cattle) detection in Pecos County; domestic animal; confirmed per APHIS dashboard (October 2026: 4 domestic cases, 4 active)"
+    },
+    {
+      "id": 55,
+      "date": "2026-10-15",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Grant",
+      "state": "NM",
+      "lat": 32.7349,
+      "lng": -108.2753,
+      "status": "active",
+      "notes": "Second Grant County case; first bovine (cattle) detection in New Mexico; domestic animal; confirmed per APHIS dashboard Oct 15 alongside case 56 in the same county"
+    },
+    {
+      "id": 56,
+      "date": "2026-10-15",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Grant",
+      "state": "NM",
+      "lat": 32.7399,
+      "lng": -108.2903,
+      "status": "active",
+      "notes": "Third Grant County case; third equine (horse) detection of the US outbreak and the second in New Mexico; domestic animal; same-day Grant County detection with case 55"
     }
   ],
   "quarantineZones": [
@@ -987,19 +1023,31 @@
       {
         "date": "2026-10-08",
         "event": "Case 51 (Grant County, NM horse, confirmed Sep 17) moved to inactive per the APHIS dashboard — 21 days after confirmation, matching the outbreak's typical resolution window. No new domestic cases; US total holds at 52 domestic animal cases with 2 active (52 Crockett goat, 53 Brewster dog). New Mexico has no active cases for the first time since the Grant County detection"
+      },
+      {
+        "date": "2026-10-10",
+        "event": "Case 54: cattle in Pecos County, TX — fifth Pecos County case and the first bovine detection in that county, which had previously recorded only sheep and a dog. US total reaches 53 domestic animal cases"
+      },
+      {
+        "date": "2026-10-15",
+        "event": "Cases 55 and 56: cattle and a horse confirmed the same day in Grant County, NM — the first bovine case in New Mexico and the third equine detection of the US outbreak. New Mexico rises to 4 cases (Lea dog, Grant horse Sep 17, Grant cattle Oct 15, Grant horse Oct 15) with 2 active. US total reaches 55 domestic animal cases; no new county or state, holding at 19 counties across 2 states"
+      },
+      {
+        "date": "2026-10-19",
+        "event": "Case 52 (Crockett County, TX goat, confirmed Sep 26) moved to inactive per the APHIS dashboard, clearing September of active cases — all 4 remaining active cases are now October detections (53 Brewster dog, 54 Pecos cattle, 55 Grant cattle, 56 Grant horse). US total stands at 55 domestic animal cases with 4 active and 51 inactive"
       }
     ]
   },
   "speciesBreakdown": [
     {
       "species": "Bovine (Cattle)",
-      "count": 22,
-      "percentage": 42
+      "count": 24,
+      "percentage": 44
     },
     {
       "species": "Canine (Dogs)",
       "count": 5,
-      "percentage": 10
+      "percentage": 9
     },
     {
       "species": "Caprine (Goats)",
@@ -1008,13 +1056,13 @@
     },
     {
       "species": "Equine (Horses)",
-      "count": 2,
-      "percentage": 4
+      "count": 3,
+      "percentage": 5
     },
     {
       "species": "Ovine (Sheep)",
       "count": 16,
-      "percentage": 31
+      "percentage": 29
     }
   ],
   "stateResponses": [
