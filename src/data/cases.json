@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-19T00:00:00Z",
-  "lastChecked": "2026-10-19T09:36:14.489Z",
+  "lastUpdated": "2026-10-21T00:00:00Z",
+  "lastChecked": "2026-10-21T09:38:41.874Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -661,6 +661,18 @@
       "lng": -108.2903,
       "status": "active",
       "notes": "Third Grant County case; third equine (horse) detection of the US outbreak and the second in New Mexico; domestic animal; same-day Grant County detection with case 55"
+    },
+    {
+      "id": 57,
+      "date": "2026-10-18",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Brewster",
+      "state": "TX",
+      "lat": 29.86,
+      "lng": -103.17,
+      "status": "active",
+      "notes": "Sixth Brewster County case; fourth equine (horse) detection of the US outbreak and the second in Texas; domestic animal; confirmed per APHIS dashboard Oct 21"
     }
   ],
   "quarantineZones": [
@@ -1033,6 +1045,10 @@
         "event": "Cases 55 and 56: cattle and a horse confirmed the same day in Grant County, NM — the first bovine case in New Mexico and the third equine detection of the US outbreak. New Mexico rises to 4 cases (Lea dog, Grant horse Sep 17, Grant cattle Oct 15, Grant horse Oct 15) with 2 active. US total reaches 55 domestic animal cases; no new county or state, holding at 19 counties across 2 states"
       },
       {
+        "date": "2026-10-18",
+        "event": "Case 57: horse in Brewster County, TX — sixth Brewster County case and the fourth equine detection of the US outbreak, the second in Texas after the Sep 9 Presidio County horse. Brewster becomes the second-heaviest county in the outbreak behind Crockett (13), and Texas rises to 52 cases. US total reaches 56 domestic animal cases with 5 active and 51 inactive; no new county or state, holding at 19 counties across 2 states. All 5 active cases are October detections"
+      },
+      {
         "date": "2026-10-19",
         "event": "Case 52 (Crockett County, TX goat, confirmed Sep 26) moved to inactive per the APHIS dashboard, clearing September of active cases — all 4 remaining active cases are now October detections (53 Brewster dog, 54 Pecos cattle, 55 Grant cattle, 56 Grant horse). US total stands at 55 domestic animal cases with 4 active and 51 inactive"
       }
@@ -1042,7 +1058,7 @@
     {
       "species": "Bovine (Cattle)",
       "count": 24,
-      "percentage": 44
+      "percentage": 43
     },
     {
       "species": "Canine (Dogs)",
@@ -1056,8 +1072,8 @@
     },
     {
       "species": "Equine (Horses)",
-      "count": 3,
-      "percentage": 5
+      "count": 4,
+      "percentage": 7
     },
     {
       "species": "Ovine (Sheep)",
