@@ -1,3 +1,12 @@
+function fillClass(label) {
+  const s = label.toLowerCase();
+  if (s.includes('cattle') || s.includes('bovine')) return 'cattle';
+  if (s.includes('caprine') || s.includes('goat')) return 'caprine';
+  if (s.includes('ovine') || s.includes('sheep')) return 'ovine';
+  if (s.includes('cervid') || s.includes('elk')) return 'cervid';
+  return 'canine';
+}
+
 export default function SpeciesBreakdown({ breakdown }) {
   const total = breakdown.reduce((sum, s) => sum + s.count, 0);
 
@@ -17,7 +26,7 @@ export default function SpeciesBreakdown({ breakdown }) {
               </div>
               <div className="species-bar-track">
                 <div
-                  className={`species-bar-fill ${s.species.toLowerCase().includes('cattle') || s.species.toLowerCase().includes('bovine') ? 'cattle' : s.species.toLowerCase().includes('caprine') || s.species.toLowerCase().includes('goat') ? 'caprine' : s.species.toLowerCase().includes('ovine') || s.species.toLowerCase().includes('sheep') ? 'ovine' : 'canine'}`}
+                  className={`species-bar-fill ${fillClass(s.species)}`}
                   style={{ width: `${(s.count / total) * 100}%` }}
                 >
                   {s.percentage}%

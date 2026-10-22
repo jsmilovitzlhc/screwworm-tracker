@@ -501,6 +501,18 @@ body {
   background: var(--amber);
 }
 
+.species-bar-fill.caprine {
+  background: #2E6B4F;
+}
+
+.species-bar-fill.ovine {
+  background: #4A6FA5;
+}
+
+.species-bar-fill.cervid {
+  background: #8A5A2B;
+}
+
 .species-note {
   background: var(--bg-alt);
   border-left: 3px solid var(--amber);
