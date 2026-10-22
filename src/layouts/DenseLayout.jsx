@@ -124,7 +124,7 @@ export default function DenseLayout() {
               </div>
               <div className="bb-case-bottom">
                 <span className="bb-case-loc">{c.county} Co., {c.state}</span>
-                <span className="bb-case-date">{formatShortDate(c.date)}</span>
+                <span className="bb-case-date">{formatShortDate(c.date + 'T00:00:00')}</span>
               </div>
               <div className="bb-case-note">{c.notes}</div>
             </div>
