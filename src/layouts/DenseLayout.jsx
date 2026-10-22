@@ -36,8 +36,10 @@ export default function DenseLayout() {
     [...data.confirmedCases].sort((a, b) => b.date.localeCompare(a.date)),
   [data]);
 
+  // lastUpdated is a date-stamp stored as UTC midnight, so it has to be formatted in UTC.
+  // Formatting it in the viewer's zone rendered the previous day everywhere west of UTC.
   const lastUpdated = new Date(data.lastUpdated).toLocaleDateString('en-US', {
-    month: 'short', day: 'numeric', year: 'numeric',
+    month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC',
   });
 
   const allEvents = [
