@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-21T00:00:00Z",
-  "lastChecked": "2026-10-21T09:38:41.874Z",
+  "lastUpdated": "2026-10-22T00:00:00Z",
+  "lastChecked": "2026-10-22T09:44:57.361Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -673,6 +673,30 @@
       "lng": -103.17,
       "status": "active",
       "notes": "Sixth Brewster County case; fourth equine (horse) detection of the US outbreak and the second in Texas; domestic animal; confirmed per APHIS dashboard Oct 21"
+    },
+    {
+      "id": 58,
+      "date": "2026-10-21",
+      "species": "Cervid",
+      "animal": "Elk",
+      "county": "Pecos",
+      "state": "TX",
+      "lat": 30.8844,
+      "lng": -103.4782,
+      "status": "active",
+      "notes": "First detection of New World screwworm in US wildlife and the sixth Pecos County case; hunter-harvested female elk on a game ranch, confirmed at the ARS Knipling-Bushland lab in Kerrville; TAHC is modifying a previously established infested zone and USDA/TPWD are expanding wildlife surveillance in the area; confirmed per APHIS announcement Oct 21"
+    },
+    {
+      "id": 59,
+      "date": "2026-10-21",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Otero",
+      "state": "NM",
+      "lat": 32.6119,
+      "lng": -105.3881,
+      "status": "active",
+      "notes": "First Otero County case and the twentieth county of the US outbreak; beef cow near Piñon, NM and New Mexico's fifth case; the NM Livestock Board set a minimum 12.4-mile infested zone around the animal; domestic animal; confirmed same day as the Pecos County elk per APHIS dashboard Oct 21"
     }
   ],
   "quarantineZones": [
@@ -1051,13 +1075,21 @@
       {
         "date": "2026-10-19",
         "event": "Case 52 (Crockett County, TX goat, confirmed Sep 26) moved to inactive per the APHIS dashboard, clearing September of active cases — all 4 remaining active cases are now October detections (53 Brewster dog, 54 Pecos cattle, 55 Grant cattle, 56 Grant horse). US total stands at 55 domestic animal cases with 4 active and 51 inactive"
+      },
+      {
+        "date": "2026-10-21",
+        "event": "Case 58: hunter-harvested female elk in Pecos County, TX — the first detection of New World screwworm in US wildlife. The hunter reported the animal on a game ranch and the sample was confirmed at the ARS Knipling-Bushland U.S. Livestock Insects Research Laboratory in Kerrville. Cervid becomes the sixth species of the outbreak and the first that is neither livestock nor a companion animal; Pecos County rises to 6 cases and Texas to 53. The Texas Animal Health Commission is modifying a previously established infested zone while USDA and Texas Parks and Wildlife expand wildlife surveillance in the area"
+      },
+      {
+        "date": "2026-10-21",
+        "event": "Case 59: beef cow in Otero County, NM — the first case in Otero County, which becomes the twentieth county of the US outbreak, confirmed the same day as the Pecos County elk. New Mexico rises to 5 cases and the New Mexico Livestock Board established a minimum 12.4-mile infested zone around the affected animal near Piñon. US total reaches 58 animal cases with 7 active and 51 inactive across 20 counties in 2 states; 57 of the 58 are domestic animals and 1 is wildlife"
       }
     ]
   },
   "speciesBreakdown": [
     {
       "species": "Bovine (Cattle)",
-      "count": 24,
+      "count": 25,
       "percentage": 43
     },
     {
@@ -1068,7 +1100,12 @@
     {
       "species": "Caprine (Goats)",
       "count": 7,
-      "percentage": 13
+      "percentage": 12
+    },
+    {
+      "species": "Cervid (Elk)",
+      "count": 1,
+      "percentage": 2
     },
     {
       "species": "Equine (Horses)",
@@ -1078,7 +1115,7 @@
     {
       "species": "Ovine (Sheep)",
       "count": 16,
-      "percentage": 29
+      "percentage": 28
     }
   ],
   "stateResponses": [
