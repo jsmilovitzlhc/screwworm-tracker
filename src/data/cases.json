@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-22T00:00:00Z",
-  "lastChecked": "2026-10-22T09:44:57.361Z",
+  "lastUpdated": "2026-10-23T00:00:00Z",
+  "lastChecked": "2026-10-23T09:42:27.261Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -675,6 +675,30 @@
       "notes": "Sixth Brewster County case; fourth equine (horse) detection of the US outbreak and the second in Texas; domestic animal; confirmed per APHIS dashboard Oct 21"
     },
     {
+      "id": 60,
+      "date": "2026-10-20",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Val Verde",
+      "state": "TX",
+      "lat": 29.9,
+      "lng": -100.99,
+      "status": "active",
+      "notes": "Third Val Verde County case and the first bovine (cattle) detection in Val Verde County; the county's first case since the Aug 25 goat and its first active case since both earlier cases were reclassified inactive Sep 13; domestic animal; confirmed per APHIS dashboard Oct 20"
+    },
+    {
+      "id": 61,
+      "date": "2026-10-20",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Jeff Davis",
+      "state": "TX",
+      "lat": 30.5883,
+      "lng": -103.8947,
+      "status": "active",
+      "notes": "First Jeff Davis County case and the twenty-first county of the US outbreak; the county already sat under TAHC movement restrictions as a neighbour of the Pecos and Brewster County clusters but had no confirmed case of its own until now; domestic cattle; APHIS reports location at county level, so the coordinates are the county seat (Fort Davis); confirmed per APHIS dashboard Oct 20"
+    },
+    {
       "id": 58,
       "date": "2026-10-21",
       "species": "Cervid",
@@ -683,7 +707,7 @@
       "state": "TX",
       "lat": 30.8844,
       "lng": -103.4782,
-      "status": "active",
+      "status": "inactive",
       "notes": "First detection of New World screwworm in US wildlife and the sixth Pecos County case; hunter-harvested female elk on a game ranch, confirmed at the ARS Knipling-Bushland lab in Kerrville; TAHC is modifying a previously established infested zone and USDA/TPWD are expanding wildlife surveillance in the area; confirmed per APHIS announcement Oct 21"
     },
     {
@@ -697,6 +721,18 @@
       "lng": -105.3881,
       "status": "active",
       "notes": "First Otero County case and the twentieth county of the US outbreak; beef cow near Piñon, NM and New Mexico's fifth case; the NM Livestock Board set a minimum 12.4-mile infested zone around the animal; domestic animal; confirmed same day as the Pecos County elk per APHIS dashboard Oct 21"
+    },
+    {
+      "id": 62,
+      "date": "2026-10-22",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Hidalgo",
+      "state": "NM",
+      "lat": 32.3503,
+      "lng": -108.7073,
+      "status": "active",
+      "notes": "First Hidalgo County case and the twenty-second county of the US outbreak; New Mexico's fourth affected county and sixth case, in the state's bootheel adjoining the Grant County cluster, an area already inside a designated infested zone; domestic cattle; APHIS reports location at county level, so the coordinates are the county seat (Lordsburg); confirmed per APHIS dashboard Oct 22"
     }
   ],
   "quarantineZones": [
@@ -1077,30 +1113,46 @@
         "event": "Case 52 (Crockett County, TX goat, confirmed Sep 26) moved to inactive per the APHIS dashboard, clearing September of active cases — all 4 remaining active cases are now October detections (53 Brewster dog, 54 Pecos cattle, 55 Grant cattle, 56 Grant horse). US total stands at 55 domestic animal cases with 4 active and 51 inactive"
       },
       {
+        "date": "2026-10-20",
+        "event": "Case 60: cattle in Val Verde County, TX — the county's third case and its first bovine detection. Val Verde had been quiet since its Aug 16 sheep and Aug 25 goat, both of which were reclassified inactive on Sep 13, so this is its first active case in five weeks and marks the outbreak re-appearing in the Del Rio border corridor while the western clusters expand"
+      },
+      {
+        "date": "2026-10-20",
+        "event": "Case 61: cattle in Jeff Davis County, TX — the first case in Jeff Davis County, which becomes the twenty-first county of the US outbreak. The county was already under Texas Animal Health Commission movement restrictions as a neighbour of the Pecos and Brewster County clusters but had never recorded a confirmed case; Texas rises to 55 cases across 19 counties"
+      },
+      {
         "date": "2026-10-21",
         "event": "Case 58: hunter-harvested female elk in Pecos County, TX — the first detection of New World screwworm in US wildlife. The hunter reported the animal on a game ranch and the sample was confirmed at the ARS Knipling-Bushland U.S. Livestock Insects Research Laboratory in Kerrville. Cervid becomes the sixth species of the outbreak and the first that is neither livestock nor a companion animal; Pecos County rises to 6 cases and Texas to 53. The Texas Animal Health Commission is modifying a previously established infested zone while USDA and Texas Parks and Wildlife expand wildlife surveillance in the area"
       },
       {
         "date": "2026-10-21",
         "event": "Case 59: beef cow in Otero County, NM — the first case in Otero County, which becomes the twentieth county of the US outbreak, confirmed the same day as the Pecos County elk. New Mexico rises to 5 cases and the New Mexico Livestock Board established a minimum 12.4-mile infested zone around the affected animal near Piñon. US total reaches 58 animal cases with 7 active and 51 inactive across 20 counties in 2 states; 57 of the 58 are domestic animals and 1 is wildlife"
+      },
+      {
+        "date": "2026-10-22",
+        "event": "Case 62: cattle in Hidalgo County, NM — the first case in Hidalgo County, which becomes the twenty-second county of the US outbreak and New Mexico's fourth affected county. The detection is in the state's bootheel, adjoining the Grant County cluster and inside territory New Mexico had already designated an infested zone; New Mexico rises to 6 cases. US total reaches 61 animal cases with 9 active and 52 inactive across 22 counties in 2 states; 60 of the 61 are domestic animals and 1 is wildlife"
+      },
+      {
+        "date": "2026-10-22",
+        "event": "Case 58, the Pecos County elk and the outbreak's only wildlife detection, is reclassified from active to inactive per the APHIS dashboard — the first October case to be closed out, one day after it was confirmed. Pecos County drops to a single active case and all 9 remaining active cases are domestic animals"
       }
     ]
   },
   "speciesBreakdown": [
     {
       "species": "Bovine (Cattle)",
-      "count": 25,
-      "percentage": 43
+      "count": 28,
+      "percentage": 46
     },
     {
       "species": "Canine (Dogs)",
       "count": 5,
-      "percentage": 9
+      "percentage": 8
     },
     {
       "species": "Caprine (Goats)",
       "count": 7,
-      "percentage": 12
+      "percentage": 11
     },
     {
       "species": "Cervid (Elk)",
@@ -1115,7 +1167,7 @@
     {
       "species": "Ovine (Sheep)",
       "count": 16,
-      "percentage": 28
+      "percentage": 26
     }
   ],
   "stateResponses": [
