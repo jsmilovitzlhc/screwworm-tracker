@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-23T00:00:00Z",
-  "lastChecked": "2026-10-23T09:42:27.261Z",
+  "lastUpdated": "2026-10-26T00:00:00Z",
+  "lastChecked": "2026-10-26T09:40:10.411Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -623,7 +623,7 @@
       "state": "TX",
       "lat": 29.85,
       "lng": -103.18,
-      "status": "active",
+      "status": "inactive",
       "notes": "Fifth Brewster County case; fifth canine (dog) detection of the US outbreak and fourth in Texas; confirmed per APHIS dashboard (October 2026: 1 domestic case, 1 active) and Houston Public Media Oct 4"
     },
     {
@@ -733,6 +733,54 @@
       "lng": -108.7073,
       "status": "active",
       "notes": "First Hidalgo County case and the twenty-second county of the US outbreak; New Mexico's fourth affected county and sixth case, in the state's bootheel adjoining the Grant County cluster, an area already inside a designated infested zone; domestic cattle; APHIS reports location at county level, so the coordinates are the county seat (Lordsburg); confirmed per APHIS dashboard Oct 22"
+    },
+    {
+      "id": 63,
+      "date": "2026-10-23",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Hudspeth",
+      "state": "TX",
+      "lat": 31.9382,
+      "lng": -105.1916,
+      "status": "active",
+      "notes": "First Hudspeth County case and the twenty-third county of the US outbreak; Texas's nineteenth affected county, in the far-west corner of the state where Hudspeth runs from the Rio Grande and the Mexican border north to the New Mexico state line; the county had declared a local state of disaster over the screwworm threat in June but had no confirmed case of its own until now; domestic cattle; one of two Hudspeth cases confirmed the same day; APHIS reports location at county level, so the coordinates are the Dell City farming valley in the north of the county (the county seat is Sierra Blanca); confirmed per APHIS dashboard Oct 23"
+    },
+    {
+      "id": 64,
+      "date": "2026-10-23",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Hudspeth",
+      "state": "TX",
+      "lat": 31.9268,
+      "lng": -105.2074,
+      "status": "active",
+      "notes": "Second Hudspeth County case, confirmed the same day as the first — a same-day cluster in a county with no prior detection, which is how the Grant County, NM and Val Verde County, TX clusters also opened; domestic cattle; APHIS reports location at county level, so the coordinates are offset slightly from the first Hudspeth case in the Dell City farming valley so the two pins do not render on top of each other; confirmed per APHIS dashboard Oct 23"
+    },
+    {
+      "id": 65,
+      "date": "2026-10-24",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Dona Ana",
+      "state": "NM",
+      "lat": 32.3199,
+      "lng": -106.7637,
+      "status": "active",
+      "notes": "First Dona Ana County case and the twenty-fourth county of the US outbreak; New Mexico's fifth affected county and seventh case, extending the state's cluster east from Grant and Hidalgo into the Rio Grande valley above El Paso; Dona Ana holds the Santa Teresa port of entry, the border crossing officials had been preparing to reopen to Mexican livestock imports; domestic cattle; APHIS reports location at county level, so the coordinates are the county seat (Las Cruces); confirmed per APHIS dashboard Oct 24"
+    },
+    {
+      "id": 66,
+      "date": "2026-10-24",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Dona Ana",
+      "state": "NM",
+      "lat": 32.3071,
+      "lng": -106.7792,
+      "status": "active",
+      "notes": "Second Dona Ana County case and the FIRST ovine (sheep) detection in New Mexico — every one of the state's first seven cases was cattle, a horse or a dog, so this is the outbreak's seventeenth sheep case but New Mexico's first; New Mexico's eighth case; domestic animal, confirmed the same day as the Dona Ana cattle case; APHIS reports location at county level, so the coordinates are offset slightly from the first Dona Ana case near the county seat (Las Cruces) so the two pins do not render on top of each other; confirmed per APHIS dashboard Oct 24"
     }
   ],
   "quarantineZones": [
@@ -1135,14 +1183,30 @@
       {
         "date": "2026-10-22",
         "event": "Case 58, the Pecos County elk and the outbreak's only wildlife detection, is reclassified from active to inactive per the APHIS dashboard — the first October case to be closed out, one day after it was confirmed. Pecos County drops to a single active case and all 9 remaining active cases are domestic animals"
+      },
+      {
+        "date": "2026-10-23",
+        "event": "Cases 63 and 64: two cattle confirmed the same day in Hudspeth County, TX — the first cases in Hudspeth County, which becomes the twenty-third county of the US outbreak and Texas's nineteenth affected county. Hudspeth is in the far-west corner of the state, running from the Rio Grande and the Mexican border north to the New Mexico line, and had declared a local state of disaster over the screwworm threat back in June without ever recording a case of its own. The pair opens the county with a same-day cluster and pushes the outbreak roughly 150 miles northwest of the Jeff Davis and Pecos clusters, into the corridor between the Texas and New Mexico detections; Texas rises to 57 cases"
+      },
+      {
+        "date": "2026-10-24",
+        "event": "Case 65: cattle in Dona Ana County, NM — the first case in Dona Ana County, which becomes the twenty-fourth county of the US outbreak and New Mexico's fifth affected county. The detection extends the New Mexico cluster east from Grant and Hidalgo into the Rio Grande valley above El Paso, and Dona Ana holds the Santa Teresa port of entry — the border crossing state and federal officials had been preparing to reopen to Mexican livestock imports"
+      },
+      {
+        "date": "2026-10-24",
+        "event": "Case 66: sheep in Dona Ana County, NM — the first ovine detection in New Mexico, confirmed the same day as the Dona Ana cattle case. Every one of New Mexico's first seven cases was cattle, a horse or a dog, so although this is the seventeenth sheep case of the US outbreak it is the state's first, and it widens the species profile of the New Mexico cluster beyond cattle for the first time since the Grant County horses. New Mexico rises to 8 cases across 5 counties, 6 of them active. US total reaches 65 animal cases with 12 active and 53 inactive across 24 counties in 2 states; 64 of the 65 are domestic animals and 1 is wildlife"
+      },
+      {
+        "date": "2026-10-25",
+        "event": "Case 53, the Oct 2 Brewster County dog, is reclassified from active to inactive per the APHIS dashboard — the first of October's domestic cases to be closed out, and the only domestic inactive case the month has recorded. Brewster County drops to a single active case. All 12 remaining active cases are domestic animals and all are October detections, split 6 in Texas and 6 in New Mexico — the first time New Mexico, with 8 cases to Texas's 57, has carried half the outbreak's active caseload"
       }
     ]
   },
   "speciesBreakdown": [
     {
       "species": "Bovine (Cattle)",
-      "count": 28,
-      "percentage": 46
+      "count": 31,
+      "percentage": 48
     },
     {
       "species": "Canine (Dogs)",
@@ -1162,11 +1226,11 @@
     {
       "species": "Equine (Horses)",
       "count": 4,
-      "percentage": 7
+      "percentage": 6
     },
     {
       "species": "Ovine (Sheep)",
-      "count": 16,
+      "count": 17,
       "percentage": 26
     }
   ],
