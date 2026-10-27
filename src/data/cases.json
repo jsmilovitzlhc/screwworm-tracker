@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-26T00:00:00Z",
-  "lastChecked": "2026-10-26T09:40:10.411Z",
+  "lastUpdated": "2026-10-27T00:00:00Z",
+  "lastChecked": "2026-10-27T09:42:04.065Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -781,6 +781,18 @@
       "lng": -106.7792,
       "status": "active",
       "notes": "Second Dona Ana County case and the FIRST ovine (sheep) detection in New Mexico — every one of the state's first seven cases was cattle, a horse or a dog, so this is the outbreak's seventeenth sheep case but New Mexico's first; New Mexico's eighth case; domestic animal, confirmed the same day as the Dona Ana cattle case; APHIS reports location at county level, so the coordinates are offset slightly from the first Dona Ana case near the county seat (Las Cruces) so the two pins do not render on top of each other; confirmed per APHIS dashboard Oct 24"
+    },
+    {
+      "id": 67,
+      "date": "2026-10-26",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Luna",
+      "state": "NM",
+      "lat": 32.2687,
+      "lng": -107.7586,
+      "status": "active",
+      "notes": "First Luna County case and the twenty-fifth county of the US outbreak; New Mexico's sixth affected county and ninth case; domestic cattle, the thirty-second bovine case of the US outbreak; Luna closes the gap in the southwestern New Mexico cluster, sitting directly between Grant County to the west (3 cases since Sep 17, 2 still active) and Dona Ana County to the east (2 cases on Oct 24), so the state's detections now run unbroken along the Mexican border from Hidalgo through Luna to Dona Ana; Luna also holds the Columbus port of entry, which USDA reopened to Mexican cattle imports the same day this case was confirmed — the third crossing restored under the phased reopening, after Douglas, AZ and Santa Teresa, NM; APHIS reports location at county level, so the coordinates are the county seat (Deming), about 32 miles north of Columbus and the border; SU:28227:27, SS:12716:27; confirmed per APHIS dashboard Oct 26"
     }
   ],
   "quarantineZones": [
@@ -1199,13 +1211,17 @@
       {
         "date": "2026-10-25",
         "event": "Case 53, the Oct 2 Brewster County dog, is reclassified from active to inactive per the APHIS dashboard — the first of October's domestic cases to be closed out, and the only domestic inactive case the month has recorded. Brewster County drops to a single active case. All 12 remaining active cases are domestic animals and all are October detections, split 6 in Texas and 6 in New Mexico — the first time New Mexico, with 8 cases to Texas's 57, has carried half the outbreak's active caseload"
+      },
+      {
+        "date": "2026-10-26",
+        "event": "Case 67: cattle in Luna County, NM — the first case in Luna County, which becomes the twenty-fifth county of the US outbreak and New Mexico's sixth affected county. Luna closes the gap in the southwestern New Mexico cluster: it is bordered by Grant and Hidalgo to the west and Dona Ana to the east, so with this detection New Mexico's cases run unbroken along the Mexican border from Hidalgo through Luna to Dona Ana. The case was confirmed the same day USDA reopened the Columbus port of entry, in Luna County, to Mexican cattle imports — the third crossing restored under the phased reopening after Douglas, AZ and Santa Teresa, NM, and a route that normally carries a large share of the Mexican cattle entering the US. New Mexico rises to 9 cases across 6 counties, 7 of them active, which puts the state ahead of Texas on active cases for the first time in the outbreak — Texas holds 57 cases but only 6 active. US total reaches 66 animal cases with 13 active and 53 inactive across 25 counties in 2 states; 65 of the 66 are domestic animals and 1 is wildlife"
       }
     ]
   },
   "speciesBreakdown": [
     {
       "species": "Bovine (Cattle)",
-      "count": 31,
+      "count": 32,
       "percentage": 48
     },
     {
