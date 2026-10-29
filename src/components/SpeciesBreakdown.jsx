@@ -4,6 +4,8 @@ function fillClass(label) {
   if (s.includes('caprine') || s.includes('goat')) return 'caprine';
   if (s.includes('ovine') || s.includes('sheep')) return 'ovine';
   if (s.includes('cervid') || s.includes('elk')) return 'cervid';
+  if (s.includes('feline') || /\bcats?\b/.test(s)) return 'feline';
+  if (s.includes('equine') || s.includes('horse')) return 'equine';
   return 'canine';
 }
 
@@ -36,10 +38,10 @@ export default function SpeciesBreakdown({ breakdown }) {
           ))}
         </div>
         <div className="species-note">
-          <strong>Why non-livestock cases matter:</strong> Canine detections signal the screwworm fly is
-          established in the environment — not just transported via livestock. Dogs are typically infected
-          through open wounds. Two canine cases in separate states suggest wider environmental presence
-          than livestock-only cases would indicate.
+          <strong>Why non-livestock cases matter:</strong> Pet and wildlife detections signal the screwworm
+          fly is established in the environment — not just transported via livestock. Dogs and cats are
+          typically infected through open wounds. Companion-animal cases now span all three affected
+          states, which suggests wider environmental presence than livestock-only cases would indicate.
         </div>
       </div>
     </div>

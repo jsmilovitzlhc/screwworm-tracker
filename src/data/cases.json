@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-27T00:00:00Z",
-  "lastChecked": "2026-10-27T09:42:04.065Z",
+  "lastUpdated": "2026-10-29T00:00:00Z",
+  "lastChecked": "2026-10-29T09:48:54.633Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -793,6 +793,66 @@
       "lng": -107.7586,
       "status": "active",
       "notes": "First Luna County case and the twenty-fifth county of the US outbreak; New Mexico's sixth affected county and ninth case; domestic cattle, the thirty-second bovine case of the US outbreak; Luna closes the gap in the southwestern New Mexico cluster, sitting directly between Grant County to the west (3 cases since Sep 17, 2 still active) and Dona Ana County to the east (2 cases on Oct 24), so the state's detections now run unbroken along the Mexican border from Hidalgo through Luna to Dona Ana; Luna also holds the Columbus port of entry, which USDA reopened to Mexican cattle imports the same day this case was confirmed — the third crossing restored under the phased reopening, after Douglas, AZ and Santa Teresa, NM; APHIS reports location at county level, so the coordinates are the county seat (Deming), about 32 miles north of Columbus and the border; SU:28227:27, SS:12716:27; confirmed per APHIS dashboard Oct 26"
+    },
+    {
+      "id": 68,
+      "date": "2026-10-27",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "Dona Ana",
+      "state": "NM",
+      "lat": 32.3327,
+      "lng": -106.7483,
+      "status": "active",
+      "notes": "Third Dona Ana County case and New Mexico's tenth case; the sixth canine (dog) detection of the US outbreak and the first dog in Dona Ana, after the county's cattle and sheep cases on Oct 24 — so all three of the county's cases came inside four days and Dona Ana now spans livestock and companion animals; one of five cases confirmed across Oct 27-28, a cluster Border Report summarised as \"four dogs and a cat\" and the largest two-day run of the outbreak since the June Zavala cluster; domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other Dona Ana cases near the county seat (Las Cruces) so the pins do not render on top of each other; SU:28251:27, SS:12722:27; confirmed per APHIS dashboard Oct 27"
+    },
+    {
+      "id": 69,
+      "date": "2026-10-27",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "El Paso",
+      "state": "TX",
+      "lat": 31.6546,
+      "lng": -106.3033,
+      "status": "active",
+      "notes": "First El Paso County case and the TWENTY-SIXTH county of the US outbreak; Texas's twentieth affected county and fifty-eighth case, and the seventh canine (dog) detection overall; by far the most populous county the outbreak has reached — about 870,000 people — and the first case in a major metropolitan area rather than ranch country, which is why the Texas Animal Health Commission drew the infested zone across the whole of El Paso County; the dog was in Socorro, Texas per State Rep. Mary Gonzalez, so unlike most cases in this dataset the coordinates are the reported community rather than the county seat; El Paso County wraps the western tip of Texas between Dona Ana County, NM (4 cases, all active) and Ciudad Juarez, so this detection joins the Texas and New Mexico clusters into one continuous band along the Rio Grande; domestic animal; SU:28252:27, SS:12725:27; confirmed per APHIS dashboard Oct 27"
+    },
+    {
+      "id": 70,
+      "date": "2026-10-28",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "Cochise",
+      "state": "AZ",
+      "lat": 31.4484,
+      "lng": -109.9284,
+      "status": "active",
+      "notes": "First Cochise County case and the first detection of New World screwworm in ARIZONA — the TWENTY-SEVENTH county and the THIRD STATE of the US outbreak, after Texas and New Mexico, and the first new state since New Mexico's Lea County dog on Jun 7; the eighth canine (dog) detection overall; the dog was on a Cochise County ranch, where a local veterinarian found a maggot-infested wound on its back on Oct 26, and samples were tested and confirmed at the APHIS National Veterinary Services Laboratories in Ames, Iowa on Oct 28; APHIS and the Arizona Department of Agriculture are running a joint response under the APHIS NWS Response Playbook: a 20-km infested zone around the detection, animal movement controls for that area, increased live animal surveillance and trapping, sterile fly releases (roughly a million flies released in the Cochise County area) and targeted outreach to producers, veterinarians and communities, with other livestock on the ranch being evaluated; Cochise County borders Hidalgo County, NM (1 active case) to the east, so Arizona's first detection is contiguous with the existing southwestern New Mexico cluster rather than a long-range jump; Cochise also holds the Douglas port of entry — the FIRST crossing USDA reopened to Mexican cattle imports under the phased reopening, ahead of Santa Teresa, NM and Columbus, NM — and is the planned site of Arizona's sterile fly facility; APHIS has not disclosed the location within the county, so the coordinates are the county seat (Bisbee); SU:28258:27, SS:12741:27; confirmed per APHIS dashboard and APHIS announcement Oct 28"
+    },
+    {
+      "id": 71,
+      "date": "2026-10-28",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "Dona Ana",
+      "state": "NM",
+      "lat": 32.2943,
+      "lng": -106.7948,
+      "status": "active",
+      "notes": "Fourth Dona Ana County case and New Mexico's eleventh case; the ninth canine (dog) detection of the US outbreak and the county's second dog on consecutive days, after case 68 on Oct 27; Dona Ana is now the outbreak's LARGEST ACTIVE cluster, with 4 cases all active across cattle, sheep and two dogs, all confirmed inside five days — more active cases than any other county, though Crockett County, TX is still the largest cluster by total cases at 13, all of them long since closed; and Las Cruces sits inside the resulting infested zone; domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other Dona Ana cases near the county seat (Las Cruces) so the pins do not render on top of each other; SU:28277:27, SS:12742:27; confirmed per APHIS dashboard Oct 28"
+    },
+    {
+      "id": 72,
+      "date": "2026-10-28",
+      "species": "Feline",
+      "animal": "Cat",
+      "county": "Grant",
+      "state": "NM",
+      "lat": 32.7249,
+      "lng": -108.2653,
+      "status": "active",
+      "notes": "FIRST FELINE (CAT) DETECTION OF THE US OUTBREAK — a domestic cat, and the seventh species the outbreak has infected after cattle, sheep, goats, dogs, horses and one elk; APHIS records the species as \"Domestic Cat\"; fourth Grant County case and New Mexico's twelfth case, which makes Grant the state's joint-largest cluster alongside Dona Ana at 4 cases each; Grant's cases now run horse (Sep 17, inactive), cattle and horse (Oct 15, both active) and this cat, so 3 of its 4 are active; a cat is a second companion-animal species after dogs and, like the dog cases, it points to the fly being established in the local environment rather than moving with livestock shipments — cats are not transported under livestock permits and are not covered by the movement controls the response relies on; one of five cases confirmed across Oct 27-28, the cluster Border Report summarised as \"four dogs and a cat\"; domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other Grant cases near the county seat (Silver City) so the pins do not render on top of each other; SU:28278:27, SS:12743:27; confirmed per APHIS dashboard Oct 28"
     }
   ],
   "quarantineZones": [
@@ -1215,6 +1275,14 @@
       {
         "date": "2026-10-26",
         "event": "Case 67: cattle in Luna County, NM — the first case in Luna County, which becomes the twenty-fifth county of the US outbreak and New Mexico's sixth affected county. Luna closes the gap in the southwestern New Mexico cluster: it is bordered by Grant and Hidalgo to the west and Dona Ana to the east, so with this detection New Mexico's cases run unbroken along the Mexican border from Hidalgo through Luna to Dona Ana. The case was confirmed the same day USDA reopened the Columbus port of entry, in Luna County, to Mexican cattle imports — the third crossing restored under the phased reopening after Douglas, AZ and Santa Teresa, NM, and a route that normally carries a large share of the Mexican cattle entering the US. New Mexico rises to 9 cases across 6 counties, 7 of them active, which puts the state ahead of Texas on active cases for the first time in the outbreak — Texas holds 57 cases but only 6 active. US total reaches 66 animal cases with 13 active and 53 inactive across 25 counties in 2 states; 65 of the 66 are domestic animals and 1 is wildlife"
+      },
+      {
+        "date": "2026-10-27",
+        "event": "Cases 68 and 69: a dog in Dona Ana County, NM and a dog in El Paso County, TX. El Paso is the first case in the county and the twenty-sixth county of the US outbreak — Texas's twentieth affected county, its fifty-eighth case, and by far the most populous county the outbreak has reached at about 870,000 people. It is the first detection in a major metropolitan area rather than ranch country, and the Texas Animal Health Commission responded by drawing an infested zone across the whole of El Paso County; the dog was in Socorro, Texas. Because El Paso County wraps the western tip of Texas between Dona Ana County, NM and Ciudad Juarez, the Texas and New Mexico clusters are now one continuous band along the Rio Grande. The Dona Ana dog is the county's third case in four days, after cattle and sheep on Oct 24, and New Mexico's tenth case. Both are dogs, the outbreak's sixth and seventh canine detections"
+      },
+      {
+        "date": "2026-10-28",
+        "event": "ARIZONA BECOMES THE THIRD STATE. Case 70: a dog on a ranch in Cochise County, AZ — the first detection of New World screwworm in Arizona, the twenty-seventh county of the US outbreak, and the first new state since New Mexico's Lea County dog on Jun 7. A local veterinarian found a maggot-infested wound on the dog's back on Oct 26 and APHIS confirmed the sample at the National Veterinary Services Laboratories in Ames, Iowa. APHIS and the Arizona Department of Agriculture opened a joint response under the APHIS NWS Response Playbook: a 20-km infested zone around the detection, animal movement controls, increased live animal surveillance and trapping, sterile fly releases — about a million flies in the Cochise County area — and targeted outreach. Cochise borders Hidalgo County, NM, so Arizona's first case is contiguous with the southwestern New Mexico cluster rather than a long-range jump; it also holds the Douglas port of entry, the first crossing USDA reopened to Mexican cattle, and the planned site of Arizona's sterile fly facility. Two more New Mexico cases landed the same day: case 71, a second Dona Ana dog on consecutive days, and case 72, a DOMESTIC CAT in Grant County — the outbreak's FIRST FELINE DETECTION and its seventh species after cattle, sheep, goats, dogs, horses and one elk. Cats move outside the livestock permit system the response depends on, so like the dog cases the detection points to the fly being established locally rather than travelling with shipments. Five cases were confirmed across Oct 27-28 — four dogs and a cat, the outbreak's largest two-day run since June. US total reaches 71 animal cases with 18 active and 53 inactive across 27 counties in 3 states; 70 of the 71 are domestic animals and 1 is wildlife. New Mexico leads on active cases with 10 of the 18, from 12 cases across 6 counties, against Texas's 7 active from 58 cases and Arizona's 1"
       }
     ]
   },
@@ -1222,22 +1290,22 @@
     {
       "species": "Bovine (Cattle)",
       "count": 32,
-      "percentage": 48
+      "percentage": 45
     },
     {
       "species": "Canine (Dogs)",
-      "count": 5,
-      "percentage": 8
+      "count": 9,
+      "percentage": 13
     },
     {
       "species": "Caprine (Goats)",
       "count": 7,
-      "percentage": 11
+      "percentage": 10
     },
     {
       "species": "Cervid (Elk)",
       "count": 1,
-      "percentage": 2
+      "percentage": 1
     },
     {
       "species": "Equine (Horses)",
@@ -1245,9 +1313,14 @@
       "percentage": 6
     },
     {
+      "species": "Feline (Cats)",
+      "count": 1,
+      "percentage": 1
+    },
+    {
       "species": "Ovine (Sheep)",
       "count": 17,
-      "percentage": 26
+      "percentage": 24
     }
   ],
   "stateResponses": [
@@ -1255,7 +1328,7 @@
       "state": "Texas",
       "actions": [
         "Governor Abbott disaster declaration covering all 254 Texas counties",
-        "Quarantine zones in Zavala, Uvalde, La Salle, Webb, Gillespie, Kerr, Kimble, Edwards, Sutton, Val Verde, Tom Green, Coke, Schleicher, Terrell, Pecos, Medina, Bandera, Jim Hogg, Starr, Zapata counties",
+        "Quarantine zones in Zavala, Uvalde, La Salle, Webb, Gillespie, Kerr, Kimble, Edwards, Sutton, Val Verde, Tom Green, Coke, Schleicher counties; infested zone across El Paso County (added Oct 27, 2026)",
         "Mandatory livestock inspections within 150mi of cases",
         "Sterile fly release program activated (USDA/APHIS) from Moore Air Base, Edinburg",
         "Interstate movement permits required for all livestock",
@@ -1265,10 +1338,25 @@
     {
       "state": "New Mexico",
       "actions": [
-        "Emergency quarantine zone in Lea County",
-        "Enhanced surveillance at livestock markets",
-        "Coordination with TX and federal authorities",
-        "Public advisory to ranchers on wound monitoring"
+        "Infested zones across the southwestern border counties — Hidalgo, Luna, Grant, Dona Ana — plus Otero and the original Lea County zone",
+        "Las Cruces falls inside the Dona Ana County infested zone",
+        "Animal movement controls and permitting within infested zones",
+        "Enhanced surveillance at livestock markets and expanded fly trapping",
+        "Coordination with TX, AZ, and federal authorities",
+        "Public advisory to ranchers and pet owners on wound monitoring (ScrewwormNM.org)"
+      ]
+    },
+    {
+      "state": "Arizona",
+      "actions": [
+        "20-km infested zone established around the Cochise County detection (APHIS NWS Response Playbook)",
+        "Animal movement controls within the infested zone",
+        "Increased live animal surveillance and fly trapping",
+        "Sterile fly releases — roughly 1 million flies released in the Cochise County area",
+        "Targeted outreach to local producers, veterinarians, and communities",
+        "Joint APHIS / Arizona Department of Agriculture response; remaining livestock on the index ranch under evaluation",
+        "Sterile fly production facility planned for Douglas, Cochise County",
+        "Report suspected animal cases to Arizona Dept. of Agriculture (602-542-4293); infested wildlife to AZ Game and Fish (623-236-7201)"
       ]
     },
     {
