@@ -205,6 +205,8 @@ function normalizeSpecies(raw) {
   if (lower.includes('goat') || lower.includes('caprin')) return 'Caprine';
   if (lower.includes('horse') || lower.includes('equin')) return 'Equine';
   if (lower.includes('sheep') || lower.includes('ovin')) return 'Ovine';
+  if (/\bcat\b/.test(lower) || lower.includes('felin')) return 'Feline';
+  if (lower.includes('elk') || lower.includes('deer') || lower.includes('cervid')) return 'Cervid';
   if (lower.includes('pig') || lower.includes('swine') || lower.includes('porcin')) return 'Porcine';
   return raw.trim();
 }
@@ -220,6 +222,8 @@ function deriveAnimal(species, rawSpecies) {
   if (species === 'Caprine') return 'Goat';
   if (species === 'Equine') return 'Horse';
   if (species === 'Ovine') return 'Sheep';
+  if (species === 'Feline') return 'Cat';
+  if (species === 'Cervid') return lower.includes('deer') ? 'Deer' : 'Elk';
   if (species === 'Porcine') return 'Pig';
   return species;
 }

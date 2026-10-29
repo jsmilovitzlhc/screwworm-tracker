@@ -513,6 +513,14 @@ body {
   background: #8A5A2B;
 }
 
+.species-bar-fill.equine {
+  background: #7B4B94;
+}
+
+.species-bar-fill.feline {
+  background: #C25E00;
+}
+
 .species-note {
   background: var(--bg-alt);
   border-left: 3px solid var(--amber);
