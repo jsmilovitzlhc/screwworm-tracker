@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-30T00:00:00Z",
-  "lastChecked": "2026-10-30T09:48:59.182Z",
+  "lastUpdated": "2026-10-31T00:00:00Z",
+  "lastChecked": "2026-10-31T09:41:57.358Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -889,6 +889,18 @@
       "lng": -107.7462,
       "status": "active",
       "notes": "Second Luna County case and New Mexico's fourteenth case; the thirty-fifth bovine (cattle) detection of the US outbreak; this case was absent from the daily brief and was found by diffing the APHIS case-level export. Both of Luna's cases are cattle and both are active, three days apart — the county's first was Oct 26, which opened Luna as the twenty-fifth county of the outbreak. Luna sits directly between Grant County to the northwest (4 cases, 3 active) and Dona Ana County to the east (5 cases, all active), so New Mexico's detections still run unbroken along the Mexican border from Hidalgo through Luna to Dona Ana, and the two counties either side of Luna are now the state's two largest clusters. Luna also holds the Columbus port of entry, the third crossing USDA restored to Mexican cattle imports under the phased reopening, after Douglas, AZ and Santa Teresa, NM; this second case comes three days after that reopening. Confirmed the same day as the Dona Ana cow, taking New Mexico to 12 of the outbreak's 21 active cases — more than Texas (8) and Arizona (1) combined; domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the Oct 26 case near the county seat (Deming), about 32 miles north of Columbus and the border; SU:28286:27, SS:12753:27; confirmed per APHIS dashboard Oct 29"
+    },
+    {
+      "id": 76,
+      "date": "2026-10-30",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "Dona Ana",
+      "state": "NM",
+      "lat": 32.3513,
+      "lng": -106.7415,
+      "status": "active",
+      "notes": "Sixth Dona Ana County case and New Mexico's fifteenth case; the TENTH CANINE (dog) detection of the US outbreak and the county's THIRD DOG IN FOUR DAYS, after the Oct 27 dog (case 68) and the Oct 28 dog (case 71). Dona Ana remains the outbreak's LARGEST ACTIVE CLUSTER and widens its lead to a factor of two: 6 cases, all active, across three species — 2 cattle, 1 sheep and 3 dogs — against Grant County, NM at 3 active. It is also New Mexico's largest cluster by total cases, ahead of Grant at 4; Crockett County, TX is still the largest cluster by total cases overall at 13, though all 13 are long since closed. All six Dona Ana cases landed inside seven days: two on Oct 24, a two-day gap across Oct 25 and Oct 26, then one each on Oct 27, Oct 28, Oct 29 and Oct 30 — a four-day unbroken run. Half the cluster is now dogs, and dogs move outside the livestock permit system the response depends on, so a third canine detection in four days in one county points to the fly breeding locally rather than arriving with shipments; APHIS also confirmed a WILD FLY TRAP detection in Dona Ana County on Oct 29 (SU:28266:27), the first in New Mexico, which is independent evidence of the same thing — fly-trap detections are not animal cases and are not counted in this tracker. Las Cruces and the New Mexico State University campus both fall inside the resulting 12.4-mile infested zone. New Mexico now holds 13 of the outbreak's 22 active cases, more than Texas (8) and Arizona (1) combined. Domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other five Dona Ana cases near the county seat (Las Cruces) so the pins do not render on top of each other; SU:28348:27, SS:12774:27; confirmed per APHIS dashboard Oct 30"
     }
   ],
   "quarantineZones": [
@@ -1327,6 +1339,10 @@
       {
         "date": "2026-10-29",
         "event": "Cases 74 and 75: cattle in Dona Ana County, NM and cattle in Luna County, NM. Dona Ana's fifth case makes it the outbreak's largest active cluster outright — 5 cases, all active, across 2 cattle, 1 sheep and 2 dogs — and New Mexico's largest cluster by total cases, passing Grant. Luna takes its second case three days after its first. The outbreak reaches 74 animal cases with 21 active, and New Mexico now holds 12 of those 21 actives, more than Texas (8) and Arizona (1) combined, having had just 5 cases in total two weeks earlier."
+      },
+      {
+        "date": "2026-10-30",
+        "event": "Case 76: a dog in Dona Ana County, NM — the county's sixth case in seven days and its THIRD DOG IN FOUR DAYS, after the dogs of Oct 27 and Oct 28, and the tenth canine detection of the US outbreak. Dona Ana now holds 6 cases, all active, across three species (2 cattle, 1 sheep, 3 dogs), which doubles its lead as the outbreak's largest active cluster over Grant County, NM at 3. Half the cluster is dogs, which move outside the livestock permit system the response is built around; APHIS also confirmed the first WILD FLY TRAP detection in New Mexico in the same county on Oct 29, so both lines of evidence now point to the fly breeding locally around Las Cruces rather than arriving with shipments. The outbreak reaches 75 animal cases with 22 active and 53 inactive across 27 counties in 3 states; 74 of the 75 are domestic animals and 1 is wildlife. New Mexico holds 13 of the 22 actives from 15 cases across 6 counties — more than Texas (8 active from 59 cases) and Arizona (1) combined."
       }
     ]
   },
@@ -1338,8 +1354,8 @@
     },
     {
       "species": "Canine (Dogs)",
-      "count": 9,
-      "percentage": 12
+      "count": 10,
+      "percentage": 13
     },
     {
       "species": "Caprine (Goats)",
