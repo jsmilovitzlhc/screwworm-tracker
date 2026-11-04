@@ -6,6 +6,7 @@ function fillClass(label) {
   if (s.includes('cervid') || s.includes('elk')) return 'cervid';
   if (s.includes('feline') || /\bcats?\b/.test(s)) return 'feline';
   if (s.includes('equine') || s.includes('horse')) return 'equine';
+  if (s.includes('avian') || s.includes('chicken') || s.includes('poultry')) return 'avian';
   return 'canine';
 }
 
