@@ -521,6 +521,10 @@ body {
   background: #C25E00;
 }
 
+.species-bar-fill.avian {
+  background: #0F7B8A;
+}
+
 .species-note {
   background: var(--bg-alt);
   border-left: 3px solid var(--amber);
