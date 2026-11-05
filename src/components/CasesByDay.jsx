@@ -37,7 +37,7 @@ function pickLabeledBars(data) {
 export default function CasesByDay({ cases }) {
   const allSpecies = useMemo(() => {
     const s = new Set(cases.map(c => c.species));
-    return SPECIES_ORDER.filter(sp => s.has(sp));
+    return [...SPECIES_ORDER.filter(sp => s.has(sp)), ...[...s].filter(sp => !SPECIES_ORDER.includes(sp))];
   }, [cases]);
 
   const chartData = useMemo(() => {
@@ -122,7 +122,7 @@ export default function CasesByDay({ cases }) {
                 key={sp}
                 dataKey={sp}
                 stackId="species"
-                fill={SPECIES_COLORS[sp]}
+                fill={SPECIES_COLORS[sp] ?? '#888'}
                 radius={i === allSpecies.length - 1 ? [3, 3, 0, 0] : [0, 0, 0, 0]}
                 maxBarSize={40}
               />
@@ -141,7 +141,7 @@ export default function CasesByDay({ cases }) {
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.25rem 1rem', justifyContent: 'center', marginTop: '0.4rem' }}>
           {allSpecies.map(sp => (
             <div key={sp} style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: '0.7rem', color: '#666' }}>
-              <span style={{ width: 10, height: 10, borderRadius: 2, background: SPECIES_COLORS[sp], display: 'inline-block' }} />
+              <span style={{ width: 10, height: 10, borderRadius: 2, background: SPECIES_COLORS[sp] ?? '#888', display: 'inline-block' }} />
               {sp}
             </div>
           ))}
