@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LabelList } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceDot } from 'recharts';
 
 const SPECIES_COLORS = {
   Bovine: '#9B1B30',
@@ -9,9 +9,30 @@ const SPECIES_COLORS = {
   Equine: '#7B4B94',
   Cervid: '#8A5A2B',
   Feline: '#C25E00',
+  Avian: '#3E8E9E',
 };
 
-const SPECIES_ORDER = ['Bovine', 'Caprine', 'Canine', 'Ovine', 'Equine', 'Cervid', 'Feline'];
+const SPECIES_ORDER = ['Bovine', 'Caprine', 'Canine', 'Ovine', 'Equine', 'Cervid', 'Feline', 'Avian'];
+
+// A case counts from its confirmation date until the day it went inactive.
+function isActiveOn(c, day) {
+  if (c.date > day) return false;
+  if (c.status === 'active') return true;
+  return Boolean(c.inactiveDate) && day < c.inactiveDate;
+}
+
+// Only the bars worth reading get a number: today, the record high, and the earlier wave's peak.
+function pickLabeledBars(data) {
+  const last = data.length - 1;
+  const peakIn = (rows) => rows.reduce((best, d, i) => (d.total > rows[best].total ? i : best), 0);
+  const labeled = new Set([last]);
+  const overall = peakIn(data);
+  if (last - overall >= 14) labeled.add(overall);
+  const earlier = data.slice(0, Math.max(last - 30, 1));
+  const earlierPeak = peakIn(earlier);
+  if (earlier[earlierPeak].total > 0) labeled.add(earlierPeak);
+  return labeled;
+}
 
 export default function CasesByDay({ cases }) {
   const allSpecies = useMemo(() => {
@@ -20,20 +41,19 @@ export default function CasesByDay({ cases }) {
   }, [cases]);
 
   const chartData = useMemo(() => {
-    const start = new Date('2026-06-03T00:00:00');
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
+    const now = new Date();
+    const end = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
     const data = [];
 
-    for (let d = new Date(start); d <= today; d.setDate(d.getDate() + 1)) {
+    for (let d = new Date(Date.UTC(2026, 5, 3)); d.getTime() <= end; d.setUTCDate(d.getUTCDate() + 1)) {
       const key = d.toISOString().slice(0, 10);
       const row = {
         date: key,
-        label: d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+        label: d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' }),
       };
       let total = 0;
       for (const sp of allSpecies) {
-        const count = cases.filter(c => c.date <= key && c.status === 'active' && c.species === sp).length;
+        const count = cases.filter(c => c.species === sp && isActiveOn(c, key)).length;
         row[sp] = count;
         total += count;
       }
@@ -44,6 +64,8 @@ export default function CasesByDay({ cases }) {
   }, [cases, allSpecies]);
 
   const maxCases = Math.max(...chartData.map(d => d.total), 1);
+  const labeledBars = useMemo(() => pickLabeledBars(chartData), [chartData]);
+  const yMax = Math.ceil((maxCases + 3) / 15) * 15;
 
   const CustomTooltip = ({ active, payload, label }) => {
     if (!active || !payload?.length) return null;
@@ -77,20 +99,22 @@ export default function CasesByDay({ cases }) {
       <div className="bb-panel-header">Active Cases by Day — Species Breakdown</div>
       <div className="cases-by-day-chart">
         <ResponsiveContainer width="100%" height={240}>
-          <BarChart data={chartData} margin={{ top: 20, right: 4, bottom: 0, left: -20 }}>
+          <BarChart data={chartData} margin={{ top: 20, right: 12, bottom: 0, left: -20 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#E0E0E0" vertical={false} />
             <XAxis
               dataKey="label"
               tick={{ fontSize: 11, fill: '#666' }}
               tickLine={false}
               axisLine={{ stroke: '#E0E0E0' }}
+              minTickGap={24}
             />
             <YAxis
               allowDecimals={false}
               tick={{ fontSize: 11, fill: '#666' }}
               tickLine={false}
               axisLine={false}
-              domain={[0, maxCases + 1]}
+              domain={[0, yMax]}
+              ticks={Array.from({ length: yMax / 15 + 1 }, (_, i) => i * 15)}
             />
             <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(155, 27, 48, 0.06)' }} />
             {allSpecies.map((sp, i) => (
@@ -101,26 +125,29 @@ export default function CasesByDay({ cases }) {
                 fill={SPECIES_COLORS[sp]}
                 radius={i === allSpecies.length - 1 ? [3, 3, 0, 0] : [0, 0, 0, 0]}
                 maxBarSize={40}
-              >
-                {i === allSpecies.length - 1 && (
-                  <LabelList
-                    dataKey="total"
-                    position="top"
-                    style={{ fontSize: 11, fontWeight: 600, fill: '#444' }}
-                    formatter={(v) => v > 0 ? v : ''}
-                  />
-                )}
-              </Bar>
+              />
+            ))}
+            {[...labeledBars].map(i => (
+              <ReferenceDot
+                key={chartData[i].date}
+                x={chartData[i].label}
+                y={chartData[i].total}
+                r={0}
+                label={{ value: chartData[i].total, position: 'top', style: { fontSize: 11, fontWeight: 600, fill: '#444' } }}
+              />
             ))}
           </BarChart>
         </ResponsiveContainer>
-        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '0.4rem' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.25rem 1rem', justifyContent: 'center', marginTop: '0.4rem' }}>
           {allSpecies.map(sp => (
             <div key={sp} style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: '0.7rem', color: '#666' }}>
               <span style={{ width: 10, height: 10, borderRadius: 2, background: SPECIES_COLORS[sp], display: 'inline-block' }} />
               {sp}
             </div>
           ))}
+        </div>
+        <div style={{ fontSize: '0.65rem', color: '#888', textAlign: 'center', marginTop: '0.35rem' }}>
+          APHIS does not publish inactive dates. A case's end date is the first APHIS update showing it inactive.
         </div>
       </div>
     </>
