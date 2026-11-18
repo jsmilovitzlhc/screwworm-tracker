@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-04T00:00:00Z",
-  "lastChecked": "2026-11-04T10:50:32.178Z",
+  "lastUpdated": "2026-11-18T11:54:20.495Z",
+  "lastChecked": "2026-11-18T11:54:20.495Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -237,10 +237,10 @@
       "animal": "Sheep",
       "county": "Edwards",
       "state": "TX",
-      "lat": 29.9427,
-      "lng": -100.2356,
+      "lat": 29.987810885824565,
+      "lng": -100.20048911417544,
       "status": "inactive",
-      "notes": "Sixth Edwards County case; sheep"
+      "notes": "Detected via USDA dashboard"
     },
     {
       "id": 22,
@@ -321,10 +321,10 @@
       "animal": "Cattle",
       "county": "Uvalde",
       "state": "TX",
-      "lat": 29.2129,
-      "lng": -99.783,
+      "lat": 29.21291626177021,
+      "lng": -99.78298373822979,
       "status": "inactive",
-      "notes": "First Uvalde County case; detected via USDA dashboard"
+      "notes": "Detected via USDA dashboard"
     },
     {
       "id": 29,
@@ -552,7 +552,7 @@
       "lat": 29.89,
       "lng": -100.97,
       "status": "inactive",
-      "notes": "First Val Verde County case; domestic sheep; SU:24447:26, SS:11131:26; reclassified inactive Sep 13"
+      "notes": "First Val Verde County case; domestic sheep; SU:24447:26, SS:11131:26"
     },
     {
       "id": 48,
@@ -564,7 +564,7 @@
       "lat": 29.88,
       "lng": -100.96,
       "status": "inactive",
-      "notes": "Second Val Verde County case; domestic goat; new case per APHIS dashboard Aug 27; reclassified inactive Sep 13"
+      "notes": "Second Val Verde County case; domestic goat; new case per APHIS dashboard Aug 27"
     },
     {
       "id": 49,
@@ -647,7 +647,7 @@
       "state": "NM",
       "lat": 32.7349,
       "lng": -108.2753,
-      "status": "active",
+      "status": "inactive",
       "notes": "Second Grant County case; first bovine (cattle) detection in New Mexico; domestic animal; confirmed per APHIS dashboard Oct 15 alongside case 56 in the same county"
     },
     {
@@ -659,7 +659,7 @@
       "state": "NM",
       "lat": 32.7399,
       "lng": -108.2903,
-      "status": "active",
+      "status": "inactive",
       "notes": "Third Grant County case; third equine (horse) detection of the US outbreak and the second in New Mexico; domestic animal; same-day Grant County detection with case 55"
     },
     {
@@ -671,8 +671,20 @@
       "state": "TX",
       "lat": 29.86,
       "lng": -103.17,
-      "status": "active",
+      "status": "inactive",
       "notes": "Sixth Brewster County case; fourth equine (horse) detection of the US outbreak and the second in Texas; domestic animal; confirmed per APHIS dashboard Oct 21"
+    },
+    {
+      "id": 61,
+      "date": "2026-10-20",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Jeff Davis",
+      "state": "TX",
+      "lat": 30.5883,
+      "lng": -103.8947,
+      "status": "inactive",
+      "notes": "First Jeff Davis County case and the twenty-first county of the US outbreak; the county already sat under TAHC movement restrictions as a neighbour of the Pecos and Brewster County clusters but had no confirmed case of its own until now; domestic cattle; APHIS reports location at county level, so the coordinates are the county seat (Fort Davis); confirmed per APHIS dashboard Oct 20"
     },
     {
       "id": 58,
@@ -707,20 +719,8 @@
       "state": "TX",
       "lat": 29.9,
       "lng": -100.99,
-      "status": "active",
+      "status": "inactive",
       "notes": "Third Val Verde County case and the first bovine (cattle) detection in Val Verde County; the county's first case since the Aug 25 goat and its first active case since both earlier cases were reclassified inactive Sep 13; domestic animal; confirmed per APHIS dashboard Oct 20; DATE CORRECTED 2026-11-04: 2026-10-20 -> 2026-10-21 to match the APHIS confirmed date in the case-level export (SU:28048:27)"
-    },
-    {
-      "id": 61,
-      "date": "2026-10-20",
-      "species": "Bovine",
-      "animal": "Cattle",
-      "county": "Jeff Davis",
-      "state": "TX",
-      "lat": 30.5883,
-      "lng": -103.8947,
-      "status": "active",
-      "notes": "First Jeff Davis County case and the twenty-first county of the US outbreak; the county already sat under TAHC movement restrictions as a neighbour of the Pecos and Brewster County clusters but had no confirmed case of its own until now; domestic cattle; APHIS reports location at county level, so the coordinates are the county seat (Fort Davis); confirmed per APHIS dashboard Oct 20"
     },
     {
       "id": 62,
@@ -743,7 +743,7 @@
       "state": "TX",
       "lat": 31.9382,
       "lng": -105.1916,
-      "status": "active",
+      "status": "inactive",
       "notes": "First Hudspeth County case and the twenty-third county of the US outbreak; Texas's nineteenth affected county, in the far-west corner of the state where Hudspeth runs from the Rio Grande and the Mexican border north to the New Mexico state line; the county had declared a local state of disaster over the screwworm threat in June but had no confirmed case of its own until now; domestic cattle; one of two Hudspeth cases confirmed the same day; APHIS reports location at county level, so the coordinates are the Dell City farming valley in the north of the county (the county seat is Sierra Blanca); confirmed per APHIS dashboard Oct 23; DATE CORRECTED 2026-11-04: 2026-10-23 -> 2026-10-22 to match the APHIS confirmed date in the case-level export (SU:28176:27)"
     },
     {
@@ -755,7 +755,7 @@
       "state": "TX",
       "lat": 31.9268,
       "lng": -105.2074,
-      "status": "active",
+      "status": "inactive",
       "notes": "Second Hudspeth County case, confirmed the same day as the first — a same-day cluster in a county with no prior detection, which is how the Grant County, NM and Val Verde County, TX clusters also opened; domestic cattle; APHIS reports location at county level, so the coordinates are offset slightly from the first Hudspeth case in the Dell City farming valley so the two pins do not render on top of each other; confirmed per APHIS dashboard Oct 23"
     },
     {
@@ -795,18 +795,6 @@
       "notes": "First Luna County case and the twenty-fifth county of the US outbreak; New Mexico's sixth affected county and ninth case; domestic cattle, the thirty-second bovine case of the US outbreak; Luna closes the gap in the southwestern New Mexico cluster, sitting directly between Grant County to the west (3 cases since Sep 17, 2 still active) and Dona Ana County to the east (2 cases on Oct 24), so the state's detections now run unbroken along the Mexican border from Hidalgo through Luna to Dona Ana; Luna also holds the Columbus port of entry, which USDA reopened to Mexican cattle imports the same day this case was confirmed — the third crossing restored under the phased reopening, after Douglas, AZ and Santa Teresa, NM; APHIS reports location at county level, so the coordinates are the county seat (Deming), about 32 miles north of Columbus and the border; SU:28227:27, SS:12716:27; confirmed per APHIS dashboard Oct 26"
     },
     {
-      "id": 68,
-      "date": "2026-10-27",
-      "species": "Canine",
-      "animal": "Dog",
-      "county": "Dona Ana",
-      "state": "NM",
-      "lat": 32.3327,
-      "lng": -106.7483,
-      "status": "active",
-      "notes": "Third Dona Ana County case and New Mexico's tenth case; the sixth canine (dog) detection of the US outbreak and the first dog in Dona Ana, after the county's cattle and sheep cases on Oct 24 — so all three of the county's cases came inside four days and Dona Ana now spans livestock and companion animals; one of five cases confirmed across Oct 27-28, a cluster Border Report summarised as \"four dogs and a cat\" and the largest two-day run of the outbreak since the June Zavala cluster; domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other Dona Ana cases near the county seat (Las Cruces) so the pins do not render on top of each other; SU:28251:27, SS:12722:27; confirmed per APHIS dashboard Oct 27"
-    },
-    {
       "id": 69,
       "date": "2026-10-26",
       "species": "Canine",
@@ -817,6 +805,18 @@
       "lng": -106.3033,
       "status": "active",
       "notes": "First El Paso County case and the TWENTY-SIXTH county of the US outbreak; Texas's twentieth affected county and fifty-eighth case, and the seventh canine (dog) detection overall; by far the most populous county the outbreak has reached — about 870,000 people — and the first case in a major metropolitan area rather than ranch country, which is why the Texas Animal Health Commission drew the infested zone across the whole of El Paso County; the dog was in Socorro, Texas per State Rep. Mary Gonzalez, so unlike most cases in this dataset the coordinates are the reported community rather than the county seat; El Paso County wraps the western tip of Texas between Dona Ana County, NM (4 cases, all active) and Ciudad Juarez, so this detection joins the Texas and New Mexico clusters into one continuous band along the Rio Grande; domestic animal; SU:28252:27, SS:12725:27; confirmed per APHIS dashboard Oct 27; DATE CORRECTED 2026-11-04: 2026-10-27 -> 2026-10-26 to match the APHIS confirmed date in the case-level export (SU:28252:27)"
+    },
+    {
+      "id": 68,
+      "date": "2026-10-27",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "Dona Ana",
+      "state": "NM",
+      "lat": 32.3327,
+      "lng": -106.7483,
+      "status": "active",
+      "notes": "Third Dona Ana County case and New Mexico's tenth case; the sixth canine (dog) detection of the US outbreak and the first dog in Dona Ana, after the county's cattle and sheep cases on Oct 24 — so all three of the county's cases came inside four days and Dona Ana now spans livestock and companion animals; one of five cases confirmed across Oct 27-28, a cluster Border Report summarised as \"four dogs and a cat\" and the largest two-day run of the outbreak since the June Zavala cluster; domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other Dona Ana cases near the county seat (Las Cruces) so the pins do not render on top of each other; SU:28251:27, SS:12722:27; confirmed per APHIS dashboard Oct 27"
     },
     {
       "id": 70,
@@ -851,7 +851,7 @@
       "state": "NM",
       "lat": 32.7249,
       "lng": -108.2653,
-      "status": "active",
+      "status": "inactive",
       "notes": "FIRST FELINE (CAT) DETECTION OF THE US OUTBREAK — a domestic cat, and the seventh species the outbreak has infected after cattle, sheep, goats, dogs, horses and one elk; APHIS records the species as \"Domestic Cat\"; fourth Grant County case and New Mexico's twelfth case, which makes Grant the state's joint-largest cluster alongside Dona Ana at 4 cases each; Grant's cases now run horse (Sep 17, inactive), cattle and horse (Oct 15, both active) and this cat, so 3 of its 4 are active; a cat is a second companion-animal species after dogs and, like the dog cases, it points to the fly being established in the local environment rather than moving with livestock shipments — cats are not transported under livestock permits and are not covered by the movement controls the response relies on; one of five cases confirmed across Oct 27-28, the cluster Border Report summarised as \"four dogs and a cat\"; domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other Grant cases near the county seat (Silver City) so the pins do not render on top of each other; SU:28278:27, SS:12743:27; confirmed per APHIS dashboard Oct 28"
     },
     {
@@ -951,18 +951,6 @@
       "notes": "Fifth Grant County case and New Mexico's eighteenth case; the thirty-eighth bovine (cattle) detection of the US outbreak and the county's SECOND head of cattle, after the Oct 15 calf. Grant now holds 5 cases across four species — 2 cattle, 2 horses and the Oct 28 domestic cat that was the outbreak's first feline detection — with 4 active; its only inactive case is the Sep 17 horse that was New Mexico's second case of the outbreak and the detection that opened the county. That makes Grant the second-largest active cluster of the outbreak behind Dona Ana, and the two of them, either side of Luna County, account for 12 of New Mexico's 16 active cases. Confirmed the same day as the two Dona Ana cases (78 and 79) — three New Mexico cases in one day, the state's largest single-day total of the outbreak. New Mexico now holds 16 of the outbreak's 25 active cases, nearly twice Texas (8) and Arizona (1) combined, from 18 total cases against Texas's 60. Grant sits in the southwestern cluster that runs unbroken along the Mexican border from Hidalgo through Luna to Dona Ana, and it borders Cochise County, AZ, where the outbreak's only Arizona case was confirmed Oct 28. Domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other Grant cases near the county seat (Silver City) so the pins do not render on top of each other; SU:28411:27, SS:12787:27; confirmed per APHIS dashboard Oct 31; DATE CORRECTED 2026-11-04: 2026-10-31 -> 2026-10-30 to match the APHIS confirmed date in the case-level export (SU:28411:27)"
     },
     {
-      "id": 81,
-      "date": "2026-10-30",
-      "species": "Equine",
-      "animal": "Horse",
-      "county": "Grant",
-      "state": "NM",
-      "lat": 32.7199,
-      "lng": -108.2853,
-      "status": "active",
-      "notes": "Sixth Grant County case and the SIXTH EQUINE (horse) detection of the US outbreak, the county's THIRD horse after the Sep 17 case that opened the county and the Oct 15 case. BACKFILL: this row was absent from the Nov 2 APHIS export and was found by reconciling the full case-level export, not from any announcement or brief. Confirmed Oct 30 alongside case 82 (a Grant dog), three Luna County cases and an Otero horse — six cases on one day, and with cases 78, 79 and 80 redated to Oct 30 by this same reconciliation, Oct 30 becomes the outbreak's largest single day at ELEVEN cases. Grant now holds 7 cases across FOUR species — 2 cattle, 3 horses, 1 dog and the Oct 28 domestic cat that was the outbreak's first feline — with 6 active; its only closed case is the Sep 17 horse. That ties Grant with Dona Ana, Pecos and Crockett as the outbreak's most species-diverse counties, and no county has produced a fifth species. Horses are the species that carried the outbreak into New Mexico in the first place and the county keeps producing them. Domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other Grant cases near the county seat (Silver City) so the pins do not render on top of each other; SU:28412:27, SS:12800:27; confirmed per APHIS dashboard Oct 30"
-    },
-    {
       "id": 82,
       "date": "2026-10-30",
       "species": "Canine",
@@ -971,7 +959,7 @@
       "state": "NM",
       "lat": 32.7499,
       "lng": -108.2603,
-      "status": "active",
+      "status": "inactive",
       "notes": "Seventh Grant County case and GRANT'S FIRST DOG, the twelfth canine detection of the US outbreak. BACKFILL from the full case-level export, absent from the Nov 2 export. This is the case that makes Grant a FOUR-SPECIES county — cattle, horses, a cat and now a dog — tying Dona Ana, Pecos and Crockett at the outbreak's maximum. Companion animals now account for 2 of Grant's 7 cases, and dogs and cats move outside the livestock permit system the APHIS response depends on, which is the same pattern that has made the Dona Ana cluster hard to close: 3 of its 8 cases are dogs. Confirmed Oct 30 with case 81 and the Luna and Otero cases. Domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other Grant cases near the county seat (Silver City) so the pins do not render on top of each other; SU:28418:27, SS:12798:27; confirmed per APHIS dashboard Oct 30"
     },
     {
@@ -988,7 +976,7 @@
     },
     {
       "id": 84,
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "species": "Canine",
       "animal": "Dog",
       "county": "Luna",
@@ -997,30 +985,6 @@
       "lng": -107.7338,
       "status": "active",
       "notes": "Fourth Luna County case and LUNA'S FIRST DOG, the eleventh canine detection of the US outbreak. BACKFILL from the full case-level export, absent from the Nov 2 export. Confirmed Oct 30 with cases 83 and 85, the three cases that took Luna from 2 to 5 in one day. This is Luna's second species, and it leaves Hidalgo as the only New Mexico border-corridor county with more than one case that has produced nothing but cattle — Luna, Grant and Dona Ana all now carry companion-animal detections. Dogs are now 14 of the outbreak's 99 animal cases and 7 of the 42 active, and they are the clearest signal that the fly is in the environment rather than moving with livestock shipments, because dogs are not shipped on permits. Domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other Luna cases near the county seat (Deming) so the pins do not render on top of each other; SU:28415:27, SS:12795:27; confirmed per APHIS dashboard Oct 30"
-    },
-    {
-      "id": 85,
-      "date": "2026-10-30",
-      "species": "Bovine",
-      "animal": "Cattle",
-      "county": "Luna",
-      "state": "NM",
-      "lat": 32.2744,
-      "lng": -107.7834,
-      "status": "active",
-      "notes": "Fifth Luna County case and the fortieth bovine (cattle) detection of the US outbreak, the county's FOURTH head of cattle. BACKFILL from the full case-level export, absent from the Nov 2 export. The third of three Luna cases confirmed Oct 30, completing the county's jump from 2 cases to 5 in a single day — four cattle and one dog, all five active. Luna is now the outbreak's third-largest active cluster behind Dona Ana (7 active) and Grant (6 active), and the three of them together hold 18 of New Mexico's 26 active cases. New Mexico now carries 26 of the outbreak's 42 active cases from 29 total cases, against Texas's 14 active from 68 — the state with less than half of Texas's caseload holds nearly twice its active burden. Domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other Luna cases near the county seat (Deming) so the pins do not render on top of each other; SU:28417:27, SS:12797:27; confirmed per APHIS dashboard Oct 30"
-    },
-    {
-      "id": 86,
-      "date": "2026-10-30",
-      "species": "Equine",
-      "animal": "Horse",
-      "county": "Otero",
-      "state": "NM",
-      "lat": 32.6233,
-      "lng": -105.3757,
-      "status": "active",
-      "notes": "Second Otero County case and the SEVENTH EQUINE (horse) detection of the US outbreak, and OTERO'S FIRST HORSE after the Oct 21 cow that opened the county. BACKFILL from the full case-level export, absent from the Nov 2 export. Confirmed Oct 30 with the Grant pair and the three Luna cases. Otero matters geographically: it is the only New Mexico county in the outbreak that is NOT on the Mexican border, sitting north and east of Dona Ana across the Tularosa Basin, and it is the county that contains Alamogordo and Holloman AFB. A second case there, followed by a third on Nov 3 (case 97, another horse), means the detections are moving inland from the border corridor rather than staying pinned to it. All 3 Otero cases are active. Domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the Oct 21 case near the county seat (Alamogordo) so the pins do not render on top of each other; SU:28416:27, SS:12796:27; confirmed per APHIS dashboard Oct 30"
     },
     {
       "id": 87,
@@ -1057,6 +1021,54 @@
       "lng": -104.2371,
       "status": "inactive",
       "notes": "THE OUTBREAK'S FIRST AVIAN CASE — a chicken in Presidio County, TX, and the EIGHTH SPECIES of the US outbreak after cattle, sheep, goats, dogs, horses, a cat and the one elk. BACKFILL from the full case-level export, absent from the Nov 2 export. ALREADY INACTIVE on confirmation in the export, which the daily brief did not report; it is one of only two new cases in this batch of 20 that is not active. Third Presidio County case and the county's THIRD SPECIES, after the Sep 9 horse (inactive) and the Oct 28 cow (active). Poultry is a genuinely new exposure route for the response: screwworm larvae need an open wound, and backyard flocks are neither permitted nor inspected the way livestock are, so an avian case is only found if an owner reports it. Presidio sits on the Rio Grande in the Big Bend, directly across from Ojinaga, Chihuahua, and APHIS confirmed a wild fly trap detection in neighbouring Brewster County on Sep 25. Domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other two Presidio cases so the pins do not render on top of each other; SU:28390:27, SS:12789:27; confirmed per APHIS dashboard Oct 31"
+    },
+    {
+      "id": 101,
+      "date": "2026-10-31",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Greenlee",
+      "state": "AZ",
+      "lat": 33.0566,
+      "lng": -109.302,
+      "status": "active",
+      "notes": "First Greenlee County case and Arizona's second county after Cochise. APHIS reports location at county level, so the pin is approximate; SU:28469:27, SS:12827:27; confirmed per APHIS dashboard 2026-11-03."
+    },
+    {
+      "id": 81,
+      "date": "2026-11-01",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Grant",
+      "state": "NM",
+      "lat": 32.7199,
+      "lng": -108.2853,
+      "status": "active",
+      "notes": "Sixth Grant County case and the SIXTH EQUINE (horse) detection of the US outbreak, the county's THIRD horse after the Sep 17 case that opened the county and the Oct 15 case. BACKFILL: this row was absent from the Nov 2 APHIS export and was found by reconciling the full case-level export, not from any announcement or brief. Confirmed Oct 30 alongside case 82 (a Grant dog), three Luna County cases and an Otero horse — six cases on one day, and with cases 78, 79 and 80 redated to Oct 30 by this same reconciliation, Oct 30 becomes the outbreak's largest single day at ELEVEN cases. Grant now holds 7 cases across FOUR species — 2 cattle, 3 horses, 1 dog and the Oct 28 domestic cat that was the outbreak's first feline — with 6 active; its only closed case is the Sep 17 horse. That ties Grant with Dona Ana, Pecos and Crockett as the outbreak's most species-diverse counties, and no county has produced a fifth species. Horses are the species that carried the outbreak into New Mexico in the first place and the county keeps producing them. Domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other Grant cases near the county seat (Silver City) so the pins do not render on top of each other; SU:28412:27, SS:12800:27; confirmed per APHIS dashboard Oct 30"
+    },
+    {
+      "id": 85,
+      "date": "2026-11-01",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Luna",
+      "state": "NM",
+      "lat": 32.2744,
+      "lng": -107.7834,
+      "status": "active",
+      "notes": "Fifth Luna County case and the fortieth bovine (cattle) detection of the US outbreak, the county's FOURTH head of cattle. BACKFILL from the full case-level export, absent from the Nov 2 export. The third of three Luna cases confirmed Oct 30, completing the county's jump from 2 cases to 5 in a single day — four cattle and one dog, all five active. Luna is now the outbreak's third-largest active cluster behind Dona Ana (7 active) and Grant (6 active), and the three of them together hold 18 of New Mexico's 26 active cases. New Mexico now carries 26 of the outbreak's 42 active cases from 29 total cases, against Texas's 14 active from 68 — the state with less than half of Texas's caseload holds nearly twice its active burden. Domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other Luna cases near the county seat (Deming) so the pins do not render on top of each other; SU:28417:27, SS:12797:27; confirmed per APHIS dashboard Oct 30"
+    },
+    {
+      "id": 86,
+      "date": "2026-11-01",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Otero",
+      "state": "NM",
+      "lat": 32.6233,
+      "lng": -105.3757,
+      "status": "active",
+      "notes": "Second Otero County case and the SEVENTH EQUINE (horse) detection of the US outbreak, and OTERO'S FIRST HORSE after the Oct 21 cow that opened the county. BACKFILL from the full case-level export, absent from the Nov 2 export. Confirmed Oct 30 with the Grant pair and the three Luna cases. Otero matters geographically: it is the only New Mexico county in the outbreak that is NOT on the Mexican border, sitting north and east of Dona Ana across the Tularosa Basin, and it is the county that contains Alamogordo and Holloman AFB. A second case there, followed by a third on Nov 3 (case 97, another horse), means the detections are moving inland from the border corridor rather than staying pinned to it. All 3 Otero cases are active. Domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the Oct 21 case near the county seat (Alamogordo) so the pins do not render on top of each other; SU:28416:27, SS:12796:27; confirmed per APHIS dashboard Oct 30"
     },
     {
       "id": 90,
@@ -1189,6 +1201,510 @@
       "lng": -103.4632,
       "status": "active",
       "notes": "Ninth Pecos County, TX animal case and the twentieth ovine (sheep) detection of the US outbreak. It carries tracker id 100 but is the NINETY-NINTH record: ids have never been contiguous, because id 15 was never used. 99 records against APHIS's 99 animal cases is the point of this sync — the two counts agree exactly for the first time since the tracker started falling behind. The third of three Pecos sheep confirmed Nov 3. Pecos now holds 9 animal cases, more than any county except Crockett's 13, and unlike Crockett — closed since September, all 13 inactive — Pecos has 3 active. Texas's 14 active cases now sit almost entirely in the far-west corridor: Pecos 3, Hudspeth 3, Jeff Davis 2, Brewster, Presidio, El Paso, Starr, Zapata and Val Verde. The Hill Country and South Texas clusters that opened the outbreak in June are closed apart from the two new South Texas cases in this batch. Domestic animal; APHIS reports location at county level, so the coordinates are offset slightly from the other Pecos cases near the county seat (Fort Stockton) so the pins do not render on top of each other; SU:28460:27, SS:12815:27; confirmed per APHIS dashboard Nov 3"
+    },
+    {
+      "id": 102,
+      "date": "2026-11-03",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Dona Ana",
+      "state": "NM",
+      "lat": 32.3769,
+      "lng": -106.7187,
+      "status": "active",
+      "notes": "Ninth Dona Ana County case. APHIS reports location at county level, so the pin is approximate; SU:28470:27, SS:12825:27; confirmed per APHIS dashboard 2026-11-03."
+    },
+    {
+      "id": 103,
+      "date": "2026-11-03",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "Dona Ana",
+      "state": "NM",
+      "lat": 32.2687,
+      "lng": -106.8218,
+      "status": "active",
+      "notes": "Tenth Dona Ana County case. APHIS reports location at county level, so the pin is approximate; SU:28530:27, SS:12828:27; confirmed per APHIS dashboard 2026-11-03."
+    },
+    {
+      "id": 104,
+      "date": "2026-11-03",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Grant",
+      "state": "NM",
+      "lat": 32.7549,
+      "lng": -108.2553,
+      "status": "active",
+      "notes": "Eighth Grant County case. APHIS reports location at county level, so the pin is approximate; SU:28529:27, SS:12826:27; confirmed per APHIS dashboard 2026-11-03."
+    },
+    {
+      "id": 105,
+      "date": "2026-11-03",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "Hidalgo",
+      "state": "NM",
+      "lat": 32.3389,
+      "lng": -108.6949,
+      "status": "active",
+      "notes": "Fifth Hidalgo County case and the county's first dog. APHIS reports location at county level, so the pin is approximate; SU:28468:27, SS:12824:27; confirmed per APHIS dashboard 2026-11-03."
+    },
+    {
+      "id": 106,
+      "date": "2026-11-03",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Sierra",
+      "state": "NM",
+      "lat": 33.1284,
+      "lng": -107.2528,
+      "status": "active",
+      "notes": "First Sierra County case. APHIS reports location at county level, so the pin is approximate; SU:28466:27, SS:12823:27; confirmed per APHIS dashboard 2026-11-03."
+    },
+    {
+      "id": 107,
+      "date": "2026-11-03",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Hudspeth",
+      "state": "TX",
+      "lat": 31.9559,
+      "lng": -105.1688,
+      "status": "active",
+      "notes": "Fourth Hudspeth County case and the county's first horse. APHIS reports location at county level, so the pin is approximate; SU:28471:27, SS:12832:27; confirmed per APHIS dashboard 2026-11-03."
+    },
+    {
+      "id": 108,
+      "date": "2026-11-03",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Hudspeth",
+      "state": "TX",
+      "lat": 31.9154,
+      "lng": -105.2188,
+      "status": "active",
+      "notes": "Fifth Hudspeth County case. APHIS reports location at county level, so the pin is approximate; SU:28513:27, SS:12831:27; confirmed per APHIS dashboard 2026-11-03."
+    },
+    {
+      "id": 109,
+      "date": "2026-11-03",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Hudspeth",
+      "state": "TX",
+      "lat": 31.9673,
+      "lng": -105.1574,
+      "status": "active",
+      "notes": "Sixth Hudspeth County case. APHIS reports location at county level, so the pin is approximate; SU:28514:27, SS:12830:27; confirmed per APHIS dashboard 2026-11-03."
+    },
+    {
+      "id": 110,
+      "date": "2026-11-04",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Greenlee",
+      "state": "AZ",
+      "lat": 33.0452,
+      "lng": -109.2906,
+      "status": "active",
+      "notes": "Second Greenlee County case. APHIS reports location at county level, so the pin is approximate; SU:28539:27, SS:12842:27; confirmed per APHIS dashboard 2026-11-04."
+    },
+    {
+      "id": 111,
+      "date": "2026-11-04",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Eddy",
+      "state": "NM",
+      "lat": 32.4207,
+      "lng": -104.2288,
+      "status": "active",
+      "notes": "First Eddy County case. APHIS reports location at county level, so the pin is approximate; SU:28536:27, SS:12838:27; confirmed per APHIS dashboard 2026-11-04."
+    },
+    {
+      "id": 112,
+      "date": "2026-11-04",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Otero",
+      "state": "NM",
+      "lat": 32.6347,
+      "lng": -105.3633,
+      "status": "active",
+      "notes": "Fourth Otero County case. APHIS reports location at county level, so the pin is approximate; SU:28535:27, SS:12837:27; confirmed per APHIS dashboard 2026-11-04."
+    },
+    {
+      "id": 113,
+      "date": "2026-11-04",
+      "species": "Cervid",
+      "animal": "Elk",
+      "county": "Jeff Davis",
+      "state": "TX",
+      "lat": 30.6111,
+      "lng": -103.8699,
+      "status": "inactive",
+      "notes": "Third Jeff Davis County case and the second wildlife detection of the US outbreak; already inactive in the APHIS export. APHIS reports location at county level, so the pin is approximate; SU:28524:27, SS:12841:27; confirmed per APHIS dashboard 2026-11-04."
+    },
+    {
+      "id": 114,
+      "date": "2026-11-04",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Starr",
+      "state": "TX",
+      "lat": 26.5789,
+      "lng": -98.7421,
+      "status": "active",
+      "notes": "Third Starr County case. APHIS reports location at county level, so the pin is approximate; SU:28517:27, SS:12840:27; confirmed per APHIS dashboard 2026-11-04."
+    },
+    {
+      "id": 119,
+      "date": "2026-11-04",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "Sierra",
+      "state": "NM",
+      "lat": 33.10397783489252,
+      "lng": -107.16161629940125,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-04. APHIS reports location at county level, so the pin is approximate; SU:28552:27, SS:12845:27."
+    },
+    {
+      "id": 117,
+      "date": "2026-11-05",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Hudspeth",
+      "state": "TX",
+      "lat": 31.479362349280233,
+      "lng": -105.35397294550971,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-05. APHIS reports location at county level, so the pin is approximate; SU:28534:27, SS:12848:27."
+    },
+    {
+      "id": 118,
+      "date": "2026-11-05",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Mitchell",
+      "state": "TX",
+      "lat": 32.292409934075685,
+      "lng": -100.92696437869432,
+      "status": "active",
+      "notes": "TEXAS'S NORTHERNMOST CASE OF THE OUTBREAK and the thirty-third or thirty-fourth county to be drawn in (Mitchell and Graham, AZ opened the same day). At 32.29N this cow sits north of every Hudspeth County case — the previous Texas high-water mark at 31.97N — and roughly 250 miles from the Mexican border, in the rolling ranch country around Colorado City off I-20 rather than the border brush where the outbreak has done nearly all its spreading. Mitchell is not adjacent to any county that had a case before it: the nearest is Reagan, which opened four days LATER, and Tom Green, quiet since Jun 11. A single case 250 miles inside the state with no infected neighbour is the signature of animal movement rather than fly spread, which is the thing the movement restrictions exist to catch. Domestic animal; APHIS reports location at county level, so coordinates are the county seat area; SU:28527:27; confirmed per APHIS case-level export Nov 5."
+    },
+    {
+      "id": 121,
+      "date": "2026-11-05",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "Graham",
+      "state": "AZ",
+      "lat": 32.936324859657276,
+      "lng": -109.882411118524,
+      "status": "active",
+      "notes": "ARIZONA'S THIRD COUNTY IN NINE DAYS and the state's third case, after the Cochise dog of Oct 28 and the Greenlee sheep of Oct 31. Graham sits north of Cochise and west of Greenlee, so Arizona's three counties now form a contiguous block running up the New Mexico line. Like Arizona's first two cases this is a companion animal, not livestock — the state has yet to record a single case in cattle, while cattle are 69 of the outbreak's 142 cases overall. ARIZONA HAS ALSO NEVER CLOSED A CASE: all seven of its detections are still active, the only state of the three where that is true. Domestic animal; APHIS reports location at county level; SU:28540:27; confirmed per APHIS case-level export Nov 5."
+    },
+    {
+      "id": 122,
+      "date": "2026-11-05",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Luna",
+      "state": "NM",
+      "lat": 32.20066330069865,
+      "lng": -107.7356311024508,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-05. APHIS reports location at county level, so the pin is approximate; SU:28575:27, SS:12856:27."
+    },
+    {
+      "id": 123,
+      "date": "2026-11-05",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Hudspeth",
+      "state": "TX",
+      "lat": 31.447446673912538,
+      "lng": -105.35253027797017,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-05. APHIS reports location at county level, so the pin is approximate; SU:28578:27, SS:12854:27."
+    },
+    {
+      "id": 120,
+      "date": "2026-11-06",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Luna",
+      "state": "NM",
+      "lat": 32.195169242171595,
+      "lng": -107.77586737251939,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-06. APHIS reports location at county level, so the pin is approximate; SU:28590:27, SS:12869:27."
+    },
+    {
+      "id": 124,
+      "date": "2026-11-06",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Luna",
+      "state": "NM",
+      "lat": 32.16938830426763,
+      "lng": -107.73068763995053,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-06. APHIS reports location at county level, so the pin is approximate; SU:28601:27, SS:12870:27."
+    },
+    {
+      "id": 128,
+      "date": "2026-11-08",
+      "species": "Canine",
+      "animal": "Dog",
+      "county": "El Paso",
+      "state": "TX",
+      "lat": 31.736613762977186,
+      "lng": -106.23527378097789,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-08. APHIS reports location at county level, so the pin is approximate; SU:28613:27, SS:12875:27."
+    },
+    {
+      "id": 129,
+      "date": "2026-11-08",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Hudspeth",
+      "state": "TX",
+      "lat": 31.432663436743834,
+      "lng": -105.37927013767447,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-08. APHIS reports location at county level, so the pin is approximate; SU:28612:27, SS:12874:27."
+    },
+    {
+      "id": 125,
+      "date": "2026-11-09",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Bandera",
+      "state": "TX",
+      "lat": 29.73397485296012,
+      "lng": -99.2435510497898,
+      "status": "active",
+      "notes": "THE OUTBREAK RETURNS TO THE HILL COUNTRY. Bandera is the first case east of the Pecos and north of the border brush since the Medina County cow of Jun 24 — the adjacent county — and the Gillespie County goat of Jun 8. Both of those closed months ago, so for five months the outbreak had no presence within 60 miles of San Antonio. This horse and the Reagan County cow confirmed the same day are the thirty-fifth and thirty-sixth counties. Bandera is roughly 150 miles from the border with no infected county between it and the frontier, which is the second long-range jump in five days after Mitchell on Nov 5. Domestic animal; APHIS reports location at county level; SU:28644:27; confirmed per APHIS case-level export Nov 9."
+    },
+    {
+      "id": 126,
+      "date": "2026-11-09",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Reagan",
+      "state": "TX",
+      "lat": 31.388596954906152,
+      "lng": -101.53902790561354,
+      "status": "active",
+      "notes": "THE OUTBREAK OPENS THE PERMIAN BASIN. Reagan County, around Big Lake, is new ground north of the Crockett and Pecos clusters that carried the outbreak through the summer — Crockett's 13 cases, the outbreak's largest county total, have all been inactive since September, and this cow is 40 miles north of that closed cluster. Confirmed the same day as the Bandera horse 200 miles to the southeast. Both are single cases in counties with no infected neighbour, and both are in the band of Texas between the border counties and Mitchell that had been clear until this month. Domestic animal; APHIS reports location at county level; SU:28638:27; confirmed per APHIS case-level export Nov 9."
+    },
+    {
+      "id": 127,
+      "date": "2026-11-09",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Val Verde",
+      "state": "TX",
+      "lat": 29.8565264788191,
+      "lng": -101.16765306218164,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-09. APHIS reports location at county level, so the pin is approximate; SU:28623:27, SS:12879:27."
+    },
+    {
+      "id": 130,
+      "date": "2026-11-10",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Cochise",
+      "state": "AZ",
+      "lat": 31.867535099338944,
+      "lng": -109.7777838686189,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-10. APHIS reports location at county level, so the pin is approximate; SU:28654:27, SS:12885:27."
+    },
+    {
+      "id": 131,
+      "date": "2026-11-11",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Otero",
+      "state": "NM",
+      "lat": 32.62046155776208,
+      "lng": -105.7799865617626,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-11. APHIS reports location at county level, so the pin is approximate; SU:28736:27, SS:12890:27."
+    },
+    {
+      "id": 132,
+      "date": "2026-11-11",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Terrell",
+      "state": "TX",
+      "lat": 30.250025097675145,
+      "lng": -102.06600025083846,
+      "status": "active",
+      "notes": "TERRELL COUNTY REOPENS after three months. Terrell's four earlier cases — a goat on Jun 22 and THREE CATTLE ON ONE PROPERTY on Jun 23, the outbreak's largest single-day county cluster until Oct 30, plus a sheep on Aug 5 — were all inactive. This cow restarts the county and is followed two days later by two sheep, taking Terrell to 8 cases with 3 active. Domestic animal; APHIS reports location at county level, so coordinates are offset slightly from the June cluster; SU:28732:27; confirmed per APHIS case-level export Nov 11."
+    },
+    {
+      "id": 133,
+      "date": "2026-11-11",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Val Verde",
+      "state": "TX",
+      "lat": 29.8899173949057,
+      "lng": -101.15403357485744,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-11. APHIS reports location at county level, so the pin is approximate; SU:28735:27, SS:12893:27."
+    },
+    {
+      "id": 138,
+      "date": "2026-11-12",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Hidalgo",
+      "state": "NM",
+      "lat": 31.869833679887073,
+      "lng": -108.78010835308433,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-12. APHIS reports location at county level, so the pin is approximate; SU:28842:27, SS:12902:27."
+    },
+    {
+      "id": 139,
+      "date": "2026-11-12",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Luna",
+      "state": "NM",
+      "lat": 32.168353911641944,
+      "lng": -107.77554003281745,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-12. APHIS reports location at county level, so the pin is approximate; SU:28798:27, SS:12898:27."
+    },
+    {
+      "id": 134,
+      "date": "2026-11-13",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Pima",
+      "state": "AZ",
+      "lat": 32.10816469727266,
+      "lng": -111.75845677114722,
+      "status": "active",
+      "notes": "THE WESTERNMOST CASE OF THE US OUTBREAK, at -111.76 — about 110 miles west of Cochise County, which had held the western limit since Oct 28, and the first detection in the Tucson basin. Pima is Arizona's fourth county and breaks the contiguous Cochise-Greenlee-Graham block along the New Mexico line: there is no infected county between Pima and Cochise. Arizona's fourth case is also its third equine or canine animal, and all four of its counties remain fully active. Confirmed the same day as the Goliad horse, which took the EASTERN limit 800 miles the other way — the two ends of the outbreak moved outward on the same day. Domestic animal; APHIS reports location at county level; SU:28890:27; confirmed per APHIS case-level export Nov 13."
+    },
+    {
+      "id": 135,
+      "date": "2026-11-13",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Goliad",
+      "state": "TX",
+      "lat": 28.661635706582317,
+      "lng": -97.44309336368106,
+      "status": "active",
+      "notes": "THE EASTERNMOST CASE OF THE US OUTBREAK BY A WIDE MARGIN, at -97.44 — about 75 miles east of Jim Hogg County, which had held the eastern limit since Jun 26, and the first case in the Coastal Bend, roughly 100 miles from the Gulf and east of the San Antonio-Laredo line the outbreak had never crossed. Goliad is the thirty-seventh county. It is also the most consequential of the six new counties in this window: it is outside the far-west and border corridors entirely, in the eastern Texas cattle country where herd density climbs sharply, and it is a HORSE rather than a cow, so it would not have been caught by cattle-movement paperwork. Confirmed the same day as the Pima County, AZ horse at the opposite end of the outbreak. Domestic animal; APHIS reports location at county level; SU:28799:27; confirmed per APHIS case-level export Nov 13."
+    },
+    {
+      "id": 136,
+      "date": "2026-11-13",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Jim Hogg",
+      "state": "TX",
+      "lat": 27.058905261151164,
+      "lng": -98.73800923256191,
+      "status": "active",
+      "notes": "THE JUNE SOUTH TEXAS CORRIDOR REOPENS. Jim Hogg's only previous case was a cow confirmed Jun 26, inactive for nearly five months, and the county had been the outbreak's eastern limit that whole time. This is the second of the original June counties to restart on Nov 13, alongside La Salle — and the Nov 2 Zapata and Nov 2/Nov 4/Nov 16 Starr cases sit in the same corridor. A county that closed out in June producing a new case in November is the clearest evidence in the data that an inactive county cannot be treated as a finished one, the same lesson Pecos delivered on Nov 3. Domestic animal; APHIS reports location at county level; SU:28738:27; confirmed per APHIS case-level export Nov 13."
+    },
+    {
+      "id": 137,
+      "date": "2026-11-13",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "La Salle",
+      "state": "TX",
+      "lat": 28.34534250848104,
+      "lng": -99.1033247153953,
+      "status": "active",
+      "notes": "LA SALLE RESTARTS AFTER FIVE MONTHS — the first of two cattle confirmed here on Nov 13. La Salle was one of the outbreak's ORIGINAL counties, holding cases 3 and 6 on Jun 7 and Jun 8, both inactive since the summer. These two cases are the county's third and fourth and its first since. La Salle, Jim Hogg (also reopened Nov 13), Zapata and Starr form the South Texas corridor between Laredo and the Rio Grande Valley that opened the outbreak in June, closed by midsummer, and is now generating cases again. Domestic animal; APHIS reports location at county level, so coordinates are offset slightly from the two June cases so the pins do not render on top of each other; SU:28746:27; confirmed per APHIS case-level export Nov 13."
+    },
+    {
+      "id": 140,
+      "date": "2026-11-13",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "La Salle",
+      "state": "TX",
+      "lat": 28.328415479332946,
+      "lng": -99.1078559536624,
+      "status": "active",
+      "notes": "The second of two La Salle County cattle confirmed Nov 13, and the county's fourth case. Same-day pairs in one county have been a recurring feature of this outbreak — Hudspeth on Oct 23 and Nov 5, Dona Ana on Oct 24, Luna on Nov 6, Terrell on Nov 13 — and they usually mean one premises rather than two separate introductions. La Salle's two June cases were also consecutive days. Domestic animal; APHIS reports location at county level, so coordinates are offset slightly from the other La Salle cases; SU:28901:27; confirmed per APHIS case-level export Nov 13."
+    },
+    {
+      "id": 141,
+      "date": "2026-11-13",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Terrell",
+      "state": "TX",
+      "lat": 30.20682601214866,
+      "lng": -102.09604979268933,
+      "status": "active",
+      "notes": "First of TWO SHEEP in Terrell County confirmed Nov 13, two days after the cow that reopened the county. Terrell reaches 8 animal cases — behind only Crockett (13), Dona Ana (10), and the three-way tie at 9 of Hudspeth, Luna and Pecos — with 3 active and its five summer cases closed. Sheep are the outbreak's second species at 24 cases, and all three sheep confirmed in this window were in counties reopening after months of quiet (Val Verde on Nov 9, Terrell twice on Nov 13). Domestic animal; APHIS reports location at county level, so coordinates are offset slightly from the other Terrell cases; SU:28847:27; confirmed per APHIS case-level export Nov 13."
+    },
+    {
+      "id": 142,
+      "date": "2026-11-13",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Terrell",
+      "state": "TX",
+      "lat": 30.2323822653782,
+      "lng": -102.10037813968533,
+      "status": "active",
+      "notes": "Second of two Terrell County sheep confirmed Nov 13 — the county's eighth animal case and the outbreak's twenty-fourth ovine detection. Domestic animal; APHIS reports location at county level, so coordinates are offset slightly from the other Terrell cases; SU:28848:27; confirmed per APHIS case-level export Nov 13."
+    },
+    {
+      "id": 145,
+      "date": "2026-11-14",
+      "species": "Equine",
+      "animal": "Horse",
+      "county": "Otero",
+      "state": "NM",
+      "lat": 32.59926362826136,
+      "lng": -105.77004097833026,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-14. APHIS reports location at county level, so the pin is approximate; SU:28969:27, SS:12931:27."
+    },
+    {
+      "id": 144,
+      "date": "2026-11-15",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Brewster",
+      "state": "TX",
+      "lat": 29.828290419514985,
+      "lng": -103.26178105285933,
+      "status": "active",
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-15. APHIS reports location at county level, so the pin is approximate; SU:28940:27, SS:12932:27."
+    },
+    {
+      "id": 143,
+      "date": "2026-11-16",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Starr",
+      "state": "TX",
+      "lat": 26.531982640743855,
+      "lng": -98.75308051272083,
+      "status": "active",
+      "notes": "THE SOUTHERNMOST CASE OF THE US OUTBREAK, at 26.53N in the Rio Grande Valley, and the most recent case in the tracker. Starr's fourth case and its third active: the county's first was a cow on Jul 18, then a dog on Nov 2 and a cow on Nov 4, so Starr has produced three cases in fifteen days after a single case in the preceding four months. Starr sits directly on the Rio Grande opposite Tamaulipas, which makes it the county where northward fly pressure from Mexico would show up first, and it is one of the South Texas corridor counties — with La Salle, Jim Hogg and Zapata — that all restarted this month. Domestic animal; APHIS reports location at county level, so coordinates are offset slightly from the other Starr cases; SU:28982:27; confirmed per APHIS case-level export Nov 16."
     }
   ],
   "quarantineZones": [
@@ -1212,6 +1728,17 @@
       ],
       "radiusMiles": 12,
       "established": "2026-06-08",
+      "active": true
+    },
+    {
+      "name": "Lea County Zone",
+      "state": "NM",
+      "center": [
+        32.7926,
+        -103.1568
+      ],
+      "radiusMiles": 12,
+      "established": "2026-06-09",
       "active": true
     },
     {
@@ -1290,17 +1817,6 @@
       "radiusMiles": 15,
       "established": "2026-06-26",
       "active": true
-    },
-    {
-      "name": "Lea County Zone",
-      "state": "NM",
-      "center": [
-        32.7926,
-        -103.1568
-      ],
-      "radiusMiles": 12,
-      "established": "2026-06-09",
-      "active": true
     }
   ],
   "tradeImpacts": [
@@ -1322,7 +1838,7 @@
       "date": "2026-06-06",
       "entity": "Texas Animal Health Commission",
       "action": "Livestock movement restrictions in affected counties",
-      "scope": "Zavala, La Salle counties",
+      "scope": "Zavala, La Salle, Andrews counties",
       "status": "active"
     },
     {
@@ -1341,16 +1857,6 @@
     }
   ],
   "internationalContext": {
-    "totalAnimalCases": 185000,
-    "totalHumanCases": 2100,
-    "affectedCountries": [
-      "Guatemala",
-      "Honduras",
-      "Nicaragua",
-      "Costa Rica",
-      "Panama",
-      "Mexico"
-    ],
     "timeline": [
       {
         "date": "2023-10",
@@ -1651,7 +2157,37 @@
       {
         "date": "2026-11-03",
         "event": "99 ANIMAL CASES, 42 ACTIVE — AND THE OUTBREAK OPENS A SECOND FRONT. A full reconciliation against the APHIS case-level export took the tracker from 79 cases to 99 (98 domestic, 1 wildlife) with 42 active and 57 inactive across 29 counties in 3 states, plus 5 fly-trap detections tracked as context only. November has produced 11 animal cases in three days. Three CATTLE in Hidalgo County, NM on Nov 3 (cases 94-96) took that county from 1 case to 4, all active; a second Otero HORSE (97) and THREE SHEEP in Pecos County, TX (98-100) landed the same day — and the Pecos sheep REOPENED a county the previous sync had recorded as completely closed, which is why a quiet county cannot be read as a finished one. Nov 2 brought the first new SOUTH TEXAS county in more than four months, ZAPATA (93), alongside a dog in Starr (92) 60 miles downriver, the Rio Grande Valley's first case since July. With Catron County, NM opening the northern end on Oct 31, the outbreak is now generating detections at both ends of the border simultaneously rather than along one advancing front. New Mexico holds 26 of the 42 active cases from just 29 total, against Texas's 14 active from 68; the New Mexico border corridor from Hidalgo through Luna and Grant to Dona Ana holds 24 cases, 22 of them active, with every county in it recording a case in the last five days. Case 71, a Dona Ana dog, is the only case in the entire export to change status, closing the first of that cluster's eight."
+      },
+      {
+        "date": "2026-11-04",
+        "event": "113 animal cases, 55 active. APHIS case-level data adds 14 cases confirmed Nov 3-4, for 111 domestic and 2 wildlife cases across 32 counties in 3 states, plus 5 fly-trap detections not counted as animal cases. Greenlee County, AZ, and Eddy and Sierra counties, NM, report their first cases."
+      },
+      {
+        "date": "2026-11-05",
+        "event": "TEXAS'S NORTHERNMOST CASE AND A THIRD ARIZONA COUNTY — five cases, and the outbreak starts jumping inland. MITCHELL COUNTY, TX (cattle) is Texas's northernmost detection of the outbreak at 32.29N, north of every Hudspeth County case and some 250 miles from the Mexican border in the ranch country off I-20 around Colorado City; it has no infected neighbour, which points to animal movement rather than fly spread. GRAHAM COUNTY, AZ (a dog) is Arizona's third county in nine days after Cochise and Greenlee, and its third companion animal — Arizona has still not recorded a case in cattle. Two more CATTLE in Hudspeth County, TX take that county to 8 cases, and a sixth cow lands in Luna County, NM. Mitchell and Graham are the outbreak's thirty-third and thirty-fourth counties."
+      },
+      {
+        "date": "2026-11-09",
+        "event": "TWO NEW TEXAS COUNTIES WELL INSIDE THE STATE — the outbreak returns to the Hill Country and opens the Permian Basin. BANDERA COUNTY, TX (a horse) is the first case within 60 miles of San Antonio since the Medina County cow of Jun 24 and the Gillespie goat of Jun 8, both long closed. REAGAN COUNTY, TX (cattle), around Big Lake, is new ground 40 miles north of the Crockett cluster — 13 cases, the outbreak's largest county total, inactive since September. A SHEEP in Val Verde County, TX the same day is that county's fourth case and its first since Oct 21. Bandera and Reagan are the thirty-fifth and thirty-sixth counties, and like Mitchell four days earlier both are single cases in counties with no infected neighbour: three long-range jumps inland in five days, into the band of Texas between the border counties and I-20 that had been clear all outbreak."
+      },
+      {
+        "date": "2026-11-13",
+        "event": "SEVEN CASES, THE OUTBREAK'S WIDEST DAY — BOTH ENDS MOVE OUTWARD AND THE JUNE SOUTH TEXAS CORRIDOR REOPENS. The largest single day since Nov 3 and tied with Oct 30. GOLIAD COUNTY, TX (a horse) is the EASTERNMOST case of the outbreak by a wide margin at -97.44, about 75 miles east of Jim Hogg, which had held the eastern limit since June — the first detection in the Coastal Bend, roughly 100 miles from the Gulf, in eastern Texas cattle country where herd density climbs sharply, and in a horse rather than a cow, so cattle-movement paperwork would not have caught it. PIMA COUNTY, AZ (a horse) is the WESTERNMOST case at -111.76, 110 miles west of Cochise and the first in the Tucson basin, with no infected county in between. The two ends of the outbreak, 800 miles apart, moved outward on the same day. Meanwhile TWO CATTLE IN LA SALLE COUNTY, TX and one in JIM HOGG COUNTY, TX restart two of the outbreak's ORIGINAL June counties — La Salle held cases 3 and 6 on Jun 7-8, Jim Hogg a single cow on Jun 26, all inactive for nearly five months — and TWO SHEEP in TERRELL COUNTY, TX follow the cow that reopened that county on Nov 11, where the June cluster of three cattle on one property had been closed since the summer. Three counties that closed in June and August all produced new cases inside three days. Goliad and Pima are the thirty-seventh and thirty-eighth counties."
+      },
+      {
+        "date": "2026-11-16",
+        "event": "142 ANIMAL CASES, 75 ACTIVE — AND THE OUTBREAK'S SOUTHERNMOST CASE. Cattle in STARR COUNTY, TX on Nov 16, at 26.53N on the Rio Grande opposite Tamaulipas, is the southernmost detection of the outbreak and Starr's third case in fifteen days after one in the preceding four months. The tracker stands at 142 animal cases — 140 domestic and 2 wildlife — with 75 active and 67 inactive across 38 counties in 3 states, plus 7 fly-trap detections (2 active) counted by APHIS under total cases but not under animal cases and tracked here as context only. OVER NOV 5-16 THE OUTBREAK ADDED 28 CASES AND ALL 28 ARE STILL ACTIVE, along with SIX NEW COUNTIES — Mitchell, Graham AZ, Bandera, Reagan, Goliad and Pima AZ. TEXAS SUPPLIED 18 OF THE 28, against New Mexico's 7 and Arizona's 3, reversing late October when New Mexico was driving the outbreak almost alone; New Mexico nonetheless still holds 37 of the 75 active cases from only 44 total, against Texas's 31 active from 91. Nine older cases closed in the same window: four in GRANT COUNTY, NM on Nov 6-7, including the outbreak's only cat, which took Grant from 7 active to 3; the Brewster horse on Nov 10; Jeff Davis and Hudspeth cattle on Nov 15; and Val Verde and Hudspeth cattle on Nov 17. LUNA COUNTY, NM is now the outbreak's hottest cluster at 9 cases with ALL NINE ACTIVE, up from 2 on Oct 29, just ahead of Dona Ana at 9 active of 10. ARIZONA HAS NEVER CLOSED A CASE — all 7 of its cases, across 4 counties, remain active. The shape of the outbreak has changed in this window: through October it was a border-corridor problem advancing county by county, and it is now also producing isolated cases 150 to 250 miles inland with no infected neighbour, and restarting counties that had been closed since June."
       }
+    ],
+    "totalHumanCases": 2100,
+    "totalAnimalCases": 185000,
+    "affectedCountries": [
+      "Guatemala",
+      "Honduras",
+      "Nicaragua",
+      "Costa Rica",
+      "Panama",
+      "Mexico"
     ]
   },
   "speciesBreakdown": [
@@ -1662,28 +2198,28 @@
     },
     {
       "species": "Bovine (Cattle)",
-      "count": 46,
-      "percentage": 46
+      "count": 69,
+      "percentage": 49
     },
     {
       "species": "Canine (Dogs)",
-      "count": 14,
-      "percentage": 14
+      "count": 19,
+      "percentage": 13
     },
     {
       "species": "Caprine (Goats)",
       "count": 7,
-      "percentage": 7
+      "percentage": 5
     },
     {
       "species": "Cervid (Elk)",
-      "count": 1,
+      "count": 2,
       "percentage": 1
     },
     {
       "species": "Equine (Horses)",
-      "count": 9,
-      "percentage": 9
+      "count": 19,
+      "percentage": 13
     },
     {
       "species": "Feline (Cats)",
@@ -1692,8 +2228,8 @@
     },
     {
       "species": "Ovine (Sheep)",
-      "count": 20,
-      "percentage": 20
+      "count": 24,
+      "percentage": 17
     }
   ],
   "stateResponses": [
