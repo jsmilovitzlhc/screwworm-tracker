@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-18T11:54:20.495Z",
-  "lastChecked": "2026-11-18T11:54:20.495Z",
+  "lastUpdated": "2026-11-18T11:57:16.956Z",
+  "lastChecked": "2026-11-18T11:57:16.956Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -2237,7 +2237,8 @@
       "state": "Texas",
       "actions": [
         "Governor Abbott disaster declaration covering all 254 Texas counties",
-        "Infested zones with animal movement restrictions currently in parts of Brewster, Crockett, Edwards, El Paso, Hudspeth, Jeff Davis, Pecos, Presidio, Schleicher, Starr, Sutton, Terrell, Val Verde and Zapata counties (TAHC, Oct 29, 2026)",
+        "Infested zones with animal movement restrictions currently in parts of 32 counties: Bandera, Brewster, Brooks, Crockett, Culberson, Dimmit, Edwards, El Paso, Fisher, Frio, Goliad, Hidalgo, Hudspeth, Irion, Jeff Davis, Jim Hogg, La Salle, Medina, Mitchell, Nolan, Pecos, Presidio, Reagan, Reeves, Schleicher, Scurry, Starr, Sutton, Terrell, Val Verde, Zapata, Zavala (TAHC notice, Nov 16, 2026)",
+        "The infested zone does not match the confirmed-case map in either direction: 10 zone counties have no confirmed animal case (Brooks, Culberson, Dimmit, Fisher, Frio, Hidalgo, Irion, Nolan, Reeves, Scurry) because TAHC buffers around detections, while Gillespie, Tom Green, Uvalde had cases in June and are no longer zoned",
         "Warm-blooded animals may not leave an infested zone without TAHC authorization; inspection and an NWS Movement/Treatment certificate required",
         "Mandatory livestock inspections within 150mi of cases",
         "Sterile fly release program activated (USDA/APHIS) from Moore Air Base, Edinburg",
