@@ -22,11 +22,16 @@ const EXPORT_PATH = '/tmp/swpull/export.csv';
 //
 // Two things WERE behind, and both are this file's job:
 //
-//   1. THE STATIC FALLBACK, src/data/cases.json, was frozen at 99 cases / lastUpdated Nov 4
+//   1. THE STATIC FALLBACK, src/data/cases.json, was frozen at 113 cases / lastUpdated Nov 5
 //      while the database held 142. useCaseData.js seeds React state from that file and only
 //      replaces it if /api/cases answers, so any API failure would have silently served a
-//      two-week-old 99-case picture with no visible error. That is the drift this script
+//      thirteen-day-old 113-case picture with no visible error. That is the drift this script
 //      closes, and it regenerates the file from the database rather than hand-patching it.
+//
+//      (An earlier draft of this comment said 99 cases / Nov 4. That was the fallback at this
+//      branch's merge base, not the fallback on main: the Nov 5 sync, #24, had already taken
+//      the committed file to 113. The drift was real but one sync smaller than first reported,
+//      and #24 is also where inactiveDate entered api/cases.js — see section 4.)
 //
 //   2. THE NARRATIVE TIMELINE stopped at Nov 4 ("113 animal cases, 55 active"). The 28 cases
 //      confirmed Nov 5-16 were in the database with auto-generated one-line notes and no
@@ -122,7 +127,8 @@ await sql`
 
 // ---------------------------------------------------------------------------------------
 // 4. Regenerate the static fallback from the database, in exactly the shape api/cases.js
-//    returns, so the two can never disagree in structure.
+//    returns, so the two can never disagree in structure. Assertion (b3) below enforces that
+//    claim against API_CASE_KEYS rather than leaving it to this comment.
 // ---------------------------------------------------------------------------------------
 const [cases, tradeImpacts, quarantineZones, metaRows2] = await Promise.all([
   sql`SELECT * FROM screwworm_cases ORDER BY date ASC, id ASC`,
@@ -145,6 +151,10 @@ const confirmedCases = cases.map(c => ({
   lat: c.lat,
   lng: c.lng,
   status: c.status,
+  // api/cases.js returns this (it landed with the Nov 5 sync, after this script's first
+  // draft). The fallback must carry it too: CasesByDay.jsx reconstructs the active-by-day
+  // history from inactiveDate, so a fallback without it flattens that chart's history.
+  inactiveDate: c.inactive_date ? toDateStr(c.inactive_date) : null,
   notes: c.notes,
 }));
 
@@ -243,6 +253,23 @@ for (let i = 0; i < cases.length; i++) {
   }
   assert(toDateStr(a.date) === b.date, `fallback date drift on case ${a.id}`);
   assert(Number(a.lat) === Number(b.lat) && Number(a.lng) === Number(b.lng), `fallback coordinate drift on case ${a.id}`);
+  assert((a.inactive_date ? toDateStr(a.inactive_date) : null) === b.inactiveDate, `fallback inactiveDate drift on case ${a.id}`);
+}
+
+// b3) the fallback carries exactly the key set api/cases.js returns. This is what caught the
+//     dropped inactiveDate: the two shapes had diverged and nothing above would have noticed.
+const API_CASE_KEYS = ['id', 'date', 'species', 'animal', 'county', 'state', 'lat', 'lng', 'status', 'inactiveDate', 'notes'];
+for (const c of confirmedCases) {
+  const got = Object.keys(c).sort().join(',');
+  assert(got === [...API_CASE_KEYS].sort().join(','), `case ${c.id} key set ${got} != api/cases.js shape`);
+}
+
+// b4) every inactive case has an inactive date and no active case has one, which is the
+//     invariant the screwworm_inactive_date trigger is supposed to maintain.
+for (const c of confirmedCases) {
+  if (c.status === 'inactive') assert(c.inactiveDate, `inactive case ${c.id} has no inactiveDate`);
+  else assert(c.inactiveDate === null, `active case ${c.id} carries inactiveDate ${c.inactiveDate}`);
+  if (c.inactiveDate) assert(c.inactiveDate >= c.date, `case ${c.id} went inactive (${c.inactiveDate}) before it was confirmed (${c.date})`);
 }
 
 // c) no coordinate is missing, and the species breakdown sums to the case count
@@ -264,3 +291,4 @@ console.log(`  ${exRows.length - exAnimals.length} fly-trap detections held out 
 console.log(`  ${new Set(confirmedCases.map(c => c.county + '|' + c.state)).size} counties in ${new Set(confirmedCases.map(c => c.state)).size} states`);
 console.log(`  ${fallback.internationalContext.timeline.length} timeline entries, latest ${fallback.internationalContext.timeline.at(-1).date}`);
 console.log(`  latest confirmed case ${confirmedCases.reduce((a, c) => (c.date > a ? c.date : a), '')}`);
+console.log(`  ${confirmedCases.filter((c) => c.inactiveDate).length} cases carry an inactive date for the active-by-day history`);

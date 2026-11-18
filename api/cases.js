@@ -30,6 +30,7 @@ export default async function handler(req, res) {
       lat: c.lat,
       lng: c.lng,
       status: c.status,
+      inactiveDate: c.inactive_date ? toDateStr(c.inactive_date) : null,
       notes: c.notes,
     }));
 
