@@ -1,12 +1,8 @@
-// Pulls APHIS's case-level data out of the public Tableau dashboard. The dashboard's .csv export
-// only has monthly totals; the per-case rows live in a hidden worksheet named ExportToCSV, which
-// comes back in the VizQL bootstrap payload.
-const BASE = 'https://publicdashboards.dl.usda.gov';
-const WORKBOOK = 'NewWorldScrewwormPublicReporting_17805168329840';
-const VIEW_URL = `${BASE}/t/MRP_PUB/views/${WORKBOOK}/SummaryDashboard?:embed=y&:showVizHome=no`;
-const VIZQL = `${BASE}/vizql/t/MRP_PUB/w/${WORKBOOK}/v/SummaryDashboard`;
+// Pulls APHIS's case-level data out of the public Tableau dashboard. The dashboard's
+// SummaryDashboard .csv only has monthly totals; the per-case rows come from the ExportToCSV
+// worksheet, which serves a plain .csv over a normal GET -- no VizQL session needed.
+const CSV_URL = 'https://publicdashboards.dl.usda.gov/t/MRP_PUB/views/NewWorldScrewwormPublicReporting_17805168329840/ExportToCSV.csv';
 const USER_AGENT = 'ScrewwormTracker/1.0 (automated monitoring)';
-const SHEET = 'ExportToCSV';
 
 const STATES = {
   alabama: 'AL', alaska: 'AK', arizona: 'AZ', arkansas: 'AR', california: 'CA', colorado: 'CO',
@@ -22,89 +18,100 @@ const STATES = {
 };
 
 export async function fetchAphisCases() {
-  const page = await fetch(VIEW_URL, { headers: { 'User-Agent': USER_AGENT } });
-  if (!page.ok) throw new Error(`APHIS dashboard returned HTTP ${page.status}`);
-  const headers = {
-    'User-Agent': USER_AGENT,
-    'Content-Type': 'application/x-www-form-urlencoded',
-    cookie: page.headers.getSetCookie().map((c) => c.split(';')[0]).join('; '),
-  };
-
-  const start = await fetch(`${VIZQL}/startSession/viewing?:embed=y&:showVizHome=no`, { method: 'POST', headers });
-  if (!start.ok) throw new Error(`startSession returned HTTP ${start.status}`);
-  const { sessionid } = await start.json();
-  if (!sessionid) throw new Error('startSession returned no session id');
-
-  const size = JSON.stringify({ w: 1200, h: 900 });
-  const boot = await fetch(`${VIZQL}/bootstrapSession/sessions/${sessionid}`, {
-    method: 'POST',
-    headers,
-    body: new URLSearchParams({
-      sheet_id: SHEET,
-      worksheetPortSize: size,
-      dashboardPortSize: size,
-      clientDimension: size,
-      renderMapsClientSide: 'true',
-      isBrowserRendering: 'true',
-      browserRenderingThreshold: '100',
-      formatDataValueLocally: 'false',
-      language: 'en',
-      locale: 'en_US',
-    }),
-  });
-  if (!boot.ok) throw new Error(`bootstrapSession returned HTTP ${boot.status}`);
-  return parseBootstrap(await boot.text()).filter((r) => r.caseType !== 'Fly Trap').map(normalizeRow);
+  const res = await fetch(CSV_URL, { headers: { 'User-Agent': USER_AGENT } });
+  if (!res.ok) throw new Error(`APHIS ExportToCSV returned HTTP ${res.status}`);
+  return parseCsv(await res.text()).filter((r) => r.caseType !== 'Fly Trap').map(normalizeRow);
 }
 
-// The payload is a series of `<length>;<json>` chunks; the data is in the second one.
-export function parseBootstrap(text) {
-  const chunks = [];
-  for (let i = 0; i < text.length;) {
-    const semi = text.indexOf(';', i);
-    const len = parseInt(text.slice(i, semi), 10);
-    chunks.push(JSON.parse(text.slice(semi + 1, semi + 1 + len)));
-    i = semi + 1 + len;
-  }
-  const models = chunks[1].secondaryInfo.presModelMap;
+// APHIS renames these columns from time to time (the old "Animal ID" is now a long "... Id Pk"),
+// so each one is matched on a distinctive substring rather than an exact caption.
+const WANTED = {
+  caseType: 'case type',
+  county: 'county',
+  species: 'species',
+  animalId: 'id pk',
+  state: 'state',
+  status: 'status',
+  date: 'confirmed date',
+};
 
-  const dict = {};
-  for (const segment of Object.values(models.dataDictionary.presModelHolder.genDataDictionaryPresModel.dataSegments)) {
-    for (const col of segment.dataColumns) (dict[col.dataType] ||= []).push(...col.dataValues);
+export function parseCsv(text) {
+  const rows = splitCsv(text.replace(/^\uFEFF/, '').trim());
+  const header = rows.shift();
+  if (!header) throw new Error('APHIS ExportToCSV returned no rows');
+
+  const lower = header.map((h) => h.trim().toLowerCase());
+  const index = {};
+  for (const [key, needle] of Object.entries(WANTED)) {
+    // "Min. Confirmed Date" also contains "confirmed date", so take the exact caption when present.
+    let at = lower.indexOf(needle);
+    if (at < 0) at = lower.findIndex((h) => h.includes(needle));
+    if (at < 0) throw new Error(`Column "${needle}" is missing from the APHIS csv: ${header.join('|')}`);
+    index[key] = at;
   }
 
-  const sheet = models.vizData.presModelHolder.genPresModelMapPresModel.presModelMap[SHEET];
-  if (!sheet) throw new Error(`Worksheet ${SHEET} is missing from the APHIS payload`);
-  const pane = sheet.presModelHolder.genVizDataPresModel.paneColumnsData;
+  return rows
+    .filter((cells) => cells.some((c) => c.trim()))
+    .map((cells) => Object.fromEntries(
+      Object.entries(index).map(([key, at]) => [key, (cells[at] ?? '').trim()]),
+    ));
+}
 
-  const columns = {};
-  for (const col of pane.vizDataColumns) {
-    if (!col.fieldCaption) continue;
-    const raw = pane.paneColumnsList[col.paneIndices[0]].vizPaneColumns[col.columnIndices[0]];
-    const indices = raw.valueIndices.length ? raw.valueIndices : raw.aliasIndices;
-    columns[col.fieldCaption] = indices.map((k) => (k < 0 ? dict.cstring[-k - 1] : dict[col.dataType][k]));
+// Minimal RFC-4180 split: the subject-id column is quoted and contains commas.
+export function splitCsv(text) {
+  const rows = [[]];
+  let cell = '';
+  let quoted = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (quoted) {
+      if (ch === '"' && text[i + 1] === '"') { cell += '"'; i++; }
+      else if (ch === '"') quoted = false;
+      else cell += ch;
+    } else if (ch === '"') quoted = true;
+    else if (ch === ',') { rows.at(-1).push(cell); cell = ''; }
+    else if (ch === '\n' || ch === '\r') {
+      if (ch === '\r' && text[i + 1] === '\n') i++;
+      rows.at(-1).push(cell);
+      cell = '';
+      rows.push([]);
+    } else cell += ch;
   }
+  rows.at(-1).push(cell);
+  return rows.filter((r) => r.length > 1 || r[0] !== '');
+}
 
-  const wanted = { caseType: 'Case Type', county: 'County', species: 'Species', animalId: 'Animal ID', state: 'State', status: 'Status', date: 'Confirmed Date' };
-  for (const name of Object.values(wanted)) {
-    if (!columns[name]) throw new Error(`Column "${name}" is missing from the APHIS payload`);
-  }
-  return columns[wanted.status].map((_, i) => Object.fromEntries(
-    Object.entries(wanted).map(([key, name]) => [key, columns[name][i]]),
-  ));
+// APHIS writes M/D/YYYY in the csv. Pad it rather than handing it to Date(), which would reread
+// it in the runtime's local zone and can land the case a day -- or a month -- off.
+export function toIsoDate(raw) {
+  const iso = raw.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (iso) return iso[0];
+  const us = raw.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+  if (!us) return null;
+  const [, m, d, y] = us;
+  if (+m < 1 || +m > 12 || +d < 1 || +d > 31) return null;
+  return `${y}-${m.padStart(2, '0')}-${d.padStart(2, '0')}`;
 }
 
 export function normalizeRow(r) {
-  const su = r.animalId.match(/SU:\d+:\d+/)?.[0];
-  const ss = r.animalId.match(/SS:\d+:\d+/)?.[0] ?? '';
+  const su = canonicalId(r.animalId, 'SU');
+  const ss = canonicalId(r.animalId, 'SS') ?? '';
   const state = STATES[r.state.trim().toLowerCase()];
   const status = r.status.trim().toLowerCase();
-  const date = String(r.date).slice(0, 10);
+  const date = toIsoDate(String(r.date));
   if (!su) throw new Error(`No APHIS subject id in "${r.animalId}"`);
   if (!state) throw new Error(`Unknown state "${r.state}" on ${su}`);
   if (status !== 'active' && status !== 'inactive') throw new Error(`Unknown status "${r.status}" on ${su}`);
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) throw new Error(`Bad date "${r.date}" on ${su}`);
+  if (!date) throw new Error(`Bad date "${r.date}" on ${su}`);
   const species = normalizeSpecies(r.species);
   return { su, ss, date, county: r.county.trim(), state, status, species, animal: deriveAnimal(species, r.species) };
+}
+
+// APHIS is inconsistent about the separator ("SU:29064:27" vs "SU29063.27"), so both are read and
+// stored in the colon form -- otherwise the same case inserts twice when APHIS fixes its formatting.
+export function canonicalId(raw, prefix) {
+  const m = raw.match(new RegExp(`${prefix}[:.]?(\\d+)[:.](\\d+)`));
+  return m ? `${prefix}:${m[1]}:${m[2]}` : null;
 }
 
 function normalizeSpecies(raw) {
