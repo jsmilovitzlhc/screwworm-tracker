@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-19T10:34:47.643Z",
-  "lastChecked": "2026-11-19T10:34:47.643Z",
+  "lastUpdated": "2026-11-20T10:34:24.138Z",
+  "lastChecked": "2026-11-20T10:34:24.138Z",
   "confirmedCases": [
     {
       "id": 1,
@@ -1886,6 +1886,84 @@
       "status": "active",
       "inactiveDate": null,
       "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-18. APHIS reports location at county level, so the pin is approximate; SU:29092:27, SS:12960:27."
+    },
+    {
+      "id": 149,
+      "date": "2026-11-18",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Medina",
+      "state": "TX",
+      "lat": 29.367686151490783,
+      "lng": -99.10196835972773,
+      "status": "active",
+      "inactiveDate": null,
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-18. APHIS reports location at county level, so the pin is approximate; SU:29121:27, SS:12968:27."
+    },
+    {
+      "id": 150,
+      "date": "2026-11-19",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Greenlee",
+      "state": "AZ",
+      "lat": 33.257257244665865,
+      "lng": -109.26235878023402,
+      "status": "active",
+      "inactiveDate": null,
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-19. APHIS reports location at county level, so the pin is approximate; SU:29159:27, SS:12982:27."
+    },
+    {
+      "id": 151,
+      "date": "2026-11-19",
+      "species": "Ovine",
+      "animal": "Sheep",
+      "county": "Greenlee",
+      "state": "AZ",
+      "lat": 33.216464607388296,
+      "lng": -109.25052688337064,
+      "status": "active",
+      "inactiveDate": null,
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-19. APHIS reports location at county level, so the pin is approximate; SU:29094:27, SS:12985:27."
+    },
+    {
+      "id": 152,
+      "date": "2026-11-19",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Jim Hogg",
+      "state": "TX",
+      "lat": 27.039810643113952,
+      "lng": -98.73708899711815,
+      "status": "active",
+      "inactiveDate": null,
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-19. APHIS reports location at county level, so the pin is approximate; SU:29082:27, SS:12971:27."
+    },
+    {
+      "id": 153,
+      "date": "2026-11-19",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Otero",
+      "state": "NM",
+      "lat": 32.58855830417228,
+      "lng": -105.7605479779347,
+      "status": "active",
+      "inactiveDate": null,
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-19. APHIS reports location at county level, so the pin is approximate; SU:29153:27, SS:12970:27."
+    },
+    {
+      "id": 154,
+      "date": "2026-11-19",
+      "species": "Bovine",
+      "animal": "Cattle",
+      "county": "Starr",
+      "state": "TX",
+      "lat": 26.550074636765896,
+      "lng": -98.76375404682163,
+      "status": "active",
+      "inactiveDate": null,
+      "notes": "Added automatically from the APHIS case-level data; confirmed 2026-11-19. APHIS reports location at county level, so the pin is approximate; SU:29148:27, SS:12986:27."
     }
   ],
   "quarantineZones": [
@@ -2374,8 +2452,8 @@
   "speciesBreakdown": [
     {
       "species": "Bovine (Cattle)",
-      "count": 71,
-      "percentage": 49
+      "count": 76,
+      "percentage": 50
     },
     {
       "species": "Canine (Dogs)",
@@ -2389,13 +2467,13 @@
     },
     {
       "species": "Ovine (Sheep)",
-      "count": 24,
+      "count": 25,
       "percentage": 17
     },
     {
       "species": "Equine (Horses)",
       "count": 20,
-      "percentage": 14
+      "percentage": 13
     },
     {
       "species": "Cervid (Elk)",

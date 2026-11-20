@@ -23,16 +23,18 @@ export async function fetchAphisCases() {
   return parseCsv(await res.text()).filter((r) => r.caseType !== 'Fly Trap').map(normalizeRow);
 }
 
-// APHIS renames these columns from time to time (the old "Animal ID" is now a long "... Id Pk"),
-// so each one is matched on a distinctive substring rather than an exact caption.
+// APHIS renames these columns from time to time and has already renamed one of them back: the
+// subject id shipped as "Animal ID", became a long "... Id Pk", and is "Animal ID" again. Pinning
+// a single substring is what broke the cron twice, so every column carries each caption APHIS has
+// used and is resolved against all of them.
 const WANTED = {
-  caseType: 'case type',
-  county: 'county',
-  species: 'species',
-  animalId: 'id pk',
-  state: 'state',
-  status: 'status',
-  date: 'confirmed date',
+  caseType: ['case type'],
+  county: ['county'],
+  species: ['species'],
+  animalId: ['animal id', 'id pk'],
+  state: ['state'],
+  status: ['status'],
+  date: ['confirmed date'],
 };
 
 export function parseCsv(text) {
@@ -42,11 +44,21 @@ export function parseCsv(text) {
 
   const lower = header.map((h) => h.trim().toLowerCase());
   const index = {};
-  for (const [key, needle] of Object.entries(WANTED)) {
-    // "Min. Confirmed Date" also contains "confirmed date", so take the exact caption when present.
-    let at = lower.indexOf(needle);
-    if (at < 0) at = lower.findIndex((h) => h.includes(needle));
-    if (at < 0) throw new Error(`Column "${needle}" is missing from the APHIS csv: ${header.join('|')}`);
+  for (const [key, needles] of Object.entries(WANTED)) {
+    // Exact captions are tried across every candidate before any substring, because
+    // "Min. Confirmed Date" also contains "confirmed date" and "Animal Type" contains "animal".
+    let at = -1;
+    for (const needle of needles) {
+      at = lower.indexOf(needle);
+      if (at >= 0) break;
+    }
+    if (at < 0) {
+      for (const needle of needles) {
+        at = lower.findIndex((h) => h.includes(needle));
+        if (at >= 0) break;
+      }
+    }
+    if (at < 0) throw new Error(`Column ${needles.map((n) => `"${n}"`).join(' / ')} is missing from the APHIS csv: ${header.join('|')}`);
     index[key] = at;
   }
 
